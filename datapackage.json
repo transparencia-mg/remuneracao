@@ -1,0 +1,831 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "remuneracao-202001",
+      "path": "https://raw.githubusercontent.com/dados-mg/inventario-de-dados/master/remunera%C3%A7%C3%A3o/Servidores_01_20.csv",
+      "profile": "tabular-data-resource",
+      "resource type": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "masp",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descsitser",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nmefet",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "tem_apost",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "desccomi",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "descinst",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descunid",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "carga_hora",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "remuner",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "teto",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "judic",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ferias",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "decter",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "premio",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "feriasprem",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "jetons",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "eventual",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ir",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prev",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "rem_pos",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "bdmg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "codemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cohab",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "copasa",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emater",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "epamig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "funpemg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "gasmig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgi",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgs",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prodemge",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prominas",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emip",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "field36",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field37",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field38",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field39",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field40",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field41",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field42",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field43",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "field44",
+            "type": "any",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "remuneracao-202002",
+      "path": "https://raw.githubusercontent.com/dados-mg/inventario-de-dados/master/remunera%C3%A7%C3%A3o/Servidores_02_20.csv",
+      "profile": "tabular-data-resource",
+      "resource type": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "masp",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descsitser",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nmefet",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "tem_apost",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "desccomi",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "descinst",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descunid",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "carga_hora",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "remuner",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "teto",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "judic",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ferias",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "decter",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "premio",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "feriasprem",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "jetons",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "eventual",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ir",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prev",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "rem_pos",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "bdmg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "codemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cohab",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "copasa",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emater",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "epamig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "funpemg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "gasmig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgi",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgs",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prodemge",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prominas",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emip",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "remuneracao-202003",
+      "path": "https://raw.githubusercontent.com/dados-mg/inventario-de-dados/master/remunera%C3%A7%C3%A3o/remuneracao_03_20.csv",
+      "profile": "tabular-data-resource",
+      "resource type": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "masp",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descsitser",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nmefet",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "tem_apost",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "desccomi",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "descinst",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descunid",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "carga_hora",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "remuner",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "teto",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "judic",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ferias",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "decter",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "premio",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "feriasprem",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "jetons",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "eventual",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ir",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prev",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "rem_pos",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "bdmg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "codemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cohab",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "copasa",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emater",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "epamig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "funpemg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "gasmig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgi",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgs",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+             "name": "prodemge",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prominas",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emip",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "remuneracao-202004",
+      "path": "https://raw.githubusercontent.com/dados-mg/inventario-de-dados/master/remunera%C3%A7%C3%A3o/remuneracao_04_20.csv",
+      "profile": "tabular-data-resource",
+      "resource type": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "masp",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descsitser",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nmefet",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "tem_apost",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "desccomi",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "descinst",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "descunid",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "carga_hora",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "remuner",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "teto",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "judic",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ferias",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "decter",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "premio",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "feriasprem",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "jetons",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "eventual",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ir",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prev",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "rem_pos",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "bdmg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "codemig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cohab",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "copasa",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emater",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "epamig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "funpemg",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "gasmig",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgi",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mgs",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prodemge",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "prominas",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "emip",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "field36",
+            "type": "any",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "remuneração",
+    "pagamento",
+    "gratificação",
+    "cargo efetivo",
+    "cargo em comissão",
+    "férias",
+    "jetons",
+    "masp",
+    "pessoal",
+    "RH",
+    "salários",
+    "servidores"
+  ],
+  "name": "remuneracao",
+  "title": "Remuneração",
+  "description": "Nessa seção são divulgados os dados de pessoal do Poder Executivo do Estado de Minas Gerais, conforme entendimentos do Supremo Tribunal Federal sobre a Lei Federal nº 12.527/2012 - Lei de Acesso à Informação -, Decreto nº 45.969/2012 e Resolução Conjunta SEPLAG/CGE nº 8676, de 30 de julho de 2012.",
+  "homepage": "https://github.com/dados-mg/inventario-de-dados/tree/draft/remunera%C3%A7%C3%A3o",
+  "private": "false",
+  "state": "active",
+  "commit": ""
+  "contributors": [
+    {
+      "title": "Diretoria de Transparência Ativa",
+      "path": "dados.mg.gov.br",
+      "role": "publisher",
+      "email": "transparencia@cge.mg.gov.br"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
