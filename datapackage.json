@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "remuneracao-202001",
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_01_20.csv",
+      "path": "data/remuneracao_01_20.csv",
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -233,7 +233,7 @@
     },
     {
       "name": "remuneracao-202002",
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_02_20.csv",
+      "path": "data/remuneracao_02_20.csv",
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -418,7 +418,7 @@
     },
     {
       "name": "remuneracao-202003",
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_03_20.csv",
+      "path": "data/remuneracao_03_20.csv",
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -603,7 +603,7 @@
     },
     {
       "name": "remuneracao-202004",
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_04_20.csv",
+      "path": "data/remuneracao_04_20.csv",
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -809,7 +809,7 @@
   "name": "remuneracao",
   "title": "Remuneração",
   "description": "Nessa seção são divulgados os dados da remuneração de pessoal do Poder Executivo do Estado de Minas Gerais, conforme entendimentos do Supremo Tribunal Federal sobre a Lei Federal nº 12.527/2012 - Lei de Acesso à Informação -, Decreto nº 45.969/2012 e Resolução Conjunta SEPLAG/CGE nº 8676, de 30 de julho de 2012.",
-  "homepage": "https://github.com/dados-mg/remuneracao/tree/draft",
+  "homepage": "http://dados.mg.gov.br/dataset/remuneracao",
   "private": "false",
   "state": "active",
   "commit": "b2fdcc4f1670630de95d93c7f9996c76aa073358",
