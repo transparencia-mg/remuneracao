@@ -3,11 +3,7 @@
   "resources": [
     {
       "name": "remuneracao-202001",
-<<<<<<< HEAD
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_01_20.csv",
-=======
       "path": "data/remuneracao_01_20.csv",
->>>>>>> origin/draft
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -15,233 +11,254 @@
           {
             "name": "masp",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MASP",
+            "description": "Número de matrícula no serviço público"
           },
           {
             "name": "nome",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome",
+            "description": "Nome do funcionário público"
           },
           {
             "name": "descsitser",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da situação do servidor público",
+            "description": "Descrição da situação do servidor público"
           },
           {
             "name": "nmefet",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome do cargo efetivo",
+            "description": "Nome do cargo efetivo"
           },
           {
             "name": "tem_apost",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Apostila",
+            "description": "Indicativo de apostilamento"
           },
           {
             "name": "desccomi",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição do cargo em comissão",
+            "description": "Descrição do cargo em comissão"
           },
           {
             "name": "descinst",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da instituição",
+            "description": "Descrição da instituição"
           },
           {
             "name": "descunid",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da unidade",
+            "description": "Descrição da unidade"
           },
           {
             "name": "carga_hora",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "remuner",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Remuneração",
+            "description": "Remuneração do funcionário"
           },
           {
             "name": "teto",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Teto",
+            "description": "Abatimento do salário a partir do teto"
           },
           {
             "name": "judic",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "ferias",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias",
+            "description": "Férias"
           },
           {
             "name": "decter",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Décimo Terceiro Salário",
+            "description": "Décimo Terceiro Salário"
           },
           {
             "name": "premio",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Prêmio de produtividade",
+            "description": "Prêmio de produtividade"
           },
           {
             "name": "feriasprem",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias-prêmio",
+            "description": "Férias-prêmio"
           },
           {
             "name": "jetons",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Jetons",
+            "description": "Jetons"
           },
           {
             "name": "eventual",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Eventual",
+            "description": "Eventual"
           },
           {
             "name": "ir",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Imposto de Renda",
+            "description": "Imposto de Renda"
           },
           {
             "name": "prev",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Contribuição previdenciária",
+            "description": "Contribuição previdenciária"
           },
           {
             "name": "rem_pos",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Reuneração pós-deduções",
+            "description": "Reuneração pós-deduções"
           },
           {
             "name": "bdmg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "BDMG",
+            "description": "jetons BDMG"
           },
           {
             "name": "cemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CEMIG",
+            "description": "jetons CEMIG"
           },
           {
             "name": "codemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CODEMIG",
+            "description": "jetons CODEMIG"
           },
           {
             "name": "cohab",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COHAB",
+            "description": "jetons COHAB"
           },
           {
             "name": "copasa",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COPASA",
+            "description": "jetons COPASA"
           },
           {
             "name": "emater",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMATER",
+            "description": "jetons EMATER"
           },
           {
             "name": "epamig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EPAMIG",
+            "description": "jetons EPAMIG"
           },
           {
             "name": "funpemg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "FUNPEMG",
+            "description": "jetons FUNPEMG"
           },
           {
             "name": "gasmig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "GASMIG",
+            "description": "jetons GASMIG"
           },
           {
             "name": "mgi",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGI",
+            "description": "jetons MGI"
           },
           {
             "name": "mgs",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGS",
+            "description": "jetons MGS"
           },
           {
             "name": "prodemge",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PRODEMGE",
+            "description": "jetons PRODEMGE"
           },
           {
             "name": "prominas",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PROMINAS",
+            "description": "jetons PROMINAS"
           },
           {
             "name": "emip",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMIP",
+            "description": "jetons EMIP"
           },
-          {
-            "name": "field36",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field37",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field38",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field39",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field40",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field41",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field42",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field43",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "field44",
-            "type": "any",
-            "format": "default"
-          }
         ]
       }
     },
     {
       "name": "remuneracao-202002",
-<<<<<<< HEAD
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_02_20.csv",
-=======
       "path": "data/remuneracao_02_20.csv",
->>>>>>> origin/draft
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -249,188 +266,261 @@
           {
             "name": "masp",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MASP",
+            "description": "Número de matrícula no serviço público"
+          },
+          {
+            "name": "masp",
+            "type": "integer",
+            "format": "default",
+            "title": "MASP",
+            "description": "Número de matrícula no serviço público"
           },
           {
             "name": "nome",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome",
+            "description": "Nome do funcionário público"
           },
           {
             "name": "descsitser",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da situação do servidor público",
+            "description": "Descrição da situação do servidor público"
           },
           {
             "name": "nmefet",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome do cargo efetivo",
+            "description": "Nome do cargo efetivo"
           },
           {
             "name": "tem_apost",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Apostila",
+            "description": "Indicativo de apostilamento"
           },
           {
             "name": "desccomi",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição do cargo em comissão",
+            "description": "Descrição do cargo em comissão"
           },
           {
             "name": "descinst",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da instituição",
+            "description": "Descrição da instituição"
           },
           {
             "name": "descunid",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da unidade",
+            "description": "Descrição da unidade"
           },
           {
             "name": "carga_hora",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "remuner",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Remuneração",
+            "description": "Remuneração do funcionário"
           },
           {
             "name": "teto",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Teto",
+            "description": "Abatimento do salário a partir do teto"
           },
           {
             "name": "judic",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "ferias",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias",
+            "description": "Férias"
           },
           {
             "name": "decter",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Décimo Terceiro Salário",
+            "description": "Décimo Terceiro Salário"
           },
           {
             "name": "premio",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Prêmio de produtividade",
+            "description": "Prêmio de produtividade"
           },
           {
             "name": "feriasprem",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias-prêmio",
+            "description": "Férias-prêmio"
           },
           {
             "name": "jetons",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Jetons",
+            "description": "Jetons"
           },
           {
             "name": "eventual",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Eventual",
+            "description": "Eventual"
           },
           {
             "name": "ir",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Imposto de Renda",
+            "description": "Imposto de Renda"
           },
           {
             "name": "prev",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Contribuição previdenciária",
+            "description": "Contribuição previdenciária"
           },
           {
             "name": "rem_pos",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Reuneração pós-deduções",
+            "description": "Reuneração pós-deduções"
           },
           {
             "name": "bdmg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "BDMG",
+            "description": "jetons BDMG"
           },
           {
             "name": "cemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CEMIG",
+            "description": "jetons CEMIG"
           },
           {
             "name": "codemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CODEMIG",
+            "description": "jetons CODEMIG"
           },
           {
             "name": "cohab",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COHAB",
+            "description": "jetons COHAB"
           },
           {
             "name": "copasa",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COPASA",
+            "description": "jetons COPASA"
           },
           {
             "name": "emater",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMATER",
+            "description": "jetons EMATER"
           },
           {
             "name": "epamig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EPAMIG",
+            "description": "jetons EPAMIG"
           },
           {
             "name": "funpemg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "FUNPEMG",
+            "description": "jetons FUNPEMG"
           },
           {
             "name": "gasmig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "GASMIG",
+            "description": "jetons GASMIG"
           },
           {
             "name": "mgi",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGI",
+            "description": "jetons MGI"
           },
           {
             "name": "mgs",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGS",
+            "description": "jetons MGS"
           },
           {
             "name": "prodemge",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PRODEMGE",
+            "description": "jetons PRODEMGE"
           },
           {
             "name": "prominas",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PROMINAS",
+            "description": "jetons PROMINAS"
           },
           {
             "name": "emip",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMIP",
+            "description": "jetons EMIP"
           }
         ]
       }
     },
     {
       "name": "remuneracao-202003",
-<<<<<<< HEAD
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_03_20.csv",
-=======
       "path": "data/remuneracao_03_20.csv",
->>>>>>> origin/draft
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -438,188 +528,254 @@
           {
             "name": "masp",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MASP",
+            "description": "Número de matrícula no serviço público"
           },
           {
             "name": "nome",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome",
+            "description": "Nome do funcionário público"
           },
           {
             "name": "descsitser",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da situação do servidor público",
+            "description": "Descrição da situação do servidor público"
           },
           {
             "name": "nmefet",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome do cargo efetivo",
+            "description": "Nome do cargo efetivo"
           },
           {
             "name": "tem_apost",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Apostila",
+            "description": "Indicativo de apostilamento"
           },
           {
             "name": "desccomi",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição do cargo em comissão",
+            "description": "Descrição do cargo em comissão"
           },
           {
             "name": "descinst",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da instituição",
+            "description": "Descrição da instituição"
           },
           {
             "name": "descunid",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da unidade",
+            "description": "Descrição da unidade"
           },
           {
             "name": "carga_hora",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "remuner",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Remuneração",
+            "description": "Remuneração do funcionário"
           },
           {
             "name": "teto",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Teto",
+            "description": "Abatimento do salário a partir do teto"
           },
           {
             "name": "judic",
-            "type": "integer",
-            "format": "default"
+            "type": "any",
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "ferias",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias",
+            "description": "Férias"
           },
           {
             "name": "decter",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Décimo Terceiro Salário",
+            "description": "Décimo Terceiro Salário"
           },
           {
             "name": "premio",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Prêmio de produtividade",
+            "description": "Prêmio de produtividade"
           },
           {
             "name": "feriasprem",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias-prêmio",
+            "description": "Férias-prêmio"
           },
           {
             "name": "jetons",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Jetons",
+            "description": "Jetons"
           },
           {
             "name": "eventual",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Eventual",
+            "description": "Eventual"
           },
           {
             "name": "ir",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Imposto de Renda",
+            "description": "Imposto de Renda"
           },
           {
             "name": "prev",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Contribuição previdenciária",
+            "description": "Contribuição previdenciária"
           },
           {
             "name": "rem_pos",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Reuneração pós-deduções",
+            "description": "Reuneração pós-deduções"
           },
           {
             "name": "bdmg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "BDMG",
+            "description": "jetons BDMG"
           },
           {
             "name": "cemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CEMIG",
+            "description": "jetons CEMIG"
           },
           {
             "name": "codemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CODEMIG",
+            "description": "jetons CODEMIG"
           },
           {
             "name": "cohab",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COHAB",
+            "description": "jetons COHAB"
           },
           {
             "name": "copasa",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COPASA",
+            "description": "jetons COPASA"
           },
           {
             "name": "emater",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMATER",
+            "description": "jetons EMATER"
           },
           {
             "name": "epamig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EPAMIG",
+            "description": "jetons EPAMIG"
           },
           {
             "name": "funpemg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "FUNPEMG",
+            "description": "jetons FUNPEMG"
           },
           {
             "name": "gasmig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "GASMIG",
+            "description": "jetons GASMIG"
           },
           {
             "name": "mgi",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGI",
+            "description": "jetons MGI"
           },
           {
             "name": "mgs",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGS",
+            "description": "jetons MGS"
           },
           {
-             "name": "prodemge",
+            "name": "prodemge",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PRODEMGE",
+            "description": "jetons PRODEMGE"
           },
           {
             "name": "prominas",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PROMINAS",
+            "description": "jetons PROMINAS"
           },
           {
             "name": "emip",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMIP",
+            "description": "jetons EMIP"
           }
         ]
       }
     },
     {
       "name": "remuneracao-202004",
-<<<<<<< HEAD
-      "path": "https://raw.githubusercontent.com/dados-mg/remuneracao/draft/data/remuneracao_04_20.csv",
-=======
       "path": "data/remuneracao_04_20.csv",
->>>>>>> origin/draft
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
       "schema": {
@@ -627,183 +783,248 @@
           {
             "name": "masp",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MASP",
+            "description": "Número de matrícula no serviço público"
           },
           {
             "name": "nome",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome",
+            "description": "Nome do funcionário público"
           },
           {
             "name": "descsitser",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da situação do servidor público",
+            "description": "Descrição da situação do servidor público"
           },
           {
             "name": "nmefet",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Nome do cargo efetivo",
+            "description": "Nome do cargo efetivo"
           },
           {
             "name": "tem_apost",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Apostila",
+            "description": "Indicativo de apostilamento"
           },
           {
             "name": "desccomi",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição do cargo em comissão",
+            "description": "Descrição do cargo em comissão"
           },
           {
             "name": "descinst",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da instituição",
+            "description": "Descrição da instituição"
           },
           {
             "name": "descunid",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Descrição da unidade",
+            "description": "Descrição da unidade"
           },
           {
             "name": "carga_hora",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "remuner",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Remuneração",
+            "description": "Remuneração do funcionário"
           },
           {
             "name": "teto",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Teto",
+            "description": "Abatimento do salário a partir do teto"
           },
           {
             "name": "judic",
             "type": "any",
-            "format": "default"
+            "format": "default",
+            "title": "Carga horária",
+            "description": "Carga horária semanal do fncionário"
           },
           {
             "name": "ferias",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias",
+            "description": "Férias"
           },
           {
             "name": "decter",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Décimo Terceiro Salário",
+            "description": "Décimo Terceiro Salário"
           },
           {
             "name": "premio",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Prêmio de produtividade",
+            "description": "Prêmio de produtividade"
           },
           {
             "name": "feriasprem",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Férias-prêmio",
+            "description": "Férias-prêmio"
           },
           {
             "name": "jetons",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Jetons",
+            "description": "Jetons"
           },
           {
             "name": "eventual",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Eventual",
+            "description": "Eventual"
           },
           {
             "name": "ir",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Imposto de Renda",
+            "description": "Imposto de Renda"
           },
           {
             "name": "prev",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Contribuição previdenciária",
+            "description": "Contribuição previdenciária"
           },
           {
             "name": "rem_pos",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "Reuneração pós-deduções",
+            "description": "Reuneração pós-deduções"
           },
           {
             "name": "bdmg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "BDMG",
+            "description": "jetons BDMG"
           },
           {
             "name": "cemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CEMIG",
+            "description": "jetons CEMIG"
           },
           {
             "name": "codemig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "CODEMIG",
+            "description": "jetons CODEMIG"
           },
           {
             "name": "cohab",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COHAB",
+            "description": "jetons COHAB"
           },
           {
             "name": "copasa",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "COPASA",
+            "description": "jetons COPASA"
           },
           {
             "name": "emater",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMATER",
+            "description": "jetons EMATER"
           },
           {
             "name": "epamig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EPAMIG",
+            "description": "jetons EPAMIG"
           },
           {
             "name": "funpemg",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "FUNPEMG",
+            "description": "jetons FUNPEMG"
           },
           {
             "name": "gasmig",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "GASMIG",
+            "description": "jetons GASMIG"
           },
           {
             "name": "mgi",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGI",
+            "description": "jetons MGI"
           },
           {
             "name": "mgs",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "MGS",
+            "description": "jetons MGS"
           },
           {
             "name": "prodemge",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PRODEMGE",
+            "description": "jetons PRODEMGE"
           },
           {
             "name": "prominas",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "PROMINAS",
+            "description": "jetons PROMINAS"
           },
           {
             "name": "emip",
             "type": "integer",
-            "format": "default"
+            "format": "default",
+            "title": "EMIP",
+            "description": "jetons EMIP"
           },
-          {
-            "name": "field36",
-            "type": "any",
-            "format": "default"
-          }
         ]
       }
     }
@@ -825,17 +1046,10 @@
   "name": "remuneracao",
   "title": "Remuneração",
   "description": "Nessa seção são divulgados os dados da remuneração de pessoal do Poder Executivo do Estado de Minas Gerais, conforme entendimentos do Supremo Tribunal Federal sobre a Lei Federal nº 12.527/2012 - Lei de Acesso à Informação -, Decreto nº 45.969/2012 e Resolução Conjunta SEPLAG/CGE nº 8676, de 30 de julho de 2012.",
-<<<<<<< HEAD
-  "homepage": "https://github.com/dados-mg/remuneracao/tree/draft",
-  "private": "false",
-  "state": "active",
-  "commit": "b2fdcc4f1670630de95d93c7f9996c76aa073358"
-=======
   "homepage": "http://dados.mg.gov.br/dataset/remuneracao",
   "private": "false",
   "state": "active",
   "commit": "b2fdcc4f1670630de95d93c7f9996c76aa073358",
->>>>>>> origin/draft
   "contributors": [
     {
       "title": "Diretoria de Transparência Ativa",
