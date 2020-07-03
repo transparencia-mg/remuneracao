@@ -6,8 +6,10 @@
       "path": "data/remuneracao_01_20.csv",
       "profile": "tabular-data-resource",
       "resource type": "text/csv",
-      "schema": {
-        "fields": [
+      "schema": 
+      {
+        "fields": 
+        [
           {
             "name": "masp",
             "type": "integer",
@@ -252,7 +254,7 @@
             "format": "default",
             "title": "EMIP",
             "description": "jetons EMIP"
-          },
+          }
         ]
       }
     },
@@ -1024,7 +1026,7 @@
             "format": "default",
             "title": "EMIP",
             "description": "jetons EMIP"
-          },
+          }
         ]
       }
     }
