@@ -5,7 +5,7 @@
       "name": "remuneracao-202001",
       "path": "data/remuneracao_01_20.csv",
       "profile": "tabular-data-resource",
-      "resource type": "text/csv",
+      "resourceType": "text/csv",
       "schema": 
       {
         "fields": 
@@ -262,7 +262,7 @@
       "name": "remuneracao-202002",
       "path": "data/remuneracao_02_20.csv",
       "profile": "tabular-data-resource",
-      "resource type": "text/csv",
+      "resourceType": "text/csv",
       "schema": {
         "fields": [
           {
@@ -524,7 +524,7 @@
       "name": "remuneracao-202003",
       "path": "data/remuneracao_03_20.csv",
       "profile": "tabular-data-resource",
-      "resource type": "text/csv",
+      "resourceType": "text/csv",
       "schema": {
         "fields": [
           {
@@ -779,7 +779,7 @@
       "name": "remuneracao-202004",
       "path": "data/remuneracao_04_20.csv",
       "profile": "tabular-data-resource",
-      "resource type": "text/csv",
+      "resourceType": "text/csv",
       "schema": {
         "fields": [
           {
@@ -1055,7 +1055,7 @@
   "contributors": [
     {
       "title": "Diretoria de Transparência Ativa",
-      "path": "dados.mg.gov.br",
+      "path": "http://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade",
       "role": "publisher",
       "email": "transparencia@cge.mg.gov.br"
     }
