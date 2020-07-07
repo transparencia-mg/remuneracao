@@ -1051,6 +1051,7 @@
   "homepage": "http://dados.mg.gov.br/dataset/remuneracao",
   "private": "false",
   "state": "active",
+  "update":"true",
   "commit": "bb0a4da686668005b5707e6543549b3f92e99355",
   "contributors": [
     {
