@@ -2,1070 +2,182 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "remuneracao-202001",
-      "path": "data/remuneracao_01_20.csv",
+      "name": "remuneracao-01-aaaa",
+      "path": "data/remuneracao-01-aaaa.csv",
       "profile": "tabular-data-resource",
-      "resourceType": "text/csv",
-      "schema": 
-      {
-        "fields": 
-        [
-          {
-            "name": "masp",
-            "type": "integer",
-            "format": "default",
-            "title": "MASP",
-            "description": "Número de matrícula no serviço público"
-          },
-          {
-            "name": "nome",
-            "type": "string",
-            "format": "default",
-            "title": "Nome",
-            "description": "Nome do funcionário público"
-          },
-          {
-            "name": "descsitser",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da situação do servidor público",
-            "description": "Descrição da situação do servidor público"
-          },
-          {
-            "name": "nmefet",
-            "type": "string",
-            "format": "default",
-            "title": "Nome do cargo efetivo",
-            "description": "Nome do cargo efetivo"
-          },
-          {
-            "name": "tem_apost",
-            "type": "any",
-            "format": "default",
-            "title": "Apostila",
-            "description": "Indicativo de apostilamento"
-          },
-          {
-            "name": "desccomi",
-            "type": "any",
-            "format": "default",
-            "title": "Descrição do cargo em comissão",
-            "description": "Descrição do cargo em comissão"
-          },
-          {
-            "name": "descinst",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da instituição",
-            "description": "Descrição da instituição"
-          },
-          {
-            "name": "descunid",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da unidade",
-            "description": "Descrição da unidade"
-          },
-          {
-            "name": "carga_hora",
-            "type": "integer",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "remuner",
-            "type": "integer",
-            "format": "default",
-            "title": "Remuneração",
-            "description": "Remuneração do funcionário"
-          },
-          {
-            "name": "teto",
-            "type": "integer",
-            "format": "default",
-            "title": "Teto",
-            "description": "Abatimento do salário a partir do teto"
-          },
-          {
-            "name": "judic",
-            "type": "any",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "ferias",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias",
-            "description": "Férias"
-          },
-          {
-            "name": "decter",
-            "type": "integer",
-            "format": "default",
-            "title": "Décimo Terceiro Salário",
-            "description": "Décimo Terceiro Salário"
-          },
-          {
-            "name": "premio",
-            "type": "integer",
-            "format": "default",
-            "title": "Prêmio de produtividade",
-            "description": "Prêmio de produtividade"
-          },
-          {
-            "name": "feriasprem",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias-prêmio",
-            "description": "Férias-prêmio"
-          },
-          {
-            "name": "jetons",
-            "type": "integer",
-            "format": "default",
-            "title": "Jetons",
-            "description": "Jetons"
-          },
-          {
-            "name": "eventual",
-            "type": "integer",
-            "format": "default",
-            "title": "Eventual",
-            "description": "Eventual"
-          },
-          {
-            "name": "ir",
-            "type": "integer",
-            "format": "default",
-            "title": "Imposto de Renda",
-            "description": "Imposto de Renda"
-          },
-          {
-            "name": "prev",
-            "type": "integer",
-            "format": "default",
-            "title": "Contribuição previdenciária",
-            "description": "Contribuição previdenciária"
-          },
-          {
-            "name": "rem_pos",
-            "type": "integer",
-            "format": "default",
-            "title": "Reuneração pós-deduções",
-            "description": "Reuneração pós-deduções"
-          },
-          {
-            "name": "bdmg",
-            "type": "integer",
-            "format": "default",
-            "title": "BDMG",
-            "description": "jetons BDMG"
-          },
-          {
-            "name": "cemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CEMIG",
-            "description": "jetons CEMIG"
-          },
-          {
-            "name": "codemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CODEMIG",
-            "description": "jetons CODEMIG"
-          },
-          {
-            "name": "cohab",
-            "type": "integer",
-            "format": "default",
-            "title": "COHAB",
-            "description": "jetons COHAB"
-          },
-          {
-            "name": "copasa",
-            "type": "integer",
-            "format": "default",
-            "title": "COPASA",
-            "description": "jetons COPASA"
-          },
-          {
-            "name": "emater",
-            "type": "integer",
-            "format": "default",
-            "title": "EMATER",
-            "description": "jetons EMATER"
-          },
-          {
-            "name": "epamig",
-            "type": "integer",
-            "format": "default",
-            "title": "EPAMIG",
-            "description": "jetons EPAMIG"
-          },
-          {
-            "name": "funpemg",
-            "type": "integer",
-            "format": "default",
-            "title": "FUNPEMG",
-            "description": "jetons FUNPEMG"
-          },
-          {
-            "name": "gasmig",
-            "type": "integer",
-            "format": "default",
-            "title": "GASMIG",
-            "description": "jetons GASMIG"
-          },
-          {
-            "name": "mgi",
-            "type": "integer",
-            "format": "default",
-            "title": "MGI",
-            "description": "jetons MGI"
-          },
-          {
-            "name": "mgs",
-            "type": "integer",
-            "format": "default",
-            "title": "MGS",
-            "description": "jetons MGS"
-          },
-          {
-            "name": "prodemge",
-            "type": "integer",
-            "format": "default",
-            "title": "PRODEMGE",
-            "description": "jetons PRODEMGE"
-          },
-          {
-            "name": "prominas",
-            "type": "integer",
-            "format": "default",
-            "title": "PROMINAS",
-            "description": "jetons PROMINAS"
-          },
-          {
-            "name": "emip",
-            "type": "integer",
-            "format": "default",
-            "title": "EMIP",
-            "description": "jetons EMIP"
-          }
-        ]
-      }
+      "schema": "remuneracao-schema.json",
+      "title": "Remuneração Janeiro",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
     },
     {
-      "name": "remuneracao-202002",
-      "path": "data/remuneracao_02_20.csv",
+      "name": "remuneracao-02-aaaa-",
+      "path": "data/remuneracao-02-aaaa.csv",
       "profile": "tabular-data-resource",
-      "resourceType": "text/csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "masp",
-            "type": "integer",
-            "format": "default",
-            "title": "MASP",
-            "description": "Número de matrícula no serviço público"
-          },
-          {
-            "name": "masp",
-            "type": "integer",
-            "format": "default",
-            "title": "MASP",
-            "description": "Número de matrícula no serviço público"
-          },
-          {
-            "name": "nome",
-            "type": "string",
-            "format": "default",
-            "title": "Nome",
-            "description": "Nome do funcionário público"
-          },
-          {
-            "name": "descsitser",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da situação do servidor público",
-            "description": "Descrição da situação do servidor público"
-          },
-          {
-            "name": "nmefet",
-            "type": "string",
-            "format": "default",
-            "title": "Nome do cargo efetivo",
-            "description": "Nome do cargo efetivo"
-          },
-          {
-            "name": "tem_apost",
-            "type": "any",
-            "format": "default",
-            "title": "Apostila",
-            "description": "Indicativo de apostilamento"
-          },
-          {
-            "name": "desccomi",
-            "type": "any",
-            "format": "default",
-            "title": "Descrição do cargo em comissão",
-            "description": "Descrição do cargo em comissão"
-          },
-          {
-            "name": "descinst",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da instituição",
-            "description": "Descrição da instituição"
-          },
-          {
-            "name": "descunid",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da unidade",
-            "description": "Descrição da unidade"
-          },
-          {
-            "name": "carga_hora",
-            "type": "integer",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "remuner",
-            "type": "integer",
-            "format": "default",
-            "title": "Remuneração",
-            "description": "Remuneração do funcionário"
-          },
-          {
-            "name": "teto",
-            "type": "integer",
-            "format": "default",
-            "title": "Teto",
-            "description": "Abatimento do salário a partir do teto"
-          },
-          {
-            "name": "judic",
-            "type": "any",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "ferias",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias",
-            "description": "Férias"
-          },
-          {
-            "name": "decter",
-            "type": "integer",
-            "format": "default",
-            "title": "Décimo Terceiro Salário",
-            "description": "Décimo Terceiro Salário"
-          },
-          {
-            "name": "premio",
-            "type": "integer",
-            "format": "default",
-            "title": "Prêmio de produtividade",
-            "description": "Prêmio de produtividade"
-          },
-          {
-            "name": "feriasprem",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias-prêmio",
-            "description": "Férias-prêmio"
-          },
-          {
-            "name": "jetons",
-            "type": "integer",
-            "format": "default",
-            "title": "Jetons",
-            "description": "Jetons"
-          },
-          {
-            "name": "eventual",
-            "type": "integer",
-            "format": "default",
-            "title": "Eventual",
-            "description": "Eventual"
-          },
-          {
-            "name": "ir",
-            "type": "integer",
-            "format": "default",
-            "title": "Imposto de Renda",
-            "description": "Imposto de Renda"
-          },
-          {
-            "name": "prev",
-            "type": "integer",
-            "format": "default",
-            "title": "Contribuição previdenciária",
-            "description": "Contribuição previdenciária"
-          },
-          {
-            "name": "rem_pos",
-            "type": "integer",
-            "format": "default",
-            "title": "Reuneração pós-deduções",
-            "description": "Reuneração pós-deduções"
-          },
-          {
-            "name": "bdmg",
-            "type": "integer",
-            "format": "default",
-            "title": "BDMG",
-            "description": "jetons BDMG"
-          },
-          {
-            "name": "cemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CEMIG",
-            "description": "jetons CEMIG"
-          },
-          {
-            "name": "codemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CODEMIG",
-            "description": "jetons CODEMIG"
-          },
-          {
-            "name": "cohab",
-            "type": "integer",
-            "format": "default",
-            "title": "COHAB",
-            "description": "jetons COHAB"
-          },
-          {
-            "name": "copasa",
-            "type": "integer",
-            "format": "default",
-            "title": "COPASA",
-            "description": "jetons COPASA"
-          },
-          {
-            "name": "emater",
-            "type": "integer",
-            "format": "default",
-            "title": "EMATER",
-            "description": "jetons EMATER"
-          },
-          {
-            "name": "epamig",
-            "type": "integer",
-            "format": "default",
-            "title": "EPAMIG",
-            "description": "jetons EPAMIG"
-          },
-          {
-            "name": "funpemg",
-            "type": "integer",
-            "format": "default",
-            "title": "FUNPEMG",
-            "description": "jetons FUNPEMG"
-          },
-          {
-            "name": "gasmig",
-            "type": "integer",
-            "format": "default",
-            "title": "GASMIG",
-            "description": "jetons GASMIG"
-          },
-          {
-            "name": "mgi",
-            "type": "integer",
-            "format": "default",
-            "title": "MGI",
-            "description": "jetons MGI"
-          },
-          {
-            "name": "mgs",
-            "type": "integer",
-            "format": "default",
-            "title": "MGS",
-            "description": "jetons MGS"
-          },
-          {
-            "name": "prodemge",
-            "type": "integer",
-            "format": "default",
-            "title": "PRODEMGE",
-            "description": "jetons PRODEMGE"
-          },
-          {
-            "name": "prominas",
-            "type": "integer",
-            "format": "default",
-            "title": "PROMINAS",
-            "description": "jetons PROMINAS"
-          },
-          {
-            "name": "emip",
-            "type": "integer",
-            "format": "default",
-            "title": "EMIP",
-            "description": "jetons EMIP"
-          }
-        ]
-      }
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Fevereiro",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
     },
     {
-      "name": "remuneracao-202003",
-      "path": "data/remuneracao_03_20.csv",
+      "name": "remuneracao-03-aaaa",
+      "path": "data/remuneracao-03-aaaa.csv",
       "profile": "tabular-data-resource",
-      "resourceType": "text/csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "masp",
-            "type": "integer",
-            "format": "default",
-            "title": "MASP",
-            "description": "Número de matrícula no serviço público"
-          },
-          {
-            "name": "nome",
-            "type": "string",
-            "format": "default",
-            "title": "Nome",
-            "description": "Nome do funcionário público"
-          },
-          {
-            "name": "descsitser",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da situação do servidor público",
-            "description": "Descrição da situação do servidor público"
-          },
-          {
-            "name": "nmefet",
-            "type": "string",
-            "format": "default",
-            "title": "Nome do cargo efetivo",
-            "description": "Nome do cargo efetivo"
-          },
-          {
-            "name": "tem_apost",
-            "type": "any",
-            "format": "default",
-            "title": "Apostila",
-            "description": "Indicativo de apostilamento"
-          },
-          {
-            "name": "desccomi",
-            "type": "any",
-            "format": "default",
-            "title": "Descrição do cargo em comissão",
-            "description": "Descrição do cargo em comissão"
-          },
-          {
-            "name": "descinst",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da instituição",
-            "description": "Descrição da instituição"
-          },
-          {
-            "name": "descunid",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da unidade",
-            "description": "Descrição da unidade"
-          },
-          {
-            "name": "carga_hora",
-            "type": "integer",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "remuner",
-            "type": "integer",
-            "format": "default",
-            "title": "Remuneração",
-            "description": "Remuneração do funcionário"
-          },
-          {
-            "name": "teto",
-            "type": "integer",
-            "format": "default",
-            "title": "Teto",
-            "description": "Abatimento do salário a partir do teto"
-          },
-          {
-            "name": "judic",
-            "type": "any",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "ferias",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias",
-            "description": "Férias"
-          },
-          {
-            "name": "decter",
-            "type": "integer",
-            "format": "default",
-            "title": "Décimo Terceiro Salário",
-            "description": "Décimo Terceiro Salário"
-          },
-          {
-            "name": "premio",
-            "type": "integer",
-            "format": "default",
-            "title": "Prêmio de produtividade",
-            "description": "Prêmio de produtividade"
-          },
-          {
-            "name": "feriasprem",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias-prêmio",
-            "description": "Férias-prêmio"
-          },
-          {
-            "name": "jetons",
-            "type": "integer",
-            "format": "default",
-            "title": "Jetons",
-            "description": "Jetons"
-          },
-          {
-            "name": "eventual",
-            "type": "integer",
-            "format": "default",
-            "title": "Eventual",
-            "description": "Eventual"
-          },
-          {
-            "name": "ir",
-            "type": "integer",
-            "format": "default",
-            "title": "Imposto de Renda",
-            "description": "Imposto de Renda"
-          },
-          {
-            "name": "prev",
-            "type": "integer",
-            "format": "default",
-            "title": "Contribuição previdenciária",
-            "description": "Contribuição previdenciária"
-          },
-          {
-            "name": "rem_pos",
-            "type": "integer",
-            "format": "default",
-            "title": "Reuneração pós-deduções",
-            "description": "Reuneração pós-deduções"
-          },
-          {
-            "name": "bdmg",
-            "type": "integer",
-            "format": "default",
-            "title": "BDMG",
-            "description": "jetons BDMG"
-          },
-          {
-            "name": "cemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CEMIG",
-            "description": "jetons CEMIG"
-          },
-          {
-            "name": "codemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CODEMIG",
-            "description": "jetons CODEMIG"
-          },
-          {
-            "name": "cohab",
-            "type": "integer",
-            "format": "default",
-            "title": "COHAB",
-            "description": "jetons COHAB"
-          },
-          {
-            "name": "copasa",
-            "type": "integer",
-            "format": "default",
-            "title": "COPASA",
-            "description": "jetons COPASA"
-          },
-          {
-            "name": "emater",
-            "type": "integer",
-            "format": "default",
-            "title": "EMATER",
-            "description": "jetons EMATER"
-          },
-          {
-            "name": "epamig",
-            "type": "integer",
-            "format": "default",
-            "title": "EPAMIG",
-            "description": "jetons EPAMIG"
-          },
-          {
-            "name": "funpemg",
-            "type": "integer",
-            "format": "default",
-            "title": "FUNPEMG",
-            "description": "jetons FUNPEMG"
-          },
-          {
-            "name": "gasmig",
-            "type": "integer",
-            "format": "default",
-            "title": "GASMIG",
-            "description": "jetons GASMIG"
-          },
-          {
-            "name": "mgi",
-            "type": "integer",
-            "format": "default",
-            "title": "MGI",
-            "description": "jetons MGI"
-          },
-          {
-            "name": "mgs",
-            "type": "integer",
-            "format": "default",
-            "title": "MGS",
-            "description": "jetons MGS"
-          },
-          {
-            "name": "prodemge",
-            "type": "integer",
-            "format": "default",
-            "title": "PRODEMGE",
-            "description": "jetons PRODEMGE"
-          },
-          {
-            "name": "prominas",
-            "type": "integer",
-            "format": "default",
-            "title": "PROMINAS",
-            "description": "jetons PROMINAS"
-          },
-          {
-            "name": "emip",
-            "type": "integer",
-            "format": "default",
-            "title": "EMIP",
-            "description": "jetons EMIP"
-          }
-        ]
-      }
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Março",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
     },
     {
-      "name": "remuneracao-202004",
-      "path": "data/remuneracao_04_20.csv",
+      "name": "remuneracao-04-aaaa",
+      "path": "data/remuneracao-04-aaaa.csv",
       "profile": "tabular-data-resource",
-      "resourceType": "text/csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "masp",
-            "type": "integer",
-            "format": "default",
-            "title": "MASP",
-            "description": "Número de matrícula no serviço público"
-          },
-          {
-            "name": "nome",
-            "type": "string",
-            "format": "default",
-            "title": "Nome",
-            "description": "Nome do funcionário público"
-          },
-          {
-            "name": "descsitser",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da situação do servidor público",
-            "description": "Descrição da situação do servidor público"
-          },
-          {
-            "name": "nmefet",
-            "type": "string",
-            "format": "default",
-            "title": "Nome do cargo efetivo",
-            "description": "Nome do cargo efetivo"
-          },
-          {
-            "name": "tem_apost",
-            "type": "any",
-            "format": "default",
-            "title": "Apostila",
-            "description": "Indicativo de apostilamento"
-          },
-          {
-            "name": "desccomi",
-            "type": "any",
-            "format": "default",
-            "title": "Descrição do cargo em comissão",
-            "description": "Descrição do cargo em comissão"
-          },
-          {
-            "name": "descinst",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da instituição",
-            "description": "Descrição da instituição"
-          },
-          {
-            "name": "descunid",
-            "type": "string",
-            "format": "default",
-            "title": "Descrição da unidade",
-            "description": "Descrição da unidade"
-          },
-          {
-            "name": "carga_hora",
-            "type": "integer",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "remuner",
-            "type": "integer",
-            "format": "default",
-            "title": "Remuneração",
-            "description": "Remuneração do funcionário"
-          },
-          {
-            "name": "teto",
-            "type": "integer",
-            "format": "default",
-            "title": "Teto",
-            "description": "Abatimento do salário a partir do teto"
-          },
-          {
-            "name": "judic",
-            "type": "any",
-            "format": "default",
-            "title": "Carga horária",
-            "description": "Carga horária semanal do fncionário"
-          },
-          {
-            "name": "ferias",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias",
-            "description": "Férias"
-          },
-          {
-            "name": "decter",
-            "type": "integer",
-            "format": "default",
-            "title": "Décimo Terceiro Salário",
-            "description": "Décimo Terceiro Salário"
-          },
-          {
-            "name": "premio",
-            "type": "integer",
-            "format": "default",
-            "title": "Prêmio de produtividade",
-            "description": "Prêmio de produtividade"
-          },
-          {
-            "name": "feriasprem",
-            "type": "integer",
-            "format": "default",
-            "title": "Férias-prêmio",
-            "description": "Férias-prêmio"
-          },
-          {
-            "name": "jetons",
-            "type": "integer",
-            "format": "default",
-            "title": "Jetons",
-            "description": "Jetons"
-          },
-          {
-            "name": "eventual",
-            "type": "integer",
-            "format": "default",
-            "title": "Eventual",
-            "description": "Eventual"
-          },
-          {
-            "name": "ir",
-            "type": "integer",
-            "format": "default",
-            "title": "Imposto de Renda",
-            "description": "Imposto de Renda"
-          },
-          {
-            "name": "prev",
-            "type": "integer",
-            "format": "default",
-            "title": "Contribuição previdenciária",
-            "description": "Contribuição previdenciária"
-          },
-          {
-            "name": "rem_pos",
-            "type": "integer",
-            "format": "default",
-            "title": "Reuneração pós-deduções",
-            "description": "Reuneração pós-deduções"
-          },
-          {
-            "name": "bdmg",
-            "type": "integer",
-            "format": "default",
-            "title": "BDMG",
-            "description": "jetons BDMG"
-          },
-          {
-            "name": "cemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CEMIG",
-            "description": "jetons CEMIG"
-          },
-          {
-            "name": "codemig",
-            "type": "integer",
-            "format": "default",
-            "title": "CODEMIG",
-            "description": "jetons CODEMIG"
-          },
-          {
-            "name": "cohab",
-            "type": "integer",
-            "format": "default",
-            "title": "COHAB",
-            "description": "jetons COHAB"
-          },
-          {
-            "name": "copasa",
-            "type": "integer",
-            "format": "default",
-            "title": "COPASA",
-            "description": "jetons COPASA"
-          },
-          {
-            "name": "emater",
-            "type": "integer",
-            "format": "default",
-            "title": "EMATER",
-            "description": "jetons EMATER"
-          },
-          {
-            "name": "epamig",
-            "type": "integer",
-            "format": "default",
-            "title": "EPAMIG",
-            "description": "jetons EPAMIG"
-          },
-          {
-            "name": "funpemg",
-            "type": "integer",
-            "format": "default",
-            "title": "FUNPEMG",
-            "description": "jetons FUNPEMG"
-          },
-          {
-            "name": "gasmig",
-            "type": "integer",
-            "format": "default",
-            "title": "GASMIG",
-            "description": "jetons GASMIG"
-          },
-          {
-            "name": "mgi",
-            "type": "integer",
-            "format": "default",
-            "title": "MGI",
-            "description": "jetons MGI"
-          },
-          {
-            "name": "mgs",
-            "type": "integer",
-            "format": "default",
-            "title": "MGS",
-            "description": "jetons MGS"
-          },
-          {
-            "name": "prodemge",
-            "type": "integer",
-            "format": "default",
-            "title": "PRODEMGE",
-            "description": "jetons PRODEMGE"
-          },
-          {
-            "name": "prominas",
-            "type": "integer",
-            "format": "default",
-            "title": "PROMINAS",
-            "description": "jetons PROMINAS"
-          },
-          {
-            "name": "emip",
-            "type": "integer",
-            "format": "default",
-            "title": "EMIP",
-            "description": "jetons EMIP"
-          }
-        ]
-      }
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Abril",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-05-aaaa",
+      "path": "data/remuneracao-05-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Maio",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-06-aaaa",
+      "path": "data/remuneracao-06-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Junho",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-07-aaaa",
+      "path": "data/remuneracao-07-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Julho",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-08-aaaa",
+      "path": "data/remuneracao-08-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Agosto",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-09-aaaa",
+      "path": "data/remuneracao-09-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Setembro",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-10-aaaa",
+      "path": "data/remuneracao-10-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Outubro",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-11-aaaa",
+      "path": "data/remuneracao-11-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Novembro",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
+    },
+    {
+      "name": "remuneracao-12-aaaa",
+      "path": "data/remuneracao-12-aaaa.csv",
+      "profile": "tabular-data-resource",
+      "schema": "remuneracao-schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração Dezembro",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": ["NA", ""],
+      "dialect": {
+      "delimiter": ";"}
     }
   ],
   "keywords": [
-    "remuneração",
-    "pagamento",
-    "gratificação",
-    "cargo efetivo",
-    "cargo em comissão",
-    "férias",
-    "jetons",
-    "masp",
-    "pessoal",
-    "RH",
-    "salários",
-    "servidores"
+    "salário",
+    "remuneração"
   ],
   "name": "remuneracao",
   "title": "Remuneração",
-  "description": "Nessa seção são divulgados os dados da remuneração de pessoal do Poder Executivo do Estado de Minas Gerais, conforme entendimentos do Supremo Tribunal Federal sobre a Lei Federal nº 12.527/2012 - Lei de Acesso à Informação -, Decreto nº 45.969/2012 e Resolução Conjunta SEPLAG/CGE nº 8676, de 30 de julho de 2012.",
-  "homepage": "http://dados.mg.gov.br/dataset/remuneracao",
+  "description": "Remuneração dos Servidores do Poder Executivo ",
   "private": "false",
   "state": "active",
-  "update":"true",
-  "commit": "bb0a4da686668005b5707e6543549b3f92e99355",
-  "contributors": [
-    {
-      "title": "Diretoria de Transparência Ativa",
-      "path": "http://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade",
-      "role": "publisher",
-      "email": "transparencia@cge.mg.gov.br"
-    }
-  ],
   "licenses": [
     {
       "name": "CC-BY-4.0",
       "title": "Creative Commons Attribution 4.0",
       "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Andre Amorim",
+      "role": "author"
     }
   ]
 }
