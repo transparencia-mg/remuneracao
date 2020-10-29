@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "Servidores_01_20.csv",
+      "name": "Servidores_01_20",
       "path": "data/Servidores_01_20.csv",
       "profile": "tabular-data-resource",
       "schema": "remuneracao-schema.json",
@@ -26,7 +26,7 @@
       "format": "csv"
     },
     {
-      "name": "Servidores_02_20.csv",
+      "name": "Servidores_02_20",
       "path": "data/Servidores_02_20.csv",
       "profile": "tabular-data-resource",
       "schema": "remuneracao-schema.json",
