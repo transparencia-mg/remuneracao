@@ -2,8 +2,8 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "Servidores-01-20",
-      "path": "data/Servidores-01-20.csv",
+      "name": "Servidores_01_20",
+      "path": "data/Servidores_01_20.csv",
       "profile": "tabular-data-resource",
       "schema": "remuneracao-schema.json",
       "title": "Remuneração Janeiro",
@@ -26,8 +26,8 @@
       "format": "csv"
     },
     {
-      "name": "Servidores-02-20",
-      "path": "data/Servidores-02-20.csv",
+      "name": "Servidores_02_20",
+      "path": "data/Servidores_02_20.csv",
       "profile": "tabular-data-resource",
       "schema": "remuneracao-schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
