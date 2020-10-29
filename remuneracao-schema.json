@@ -6,13 +6,14 @@
             "type": "integer",
             "format": "default",
             "title": "MASP",
-            "description": "Matrícula do servidor civil ou militar de Minas Gerais."
+            "description": "Número que identifica o servidor civil ou militar de Minas Gerais."
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
-            "title": "Nome do servidor"
+            "title": "Nome",
+            "description": "Nome do servidor civil ou militar conforme registrado nos Sistemas de Pagamento de Pessoal do Estado de Minas Gerais - SEPLAG, CBMMG e PMMG."
           },
           {
             "name": "descsitser",
@@ -26,62 +27,62 @@
             "type": "string",
             "format": "default",
             "title": "Nome do cargo efetivo",
-            "description": "Nome do cargo efetivo do servidor"
+            "description": "Cargo da carreira de origem do servidor"
           },
           {
             "name": "tem_apost",
-            "type": "any",
+            "type": "numeric",
             "format": "default",
             "title": "Apostila",
-            "description": "Existência de apostila"
+            "description": "Existência de benefício pessoal. Quando sinalizado com a expressão “Sim”, indica que o servidor tem direito a uma remuneração adicional a do seu cargo efetivo. Conforme previsto nas Leis nº 9.532, de 30 de dezembro de 1987 e nº 13.434, de 30 de dezembro de 1999."
           },
           {
             "name": "desccomi",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Descrição do cargo comissionado",
-            "description": "Descrição do cargo comissionado, caso haja"
+            "description": "Destinado às atribuições de direção, chefia e assessoramento, caracterizando-se pela transitoriedade da investidura. Pode ser preenchido por pessoa que não seja servidor/militar de carreira. "
           },
           {
             "name": "descinst",
             "type": "string",
             "format": "default",
             "title": "Descrição da instituição",
-            "description": "Órgão ou entidade de exercício do servidor"
+            "description": "Indica o órgão e/ou entidade de exercício do servidor civil ou militar."
           },
           {
             "name": "descunid",
             "type": "string",
             "format": "default",
             "title": "Descrição da unidade de exercício",
-            "description": "Descrição da unidade de exercício do servidor. Será omitida se a informação for classificada por Termo específico na instituição de exercício"
+            "description": "Unidade administrativa de exercício dentro do órgão. Será omitida se a informação for classificada por termo específico na instituição de exercício"
           },
           {
             "name": "carga_hora",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Carga Horária",
-            "description": "Jornada semanal de trabalho, em horas"
+            "description": "Carga horária semanal do servidor"
           },
           {
             "name": "remuner",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Remuneração básica bruta",
-            "description": "Composta pela soma das parcelas remuneratórias correspondentes ao cargo efetivo, função gratificada ou cargo comissionado",
+            "description": "Composta pela soma das parcelas remuneratórias correspondentes a remuneração básica e vantagens pecuniárias de caráter temporário ou permanente (gratificação natalina, férias e etc)",
             "decimalChar": ","
           },
           {
             "name": "teto",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "title": "Abatimento pelo teto salarial",
-            "description": "Valor de dedução obrigatória caso a soma das parcelas remuneratórias ultrapasse o teto constitucional do salário dos servidores",
+            "title": "Abate Teto Valor",
+            "description": "Valor deduzido da remuneração básica bruta, quando esta ultrapassar o teto constitucional, nos termos da legislação pertinente",
             "decimalChar": ","
           },
           {
             "name": "judic",
-            "type": "any",
+            "type": "numeric",
             "format": "default",
             "title": "Acréscimo judicial",
             "description": "Valor de acréscimo no caso de ação judicial em favor do servidor",
@@ -89,7 +90,7 @@
           },
           {
             "name": "ferias",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Férias",
             "description": "Adicional pago ao servidor, por ocasião das férias regulamentares, correspondentes a 1/3 (um terço) da remuneração do período de férias",
@@ -97,7 +98,7 @@
           },
           {
             "name": "decter",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Décimo Terceiro",
             "description": "Gratificação assegurada ao servidor civil ou militar a título de décimo terceiro salário",
@@ -105,169 +106,170 @@
           },
           {
             "name": "premio",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Prêmio de produtividade",
-            "description": "Valor referente ao prêmio de produtividade",
+            "description": "Percentual de remuneração paga a título de premiação aos servidores civis ou militares que atingiram as metas pactuadas no Acordo de Resultados",
             "decimalChar": ","
           },
           {
             "name": "feriasprem",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Férias-prêmio",
-            "description": "Valor referente às férias-prêmio",
+            "description": "Conversão em espécie, quando da aposentadoria, do saldo de férias prêmio concedida e não gozadas, conforme legislação pertinente",
             "decimalChar": ","
           },
           {
             "name": "jetons",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "title": "Jetons",
+            "title": "Jetons Adm Direta",
+            "description": "Valor recebido em razão da participação em conselhos da Administração Direta",
             "decimalChar": ","
           },
           {
             "name": "eventual",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "Valores pagos em condições excepcionais e transitórias, tais como: Indenizações, Decisões Judiciais, Ajuda de Custo, Alimentação e outros valores de natureza eventual.",
-            "title": "Eventuais",
+            "title": "Demais Eventuais",
+            "description": "VGratificações, restituições, horas-extras e outros, pagos de forma variável e/ou eventual",
             "decimalChar": ","
           },
           {
             "name": "ir",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
             "title": "Imposto de renda",
-            "description": "valor de dedução do Imposto de renda retido na fonte",
+            "description": "Imposto de Renda Retido na Fonte, nos termos da legislação própria",
             "decimalChar": ","
           },
           {
             "name": "prev",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "title": "Previdência",
-            "description": "valor de dedução da contribuição previdenciária oficial",
+            "title": "Contribuição Previdenciária",
+            "description": "Contribuição Previdenciária obrigatória, nos termos da legislação pertinente",
             "decimalChar": ","
           },
           {
             "name": "rem_pos",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "title": "Remuneração  pós deduções",
+            "title": "Remuneração Após deduções",
             "description": "Valor da remuneração do servidor após deduções obrigatórias realizadas no mês. O valor líquido apresentado pode ser superior ao efetivamente recebido, em face de não estarem inseridos os descontos de caráter pessoal.",
             "decimalChar": ","
           },
           {
             "name": "bdmg",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons BDMG",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "cemig",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons CEMIG",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "codemig",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons CODEMIG",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "cohab",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons COHAB",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "copasa",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons COPASA",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "emater",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons EMATER",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "epamig",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons EPAMIG",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "funpemg",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons FUNPEMG",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "gasmig",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons GASMIG",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "mgi",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons MGI",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "mgs",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons MGS",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "prodemge",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons PRODEMGE",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "prominas",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons PROMINAS",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           },
           {
             "name": "emip",
-            "type": "integer",
+            "type": "numeric",
             "format": "default",
-            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "title": "Jetons EMIP",
+            "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
             "decimalChar": ","
           }
     ]
