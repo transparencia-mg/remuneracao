@@ -31,7 +31,7 @@
           },
           {
             "name": "tem_apost",
-            "type": "numeric",
+            "type": "string",
             "format": "default",
             "title": "Apostila",
             "description": "Existência de benefício pessoal. Quando sinalizado com a expressão “Sim”, indica que o servidor tem direito a uma remuneração adicional a do seu cargo efetivo. Conforme previsto nas Leis nº 9.532, de 30 de dezembro de 1987 e nº 13.434, de 30 de dezembro de 1999."
@@ -82,7 +82,7 @@
           },
           {
             "name": "judic",
-            "type": "numeric",
+            "type": "string",
             "format": "default",
             "title": "Acréscimo judicial",
             "description": "Valor de acréscimo no caso de ação judicial em favor do servidor",
