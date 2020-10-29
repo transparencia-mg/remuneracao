@@ -59,7 +59,7 @@
           },
           {
             "name": "carga_hora",
-            "type": "numeric",
+            "type": "integer",
             "format": "default",
             "title": "Carga Horária",
             "description": "Carga horária semanal do servidor"
