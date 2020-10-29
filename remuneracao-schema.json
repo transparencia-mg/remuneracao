@@ -1,10 +1,6 @@
 {
-    "fields": [
-      {
-        "name":"",
-       "type":"",
-       "description":"",
-      },
+    "fields": 
+    [
           {
             "name": "masp",
             "type": "integer",
