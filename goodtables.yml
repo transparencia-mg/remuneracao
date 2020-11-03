@@ -1,4 +1,4 @@
-files: '*.csv'
+files: '*.csv', '*.json'
   - schema: schema.json
     format: csv
     encoding: utf-8
