@@ -9,13 +9,6 @@ datapackages:
   - 'datapackage.json'
 
 settings:
-  checks:
-    # You can pass check types
-    - structure
-    - schema
-    # ...or individual checks
-    - no-headers
-    - blank-headers
   skip_checks:
     - duplicate-lines
   error_limit: 1
