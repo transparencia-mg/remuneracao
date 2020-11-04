@@ -48,6 +48,174 @@
         "caseSensitiveHeader": false
       },
       "format": "csv"
+    },
+    {
+      "name": "servidores_03_20",
+      "path": "data/Servidores_03_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Março de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
+    },
+    {
+      "name": "servidores_04_20",
+      "path": "data/Servidores_04_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Abril de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
+    },
+    {
+      "name": "servidores_05_20",
+      "path": "data/Servidores_05_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Maio de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
+    },
+    {
+      "name": "servidores_06_20",
+      "path": "data/Servidores_06_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Junho de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
+    },
+    {
+      "name": "servidores_07_20",
+      "path": "data/Servidores_07_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Julho de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
+    },
+    {
+      "name": "servidores_08_20",
+      "path": "data/Servidores_08_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Agosto de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
+    },
+    {
+      "name": "servidores_09_20",
+      "path": "data/Servidores_09_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Setembro de 2020",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      },
+      "format": "csv"
     }
   ],
   "keywords": [
