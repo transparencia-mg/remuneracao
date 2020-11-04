@@ -1,10 +1,18 @@
-files: '*.csv', '*.json'
-  - schema: schema.json
+files:
+  - source: servidores_01_20.csv
+    schema: schema.json
     format: csv
     encoding: utf-8
-    skip_rows: 1
+    skip_rows: 3
     delimiter: ';'
 
+  - source: servidores_02_20.csv
+    schema: schema.json
+    format: csv
+    encoding: utf-8
+    skip_rows: 3
+    delimiter: ';'
+ 
 datapackages:
   - 'datapackage.json'
 
@@ -13,7 +21,7 @@ settings:
     - duplicate-lines
   error_limit: 1
   table_limit: 1
-  row_limit: 333000
+  row_limit: 1000
   infer_schema: True
   infer_fields: True
   order_fields: True
