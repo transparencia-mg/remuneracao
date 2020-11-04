@@ -1,6 +1,4 @@
+  
 settings:
-    checks:
-    - structure
-    - schema
-    - blank-header
-    - missing-value
+  skip_checks:
+    - duplicate-row
