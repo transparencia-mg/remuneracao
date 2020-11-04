@@ -1,12 +1,12 @@
 files:
-  - source: servidores_01_20
+  - source: Servidores_01_20.csv
     schema: schema.json
     format: csv
     encoding: utf-8
     skip_rows: 3
     delimiter: ';'
 
-  - source: servidores_02_20
+  - source: Servidores_02_20.csv
     schema: schema.json
     format: csv
     encoding: utf-8
