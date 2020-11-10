@@ -1,3 +1,5 @@
+library(data.table)
+
 MESES <- c("JAN" = "01", "FEV" = "02", "MAR" = "03", "ABR" = "04",
            "MAI" = "05", "JUN" = "06", "JUL" = "07", "AGO" = "08",
            "SET" = "09", "OUT" = "10", "NOV" = "11", "DEZ" = "12")
@@ -106,4 +108,24 @@ col_types_mapping <- function(x) {
   stopifnot(!anyNA(result))
   
   paste0(result, collapse = "")
+}
+
+
+mask_unidades_administrativas <- function(x) {
+  
+  unidades <- readxl::read_excel("data-raw/classificacao_unidades_SEJUSP.xlsx") %>% 
+    dplyr::select(descunid, texto_exibicao) %>% 
+    unique()
+  
+  
+  result <- dplyr::left_join(x, unidades, by = "descunid")
+  
+  result <- as.data.table(result)
+  
+  result[!is.na(texto_exibicao), descunid := texto_exibicao]
+  
+  result[, texto_exibicao := NULL]
+  
+  result[]
+  
 }
