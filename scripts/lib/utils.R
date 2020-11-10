@@ -87,23 +87,23 @@ read <- function(x) {
     map_chr("type") %>% 
     col_types_mapping()
   
-  result <- fread(x, sep = ";", dec = ",", col.names = col_names, colClasses = col_types)
+  result <- readr::read_csv2(x, col_names = col_names, skip = 1, col_types = col_types, locale = locale(decimal_mark = ",", grouping_mark = "."))
   
   result
 }
 
 col_types_mapping <- function(x) {
   
-  mapping <- c("string" = "character", 
-               "number" = "numeric", 
-               "integer" = "integer", 
-               "boolean" = "logical", 
-               "date" = "Date", 
-               "year" = "integer")
+  mapping <- c("string" = "c", 
+               "number" = "n", 
+               "integer" = "i", 
+               "boolean" = "l", 
+               "date" = "D", 
+               "year" = "i")
   
   result <- unname(mapping[x])
   
   stopifnot(!anyNA(result))
   
-  result
+  paste0(result, collapse = "")
 }
