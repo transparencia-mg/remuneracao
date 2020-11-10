@@ -76,3 +76,34 @@ make_names_output_files_cbmmg <- function(x) {
   
   result
 }
+
+read <- function(x) {
+  
+  schema <- jsonlite::read_json("schema.json")$fields
+  
+  col_names <- schema %>% map_chr("name")
+  
+  col_types <- schema %>% 
+    map_chr("type") %>% 
+    col_types_mapping()
+  
+  result <- fread(x, sep = ";", dec = ",", col.names = col_names, colClasses = col_types)
+  
+  result
+}
+
+col_types_mapping <- function(x) {
+  
+  mapping <- c("string" = "character", 
+               "number" = "numeric", 
+               "integer" = "integer", 
+               "boolean" = "logical", 
+               "date" = "Date", 
+               "year" = "integer")
+  
+  result <- unname(mapping[x])
+  
+  stopifnot(!anyNA(result))
+  
+  result
+}
