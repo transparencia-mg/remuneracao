@@ -14,15 +14,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -38,15 +30,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -62,15 +46,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -86,15 +62,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -110,15 +78,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -134,15 +94,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -158,15 +110,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -182,15 +126,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     },
     {
@@ -206,15 +142,7 @@
         "NA",
         ""
       ],
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
-      },
+      "dialect": "dialect.json",
       "format": "csv"
     }
   ],
