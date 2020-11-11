@@ -156,10 +156,12 @@
   "private": "false",
   "state": "active",
   "version": "0.0.0.9000",
-  "sources": [{
-  "title": "Github",
-  "path": "https://github.com/dados-mg/remuneracao"
-}],
+  "sources": [
+    {
+      "title": "Github",
+      "path": "https://github.com/dados-mg/remuneracao"
+    }
+  ],
   "licenses": [
     {
       "name": "CC-BY-4.0",
@@ -179,6 +181,5 @@
       "email": "transparencia@cge.mg.gov.br",
       "role": "maintainer"
     }
-
   ]
 }
