@@ -129,3 +129,23 @@ mask_unidades_administrativas <- function(x) {
   result[]
   
 }
+
+validate_resource <- function(x) {
+  
+  datapackage <- jsonlite::read_json("datapackage.json")
+  
+  # recurso deve existir no datapackage.json para ser validado
+  
+  if(!x %in% map_chr(datapackage$resources, "name")) {
+    stop(glue::glue("Recurso {x} não encontrado no arquivo datapackage.json"))
+  }
+  
+  resource <- rlist::list.filter(datapackage$resources, x %in% name)[[1]]
+  
+  jsonlite::write_json(resource, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
+  
+  system("frictionless validate --source-type resource _resource.json")
+  
+  file.remove("_resource.json")
+}
+
