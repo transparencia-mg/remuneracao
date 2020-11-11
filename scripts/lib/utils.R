@@ -149,3 +149,24 @@ validate_resource <- function(x) {
   file.remove("_resource.json")
 }
 
+create_resource <- function(dataset_id, resource_id) {
+  
+  datapackage <- jsonlite::read_json("datapackage.json")
+  
+  # recurso deve existir no datapackage.json para ser validado
+  
+  if(!resource_id %in% purrr::map_chr(datapackage$resources, "name")) {
+    stop(glue::glue("Recurso {resource_id} não encontrado no arquivo datapackage.json"))
+  }
+  
+  resource <- rlist::list.filter(datapackage$resources, resource_id %in% name)[[1]]
+  
+  res <- ckanr::resource_create(package_id = dataset_id,
+                                name = resource$title,
+                                description = resource$description,
+                                upload = resource$path,
+                                url = Sys.getenv("DADOSMG_DEV_HOST"), 
+                                key = Sys.getenv("DADOSMG_DEV"))
+  res
+  
+}
