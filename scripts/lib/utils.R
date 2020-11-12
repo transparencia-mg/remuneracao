@@ -69,12 +69,15 @@ clean_headers_cbmmg <- function(x) {
 make_names_output_files_cbmmg <- function(x) {
   result <- x %>% 
     str_remove("201\\d/\\d\\d? ") %>% 
-    str_replace("data-raw/cbmmg/", "data-raw/cbmmg/CBMMG_") %>% 
+    str_replace("data-raw/cbmmg/", "data-raw/cbmmg/cbmmg_") %>% 
     str_replace(" ", "_") %>% 
     str_remove("20") %>% 
     str_replace_all(MESES) %>% 
     str_replace(".xlsx", ".csv") %>% 
-    str_replace("data-raw", "data")
+    str_replace("data-raw", "data") %>% 
+    convert_filename_to_yyyy_mm() %>% 
+    str_replace("_", "-")
+    
   
   result
 }
