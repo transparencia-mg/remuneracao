@@ -2,8 +2,8 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "servidores_01_20",
-      "path": "data/Servidores_01_20.csv",
+      "name": "servidores-2020-01",
+      "path": "data/servidores-2020-01.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2020",
@@ -18,8 +18,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_02_20",
-      "path": "data/Servidores_02_20.csv",
+      "name": "servidores-2020-02",
+      "path": "data/servidores-2020-02.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -34,8 +34,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_03_20",
-      "path": "data/Servidores_03_20.csv",
+      "name": "servidores-2020-03",
+      "path": "data/servidores-2020-03.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -50,8 +50,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_04_20",
-      "path": "data/Servidores_04_20.csv",
+      "name": "servidores-2020-04",
+      "path": "data/servidores-2020-04.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -66,8 +66,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_05_20",
-      "path": "data/Servidores_05_20.csv",
+      "name": "servidores-2020-05",
+      "path": "data/servidores-2020-05.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -82,8 +82,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_06_20",
-      "path": "data/Servidores_06_20.csv",
+      "name": "servidores-2020-06",
+      "path": "data/servidores-2020-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -98,8 +98,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_07_20",
-      "path": "data/Servidores_07_20.csv",
+      "name": "servidores-2020-07",
+      "path": "data/servidores-2020-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -114,8 +114,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_08_20",
-      "path": "data/Servidores_08_20.csv",
+      "name": "servidores-2020-08",
+      "path": "data/servidores-2020-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -130,8 +130,8 @@
       "format": "csv"
     },
     {
-      "name": "servidores_09_20",
-      "path": "data/Servidores_09_20.csv",
+      "name": "servidores-2020-09",
+      "path": "data/servidores-2020-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",

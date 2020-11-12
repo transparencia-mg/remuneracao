@@ -191,3 +191,18 @@ create_dataset <- function() {
   
   res
 }
+
+convert_filename_to_yyyy_mm <- function(x) {
+  
+  mm_yyyy <- x %>% 
+    str_extract("_\\d{2}_\\d{2}") %>% 
+    str_remove("^_") %>% 
+    str_replace("_", "_20")
+  
+  yyyy_mm <- paste(str_sub(mm_yyyy, 4, 7), str_sub(mm_yyyy, 1, 2), sep = "-") 
+  
+  result <- x %>% 
+    str_replace("\\d{2}_\\d{2}", yyyy_mm)
+  
+  result
+}
