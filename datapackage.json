@@ -2,8 +2,8 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "servidores-2020-06",
-      "path": "data/servidores-2020-06.csv",
+      "name": "servidores-2012-06",
+      "path": "data/servidores-2012-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2012",
