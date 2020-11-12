@@ -2,6 +2,1462 @@
   "profile": "tabular-data-package",
   "resources": [
     {
+      "name": "servidores-2020-06",
+      "path": "data/servidores-2020-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2012-07",
+      "path": "servidores-2012-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2012-08",
+      "path": "servidores-2012-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2012-09",
+      "path": "servidores-2012-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2012-10",
+      "path": "servidores-2012-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2012-11",
+      "path": "servidores-2012-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2012-12",
+      "path": "servidores-2012-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2012",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-01",
+      "path": "servidores-2013-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-02",
+      "path": "servidores-2013-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-03",
+      "path": "servidores-2013-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-04",
+      "path": "servidores-2013-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-05",
+      "path": "servidores-2013-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-06",
+      "path": "servidores-2013-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-07",
+      "path": "servidores-2013-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-08",
+      "path": "servidores-2013-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-09",
+      "path": "servidores-2013-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-10",
+      "path": "servidores-2013-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-11",
+      "path": "servidores-2013-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2013-12",
+      "path": "servidores-2013-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2013",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-01",
+      "path": "servidores-2014-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-02",
+      "path": "servidores-2014-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-03",
+      "path": "servidores-2014-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-04",
+      "path": "servidores-2014-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-05",
+      "path": "servidores-2014-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-06",
+      "path": "servidores-2014-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-07",
+      "path": "servidores-2014-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-08",
+      "path": "servidores-2014-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-09",
+      "path": "servidores-2014-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-10",
+      "path": "servidores-2014-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-11",
+      "path": "servidores-2014-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2014-12",
+      "path": "servidores-2014-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2014",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-01",
+      "path": "servidores-2015-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-02",
+      "path": "servidores-2015-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-03",
+      "path": "servidores-2015-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-04",
+      "path": "servidores-2015-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-05",
+      "path": "servidores-2015-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-06",
+      "path": "servidores-2015-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-07",
+      "path": "servidores-2015-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-08",
+      "path": "servidores-2015-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-09",
+      "path": "servidores-2015-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-10",
+      "path": "servidores-2015-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-11",
+      "path": "servidores-2015-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2015-12",
+      "path": "servidores-2015-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2015",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-01",
+      "path": "servidores-2016-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-02",
+      "path": "servidores-2016-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-03",
+      "path": "servidores-2016-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-04",
+      "path": "servidores-2016-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-05",
+      "path": "servidores-2016-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-06",
+      "path": "servidores-2016-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-07",
+      "path": "servidores-2016-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-08",
+      "path": "servidores-2016-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-09",
+      "path": "servidores-2016-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-10",
+      "path": "servidores-2016-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-11",
+      "path": "servidores-2016-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2016-12",
+      "path": "servidores-2016-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2016",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-01",
+      "path": "servidores-2017-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-02",
+      "path": "servidores-2017-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-03",
+      "path": "servidores-2017-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-04",
+      "path": "servidores-2017-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-05",
+      "path": "servidores-2017-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-06",
+      "path": "servidores-2017-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-07",
+      "path": "servidores-2017-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-08",
+      "path": "servidores-2017-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-09",
+      "path": "servidores-2017-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-10",
+      "path": "servidores-2017-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-11",
+      "path": "servidores-2017-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2017-12",
+      "path": "servidores-2017-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2017",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-01",
+      "path": "servidores-2018-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-02",
+      "path": "servidores-2018-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-03",
+      "path": "servidores-2018-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-04",
+      "path": "servidores-2018-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-05",
+      "path": "servidores-2018-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-06",
+      "path": "servidores-2018-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-07",
+      "path": "servidores-2018-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-08",
+      "path": "servidores-2018-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-09",
+      "path": "servidores-2018-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-10",
+      "path": "servidores-2018-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-11",
+      "path": "servidores-2018-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2018-12",
+      "path": "servidores-2018-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2018",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-01",
+      "path": "servidores-2019-01.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Janeiro de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-02",
+      "path": "servidores-2019-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Fevereiro de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-03",
+      "path": "servidores-2019-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Março de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-04",
+      "path": "servidores-2019-04.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Abril de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-05",
+      "path": "servidores-2019-05.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Maio de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-06",
+      "path": "servidores-2019-06.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Junho de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-07",
+      "path": "servidores-2019-07.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Julho de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-08",
+      "path": "servidores-2019-08.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Agosto de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-09",
+      "path": "servidores-2019-09.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Setembro de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-10",
+      "path": "servidores-2019-10.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Outubro de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-11",
+      "path": "servidores-2019-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Novembro de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
+      "name": "servidores-2019-12",
+      "path": "servidores-2019-12.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "title": "Remuneração de Dezembro de 2019",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "missingValues": [
+        "NA",
+        ""
+      ],
+      "dialect": "dialect.json",
+      "format": "csv"
+    },
+    {
       "name": "servidores-2020-01",
       "path": "data/servidores-2020-01.csv",
       "profile": "tabular-data-resource",
