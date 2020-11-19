@@ -209,3 +209,43 @@ convert_filename_to_yyyy_mm <- function(x) {
   
   result
 }
+
+summarize_servidores_ <- function(x) {
+  
+  path <- file.path(glue::glue("data/{x}.csv"))
+  
+  yyyy_mm <- stringr::str_sub(x, 12, 18)
+  yyyy <- as.integer(stringr::str_sub(x, 12, 15))
+  mm <- as.integer(stringr::str_sub(x, 17, 18))
+  yyyy_mm_dd <- as.Date(paste0(yyyy_mm, "-01"))
+  
+  
+  numeric_cols <- c("rem_pos", "remuner", "teto", "ferias", "decter", "premio",
+                    "feriasprem", "jetons", "eventual", "ir", "prev", "bdmg",
+                    "cemig", "codemig", "cohab", "copasa", "emater", "epamig",
+                    "funpemg", "gasmig", "mgi", "mgs", "prodemge", "prominas", "emip")
+  
+  dt <- fread(path, sep2 = ";", colClasses = "character")
+  
+  for (col in numeric_cols) {
+    set(dt, j = col, value = as_numeric(dt[[col]]))
+  }
+  
+  result <- dt[, lapply(.SD, sum), by = c("descinst", "descunid"), .SDcols = numeric_cols]
+  
+  result[, DATA := yyyy_mm_dd]
+  result[, ANO := yyyy]
+  result[, MES := mm]
+  result[, PERIODO := yyyy_mm]
+  
+  result[]
+  
+}
+
+summarize_servidores <- purrr::safely(summarize_servidores_)
+
+as_numeric <- function(x) {
+  return <- readr::parse_number(x, locale = locale(decimal_mark = ",", grouping_mark = "."))
+  stop_for_problems(return)
+  return
+}

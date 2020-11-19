@@ -11,6 +11,8 @@ stopifnot(length(unique(headers)) == 1)
 
 output <- make_names_output_files_cbmmg(input)
 
+dir.create("data/cbmmg")
+
 input %>% map(read_cbmmg) %>% 
                 map(recode_cbmmg) %>% 
                 map(enrich_cbmmg) %>% 
