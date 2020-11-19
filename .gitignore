@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+logs/*
+!/logs/.gitkeep
+data-raw/*
+!/logs/.gitkeep
