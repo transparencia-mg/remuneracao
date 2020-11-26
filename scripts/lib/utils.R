@@ -367,3 +367,8 @@ insert_remuneracao_sqlite <- function(resource_id, conn, table) {
   
   result
 }
+
+is_wholenumber <- function(x, tol = .Machine$double.eps^0.5) {
+  # vide seção exemplos da documentação help("is.integer")
+  abs(x - round(x)) < tol
+} 
