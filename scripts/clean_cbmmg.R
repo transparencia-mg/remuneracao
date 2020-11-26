@@ -16,4 +16,4 @@ dir.create("data/cbmmg")
 input %>% map(read_cbmmg) %>% 
                 map(recode_cbmmg) %>% 
                 map(enrich_cbmmg) %>% 
-                walk2(output, write_cbmmg)
+                walk2(output, write_remuneracao)

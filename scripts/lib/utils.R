@@ -1,4 +1,4 @@
-library(data.table)
+library(data.table); library(magrittr)
 
 MESES <- c("JAN" = "01", "FEV" = "02", "MAR" = "03", "ABR" = "04",
            "MAI" = "05", "JUN" = "06", "JUL" = "07", "AGO" = "08",
@@ -41,7 +41,7 @@ enrich_cbmmg <- function(x) {
   return
 }
 
-write_cbmmg <- function(x, output) {
+write_remuneracao <- function(x, output) {
   data.table::fwrite(x, file = output, sep = ";", dec = ",", bom = TRUE, na = "NA")
 }
 
@@ -82,17 +82,71 @@ make_names_output_files_cbmmg <- function(x) {
   result
 }
 
-read <- function(x) {
+read_remuneracao_raw <- function(path, clean = TRUE) {
   
-  schema <- jsonlite::read_json("schema.json")$fields
+  result <- data.table::fread(path, sep = ";", colClasses = "character", encoding = "UTF-8")
   
-  col_names <- schema %>% map_chr("name")
+  if(clean == TRUE) {
+    result <- clean_remuneracao(result)
+  }
   
-  col_types <- schema %>% 
-    map_chr("type") %>% 
-    col_types_mapping()
+  result
+}
+
+clean_remuneracao <- function(x) {
+  result <- x %>% 
+              clean_remove_extra_columns() 
+  #%>% clean_coerce_masp_to_integer()
   
-  result <- readr::read_csv2(x, col_names = col_names, skip = 1, col_types = col_types, locale = locale(decimal_mark = ",", grouping_mark = "."))
+  result[]
+}
+
+clean_coerce_masp_to_integer <- function(x) {
+  
+  result <- data.table::copy(x)
+  
+  result[, masp := stringr::str_replace(masp, "(\\d)-(\\d$)", "\\1\\2")]
+  
+  if(!identical(x$masp, result$masp)) {
+    diff <- waldo::compare(x$masp, result$masp)
+    warning(diff)
+  }
+  
+  result[]
+}
+
+clean_remove_extra_columns <- function(x) {
+  col_names <- jsonlite::read_json("schema.json")$fields %>% purrr::map_chr("name")
+  
+  extra_cols_to_exclude <- setdiff(names(x), col_names)
+  
+  # if (length(extra_cols_to_exclude > 0)) {
+  #   
+  #   unique_values <- extra_cols_to_exclude %>% 
+  #     purrr::map(~ unique(x[[.x]])) %>% 
+  #     purrr::set_names(extra_cols_to_exclude)
+  #   
+  #   
+  #   extra_cols_to_exclude %>% 
+  #   purrr::map(~ glue::glue("Coluna {.x} com valores únicos ({paste0(unique_values[[.x]], collapse = ", ")}) removida.")) %>% 
+  #   purrr::map(warning)
+  #   
+  # }
+  
+  x[, ..col_names]
+}
+
+read_remuneracao <- function(resource_id) {
+  
+  resource <- get_resource(resource_id)
+  
+  col_names <- get_col_names(resource_id)
+  
+  col_types <- get_col_types(resource_id) %>% col_types_mapping()
+  
+  result <- readr::read_csv2(resource$path, col_names = col_names, skip = 1, col_types = col_types, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  
+  #stop_for_problems(result)
   
   result
 }
@@ -108,7 +162,9 @@ col_types_mapping <- function(x) {
   
   result <- unname(mapping[x])
   
-  stopifnot(!anyNA(result))
+  if(anyNA(result)) {
+    stop("Não foi possível encontrar o tipo da variável.")
+  }
   
   paste0(result, collapse = "")
 }
@@ -135,34 +191,18 @@ mask_unidades_administrativas <- function(x) {
 
 validate_resource <- function(x) {
   
-  datapackage <- jsonlite::read_json("datapackage.json")
-  
-  # recurso deve existir no datapackage.json para ser validado
-  
-  if(!x %in% map_chr(datapackage$resources, "name")) {
-    stop(glue::glue("Recurso {x} não encontrado no arquivo datapackage.json"))
-  }
-  
-  resource <- rlist::list.filter(datapackage$resources, x %in% name)[[1]]
+  resource <- get_resource(x)
   
   jsonlite::write_json(resource, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
   
-  system("frictionless validate --source-type resource _resource.json")
+  system("frictionless validate --skip-errors duplicate-row --source-type resource _resource.json")
   
   file.remove("_resource.json")
 }
 
 create_resource <- function(resource_id, dataset_id) {
   
-  datapackage <- jsonlite::read_json("datapackage.json")
-  
-  # recurso deve existir no datapackage.json para ser validado
-  
-  if(!resource_id %in% purrr::map_chr(datapackage$resources, "name")) {
-    stop(glue::glue("Recurso {resource_id} não encontrado no arquivo datapackage.json"))
-  }
-  
-  resource <- rlist::list.filter(datapackage$resources, resource_id %in% name)[[1]]
+  resource <- get_resource(x)
   
   res <- ckanr::resource_create(package_id = dataset_id,
                                 name = resource$title,
@@ -248,4 +288,82 @@ as_numeric <- function(x) {
   return <- readr::parse_number(x, locale = locale(decimal_mark = ",", grouping_mark = "."))
   stop_for_problems(return)
   return
+}
+
+get_resource <- function(x) {
+  
+  resource_exists(x)
+  
+  datapackage <- jsonlite::read_json("datapackage.json")
+  
+  result <- rlist::list.filter(datapackage$resources, x %in% name)
+  
+  result[[1]]
+}
+
+
+resource_exists <- function(x) {
+  datapackage <- jsonlite::read_json("datapackage.json")
+  
+  if(!x %in% purrr::map_chr(datapackage$resources, "name")) {
+    stop(glue::glue("Recurso {x} não encontrado no arquivo datapackage.json"))
+  }
+  
+  TRUE
+}
+
+
+
+get_schema <- function(resource_id) {
+  resource <- get_resource(resource_id)
+  
+  if(grepl(".json$", resource$schema)) {
+    # dereference schema externo
+    # vide https://github.com/frictionlessdata/specs/issues/365 para contexto
+    result <- jsonlite::read_json(resource$schema)
+  } else {
+    result <- resource$schema
+  }
+  
+  result
+}
+
+get_col_types <- function(resource_id) {
+  schema <- get_schema(resource_id)
+  result <- purrr::map_chr(schema$fields, "type")
+  result  
+}
+
+
+get_col_names <- function(resource_id) {
+  schema <- get_schema(resource_id)
+  result <- purrr::map_chr(schema$fields, "name")
+  result  
+}
+
+
+get_col_labels <- function(resource_id) {
+  schema <- get_schema(resource_id)
+  result <- purrr::map_chr(schema$fields, "title")
+  result  
+}
+
+insert_remuneracao_sqlite <- function(resource_id, conn, table) {
+  
+  resource <- get_resource(resource_id)
+  
+  dt <- read_remuneracao_raw(resource$path, clean = TRUE)
+  
+  yyyy_mm <- stringr::str_extract(resource_id, "\\d{4}-\\d{2}")
+  dt$year <- stringr::str_sub(yyyy_mm, 1, 4)
+  dt$month <- stringr::str_sub(yyyy_mm, 6, 7)
+  dt$data <- paste0(yyyy_mm, "-01")
+  
+  # new code should prefer dbCreateTable() and dbAppendTable()
+  # wait fix for https://github.com/r-dbi/RSQLite/issues/306
+  result <- dbWriteTable(conn, table, dt, append = TRUE)
+  
+  print(resource_id, result)
+  
+  result
 }
