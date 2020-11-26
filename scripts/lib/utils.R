@@ -189,52 +189,6 @@ mask_unidades_administrativas <- function(x) {
   
 }
 
-validate_resource <- function(x) {
-  
-  resource <- get_resource(x)
-  
-  jsonlite::write_json(resource, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
-  
-  system("frictionless validate --skip-errors duplicate-row --source-type resource _resource.json")
-  
-  file.remove("_resource.json")
-}
-
-create_resource <- function(resource_id, dataset_id) {
-  
-  resource <- get_resource(x)
-  
-  res <- ckanr::resource_create(package_id = dataset_id,
-                                name = resource$title,
-                                description = resource$description,
-                                upload = resource$path,
-                                url = Sys.getenv("DADOSMG_DEV_HOST"), 
-                                key = Sys.getenv("DADOSMG_DEV"))
-  res
-  
-}
-
-create_dataset <- function() {
-  datapackage <- jsonlite::read_json("datapackage.json")
-  
-  
-  res <- ckanr::package_create(name = datapackage$name,
-                        owner_org = rlist::list.filter(datapackage$contributors, "publisher" %in% role)[[1]][["organization"]],
-                        maintainer = rlist::list.filter(datapackage$contributors, "maintainer" %in% role)[[1]][["title"]],
-                        maintainer_email = rlist::list.filter(datapackage$contributors, "maintainer" %in% role)[[1]][["email"]],
-                        version = datapackage$version,
-                        tags = datapackage$keywords %>% purrr::map(~ list(name = .x)),
-                        license_id = datapackage$licenses[[1]]$name,
-                        private = as.logical(datapackage$private),
-                        package_url = datapackage$sources[[1]]$path,
-                        title = datapackage$title,
-                        notes = datapackage$description,
-                        url = Sys.getenv("DADOSMG_DEV_HOST"), 
-                        key = Sys.getenv("DADOSMG_DEV"))
-  
-  res
-}
-
 convert_filename_to_yyyy_mm <- function(x) {
   
   mm_yyyy <- x %>% 
@@ -288,64 +242,6 @@ as_numeric <- function(x) {
   return <- readr::parse_number(x, locale = locale(decimal_mark = ",", grouping_mark = "."))
   stop_for_problems(return)
   return
-}
-
-get_resource <- function(x) {
-  
-  resource_exists(x)
-  
-  datapackage <- jsonlite::read_json("datapackage.json")
-  
-  result <- rlist::list.filter(datapackage$resources, x %in% name)
-  
-  result[[1]]
-}
-
-
-resource_exists <- function(x) {
-  datapackage <- jsonlite::read_json("datapackage.json")
-  
-  if(!x %in% purrr::map_chr(datapackage$resources, "name")) {
-    stop(glue::glue("Recurso {x} não encontrado no arquivo datapackage.json"))
-  }
-  
-  TRUE
-}
-
-
-
-get_schema <- function(resource_id) {
-  resource <- get_resource(resource_id)
-  
-  if(grepl(".json$", resource$schema)) {
-    # dereference schema externo
-    # vide https://github.com/frictionlessdata/specs/issues/365 para contexto
-    result <- jsonlite::read_json(resource$schema)
-  } else {
-    result <- resource$schema
-  }
-  
-  result
-}
-
-get_col_types <- function(resource_id) {
-  schema <- get_schema(resource_id)
-  result <- purrr::map_chr(schema$fields, "type")
-  result  
-}
-
-
-get_col_names <- function(resource_id) {
-  schema <- get_schema(resource_id)
-  result <- purrr::map_chr(schema$fields, "name")
-  result  
-}
-
-
-get_col_labels <- function(resource_id) {
-  schema <- get_schema(resource_id)
-  result <- purrr::map_chr(schema$fields, "title")
-  result  
 }
 
 insert_remuneracao_sqlite <- function(resource_id, conn, table) {
