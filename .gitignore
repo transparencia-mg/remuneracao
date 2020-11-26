@@ -5,4 +5,5 @@
 logs/*
 !/logs/.gitkeep
 data-raw/*
-!/logs/.gitkeep
+!/data-raw/.gitkeep
+data/*
