@@ -59,11 +59,10 @@
           },
           {
             "name": "carga_hora",
-            "type": "number",
+            "type": "string",
             "format": "default",
             "title": "Carga Horária",
-            "description": "Carga horária semanal do servidor",
-            "decimalChar": ","
+            "description": "Carga horária semanal do servidor"
           },
           {
             "name": "remuner",
