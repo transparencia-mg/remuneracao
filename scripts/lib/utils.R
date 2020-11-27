@@ -181,7 +181,7 @@ coerce_verbas_remun_to_numeric <- function(dt) {
   numeric_cols <- get_col_names(id)[get_col_types(id) == "number"]
   
   for (col in numeric_cols) {
-    data.table::set(dt, j = col, value = as_numeric(dt[[col]]))
+    data.table::set(dt, j = col, value = tidyr::replace_na(as_numeric(dt[[col]]), 0))
   }
   
   dt[]
