@@ -1,10 +1,16 @@
 library(tidyverse)
 
-purrr::walk(list.files("scripts/lib/", full.names = TRUE), source)
+purrr::walk(list.files("scripts/lib/", full.names = TRUE, pattern = ".R$"), source)
 
 jsonlite::read_json("datapackage.json")$resources %>% 
   map("name") %>% 
   map(validate_resource)
+
+
+report$valid
+
+report$tables[[1]]$errors %>% map("message")
+
   
 validate_resource("servidores-2012-06") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) Licença INSS em remuner para servidor CARLOS MAGNO PEREIRA DE SOUZA masp 600064
 validate_resource("servidores-2012-07") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) digito no masp

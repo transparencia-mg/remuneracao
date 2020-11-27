@@ -1,12 +1,19 @@
+reticulate::use_virtualenv("goodtables2.5.2", required = TRUE)
+reticulate::source_python("scripts/lib/utils.py")
+
 validate_resource <- function(x) {
   
   resource <- get_resource(x)
   
-  jsonlite::write_json(resource, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
+  descriptor <- list(resources = list(resource))
   
-  system("frictionless validate --skip-errors duplicate-row --source-type resource _resource.json")
+  jsonlite::write_json(descriptor, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
+  
+  result <- validate_resource_py("_resource.json")
   
   file.remove("_resource.json")
+  
+  result
 }
 
 get_resource <- function(x) {
