@@ -297,5 +297,9 @@
             "decimalChar": ",",
             "groupChar": "."
           }
-    ]
+    ],
+      "missingValues": [
+        "NA",
+        ""
+      ]
 }
