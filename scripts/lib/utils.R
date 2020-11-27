@@ -82,58 +82,26 @@ make_names_output_files_cbmmg <- function(x) {
   result
 }
 
-read_remuneracao_raw <- function(path, clean = TRUE) {
+read_remuneracao_raw <- function(path) {
   
   result <- data.table::fread(path, sep = ";", colClasses = "character", encoding = "UTF-8")
-  
-  if(clean == TRUE) {
-    result <- clean_remuneracao(result)
-  }
   
   result
 }
 
-clean_remuneracao <- function(x) {
-  result <- x %>% 
-              clean_remove_extra_columns() 
-  #%>% clean_coerce_masp_to_integer()
+rm_masp_hyphen <- function(dt) {
   
-  result[]
+  dt[, masp := stringr::str_replace(masp, "(\\d)-(\\d$)", "\\1\\2")]
+    
+  dt[]
 }
 
-clean_coerce_masp_to_integer <- function(x) {
-  
-  result <- data.table::copy(x)
-  
-  result[, masp := stringr::str_replace(masp, "(\\d)-(\\d$)", "\\1\\2")]
-  
-  if(!identical(x$masp, result$masp)) {
-    diff <- waldo::compare(x$masp, result$masp)
-    warning(diff)
-  }
-  
-  result[]
-}
-
-clean_remove_extra_columns <- function(x) {
+rm_extra_empty_columns <- function(dt) {
   col_names <- jsonlite::read_json("schema.json")$fields %>% purrr::map_chr("name")
   
-  extra_cols_to_exclude <- setdiff(names(x), col_names)
+  extra_cols_to_exclude <- setdiff(names(dt), col_names)
   
-  # if (length(extra_cols_to_exclude > 0)) {
-  #   
-  #   unique_values <- extra_cols_to_exclude %>% 
-  #     purrr::map(~ unique(x[[.x]])) %>% 
-  #     purrr::set_names(extra_cols_to_exclude)
-  #   
-  #   
-  #   extra_cols_to_exclude %>% 
-  #   purrr::map(~ glue::glue("Coluna {.x} com valores únicos ({paste0(unique_values[[.x]], collapse = ", ")}) removida.")) %>% 
-  #   purrr::map(warning)
-  #   
-  # }
-  
-  x[, ..col_names]
+  dt[, ..col_names]
 }
 
 read_remuneracao <- function(resource_id) {
@@ -169,23 +137,25 @@ col_types_mapping <- function(x) {
   paste0(result, collapse = "")
 }
 
+mask_descunid_gmg <- function(dt) {
+  
+  dt[
+    descinst == "GABINETE MILITAR", 
+    descunid := "INF. SIGILOSA TCI 000.3.1.5"
+  ]
+  
+  dt
+}
 
-mask_unidades_administrativas <- function(x) {
-  
-  unidades <- readxl::read_excel("data-raw/classificacao_unidades_SEJUSP.xlsx") %>% 
-    dplyr::select(descunid, texto_exibicao) %>% 
-    unique()
-  
-  
-  result <- dplyr::left_join(x, unidades, by = "descunid")
-  
-  result <- as.data.table(result)
-  
-  result[!is.na(texto_exibicao), descunid := texto_exibicao]
-  
-  result[, texto_exibicao := NULL]
-  
-  result[]
+
+mask_descunid_sejusp <- function(dt) {
+
+  setor_seguranca <- c("DEFESA SOCIAL", # Secretaria de Estado de Defesa Social de Minas Gerais - SEDS
+                       "ADMINISTRACAO PRISIONAL", # Secretaria de Estado de Administração Prisional - SEAP - 2016
+                       "SEGURANCA PUBLICA", # Secretaria de Estado de Segurança Pública - SESP - 2016
+                       "SECRETARIA DE JUSTICA E SEGURANCA PUBLICA") # Secretaria de Estado de Justiça e Segurança Pública - SEJUSP - 2019
+    
+  dt
   
 }
 
@@ -204,44 +174,26 @@ convert_filename_to_yyyy_mm <- function(x) {
   result
 }
 
-summarize_servidores_ <- function(x) {
+coerce_verbas_remun_to_numeric <- function(dt) {
   
-  path <- file.path(glue::glue("data/{x}.csv"))
+  id <- "servidores-2020-01"
   
-  yyyy_mm <- stringr::str_sub(x, 12, 18)
-  yyyy <- as.integer(stringr::str_sub(x, 12, 15))
-  mm <- as.integer(stringr::str_sub(x, 17, 18))
-  yyyy_mm_dd <- as.Date(paste0(yyyy_mm, "-01"))
-  
-  
-  numeric_cols <- c("rem_pos", "remuner", "teto", "ferias", "decter", "premio",
-                    "feriasprem", "jetons", "eventual", "ir", "prev", "bdmg",
-                    "cemig", "codemig", "cohab", "copasa", "emater", "epamig",
-                    "funpemg", "gasmig", "mgi", "mgs", "prodemge", "prominas", "emip")
-  
-  dt <- fread(path, sep2 = ";", colClasses = "character")
+  numeric_cols <- get_col_names(id)[get_col_types(id) == "number"]
   
   for (col in numeric_cols) {
-    set(dt, j = col, value = as_numeric(dt[[col]]))
+    data.table::set(dt, j = col, value = as_numeric(dt[[col]]))
   }
   
-  result <- dt[, lapply(.SD, sum), by = c("descinst", "descunid"), .SDcols = numeric_cols]
-  
-  result[, DATA := yyyy_mm_dd]
-  result[, ANO := yyyy]
-  result[, MES := mm]
-  result[, PERIODO := yyyy_mm]
-  
-  result[]
+  dt[]
   
 }
 
-summarize_servidores <- purrr::safely(summarize_servidores_)
 
 as_numeric <- function(x) {
-  return <- readr::parse_number(x, locale = locale(decimal_mark = ",", grouping_mark = "."))
-  stop_for_problems(return)
-  return
+
+  result <- readr::parse_number(x, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+
+  result
 }
 
 insert_remuneracao_sqlite <- function(resource_id, conn, table) {
@@ -268,3 +220,48 @@ is_wholenumber <- function(x, tol = .Machine$double.eps^0.5) {
   # vide seção exemplos da documentação help("is.integer")
   abs(x - round(x)) < tol
 } 
+
+
+normalize_text_basic <- function(x) {
+  result <- x %>% 
+    stringr::str_squish() %>% # espacos iniciais, finais e multiplos espacos
+    stringr::str_to_upper() %>% # caixa alta
+    stringi::stri_trans_general("latin-ascii") # acentos
+  
+  result
+}
+
+normalize_text_full <- function(x) {
+  result <- x %>% 
+    normalize_text_basic() %>% 
+    stringr::str_replace_all("[[:punct:]]", " ") %>% # pontuacao
+    textclean::replace_non_ascii() # caracters fora nao ASCI
+  
+  result
+}
+
+normalize_text_descunid <- function(dt) {
+  
+  data.table::set(dt, j = "descunid", value = normalize_text_basic(dt[["descunid"]]))
+  
+  dt[]
+  
+}
+
+normalize_text_descinst <- function(dt) {
+  
+  data.table::set(dt, j = "descinst", value = normalize_text_full(dt[["descinst"]]))
+  
+  dt[]
+  
+}
+
+impute_value_rem_pos_cbmmg <- function(dt) {
+  
+  dt[
+    descinst == "CBMMG", 
+    rem_pos := remuner - teto + ferias + decter + premio + feriasprem + jetons + eventual - ir - prev
+  ]
+  
+  dt[]
+}

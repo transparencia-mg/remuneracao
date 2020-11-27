@@ -1,32 +1,6 @@
 library(tidyverse)
 
-source("scripts/lib/utils.R")
-
-resources <- jsonlite::read_json("datapackage.json")$resources %>% map("name")
-
-lst <- resources %>% 
-  map(check_unique_values_masp)
-
-agg_remun <- resources %>% 
-  map(summarize_servidores)
-
-agg_remun_transpose <- transpose(agg_remun)
-
-is_not_null <- function(x)!is.null(x)
-
-errors <- agg_remun_transpose$error %>% 
-  set_names(resources) %>% 
-  keep(is_not_null)
-  
-
-dt <- rbindlist(agg_remun_transpose$result)
-
-dt[, rem_pos_calc := remuner - teto + ferias + decter + premio + feriasprem + jetons + eventual - ir - prev]
-dt[, rem_pos_diff := rem_pos - rem_pos_calc]
-
-dt[rem_pos_diff > 1 | rem_pos_diff < -1,][, .N, descinst]
-
-dt[descinst == "CBMMG", .(descrem_pos, rem_pos_calc, rem_pos_diff)]
+purrr::walk(list.files("scripts/lib/", full.names = TRUE), source)
 
 jsonlite::read_json("datapackage.json")$resources %>% 
   map("name") %>% 
