@@ -137,6 +137,24 @@ col_types_mapping <- function(x) {
   paste0(result, collapse = "")
 }
 
+mask_descunid_pcmg <- function(dt) {
+  dt[
+    descinst == "POLICIA CIVIL",
+    descunid := "INF. SIGILOSA TCI 1520.01.0007424/2019-76.U.05.26/11/2019.25/11/2044.N"
+  ]
+  
+  dt
+}
+
+mask_descunid_pmmg <- function(dt) {
+  dt[
+    descinst == "POLICIA MILITAR DE MINAS GERAIS",
+    descunid := "INF. SIGILOSA TCI 7460.112474/2020-63.S.05.14/02/2020.14/02/2035.N"
+  ]
+  
+  dt
+}
+
 mask_descunid_gmg <- function(dt) {
   
   dt[
@@ -154,6 +172,40 @@ mask_descunid_sejusp <- function(dt) {
                        "ADMINISTRACAO PRISIONAL", # Secretaria de Estado de Administração Prisional - SEAP - 2016
                        "SEGURANCA PUBLICA", # Secretaria de Estado de Segurança Pública - SESP - 2016
                        "SECRETARIA DE JUSTICA E SEGURANCA PUBLICA") # Secretaria de Estado de Justiça e Segurança Pública - SEJUSP - 2019
+
+  dt[
+    descinst %in% setor_seguranca,
+    descunid := "INF. SIGILOSA TCI 4.06.1450 e TCI 22.06.1690"
+  ]
+  
+  dt
+  
+    
+  # unidades_prisionais_regex <- "^CADEIA PUBLICA|^CERESP|^COMPLEXO PENITENCIARIO|^PENITENCIARIA|^PRESIDIO|^CARCERAGEM|^CASA DA ALBERGADA|^CASA DO ALBERGADO|^CENTRO DE APOIO MEDICO E PERICIAL|^COMANDO DE OPERACOES ESPECIAIS|^CENTRO DE REMANEJAMENTO DO SISTEMA PRISIONAL|^CENTRAL INTEGRADA DE ESC?OLTA DO SISTEMA PRISIONAL|^CENTRO DE REFERENCIA DA GESTANTE PRIVADA DE ?LIBERDADE|^HOSPITAL DE TOXICOMANOS PADRE WILSON VALE DA COSTA$|^HOSPITAL PSIQUIATRICO E JUDICIARIO JORGE VAZ$"
+  # unidades_policiais_regex <- "^CASA DE CUSTODIA DA POLICIA CIVIL|^DELEGACIA|^CENTRAL DE RECEPCAO DE FLAGRANTES DO SISTEMA DEDEFESA SOCIAL E DA JUSTICA CRIMINAL"
+  # 
+  # unidades_socioeducativas_regex <- "^CASA DE SEMI ?LIBERD?ADE|^CENTRO SOCIOEDUCATIVO|^CENTRO DE INTERNACAO PROVISORIA|^DELEGACIA DE ORIENTACAO E PROTECAO A CRIANCA E AO ?ADOLESCENTE|^CENTRO DE INTERNACAO DO ADOLESCENTE|^CENTRO DE ATENDIMENTO AO ADOLESCENTE$|^CENTRO DE ENCAMINHAMENTO DA SEMILIBERDADE$|^CENTRO DE INTEGRACAO DA MENOR INFRATORA$|^CENTRO DE INTERNACAO SANCAO$|^CENTRO DE REEDUCACAO SOCIAL SAO JERONIMO$|^CENTRO INTEGRADO DE ATENDIMENTO AO ADOLESCENTE ?AUTOR DE ATO INFRACIONAL$"
+  # unidades_prevencao_criminalidade_regex <- "^CENTRO DE PREVENCAO SOCIAL A CRIMINALIDADE TAQUARIL"
+  # 
+  # dt[
+  #   descinst %in% setor_seguranca & grepl(unidades_prisionais_regex, descunid), 
+  #   descunid := "INF. SIGILOSA TCI 4.06.1450"
+  # ]
+  # 
+  # dt[
+  #   descinst %in% setor_seguranca & grepl(unidades_policiais_regex, descunid), 
+  #   descunid := "INF. SIGILOSA TCI 4.06.1450"
+  # ]
+  # 
+  # dt[
+  #   descinst %in% setor_seguranca & grepl(unidades_socioeducativas_regex, descunid), 
+  #   descunid := "INF. SIGILOSA TCI 22.06.1690"
+  # ]
+  # 
+  # dt[
+  #   descinst %in% setor_seguranca & grepl(unidades_prevencao_criminalidade_regex, descunid), 
+  #   descunid := "INF. SIGILOSA TCI 22.06.1690"
+  #]
     
   dt
   
