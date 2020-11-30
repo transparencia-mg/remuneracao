@@ -1,9 +1,6 @@
 library(magrittr); library(purrr)
 
-source("scripts/lib/utils.R")
-
-dataset_id <- "13902bdb-f846-4c06-8a0b-7998df6d9e4b"
-resource_id <- "servidores_05_20"
+purrr::walk(list.files("scripts/lib/", full.names = TRUE, pattern = ".R"), source)
 
 dataset <- create_dataset()
 

@@ -1,6 +1,6 @@
 create_resource <- function(resource_id, dataset_id) {
   
-  resource <- get_resource(x)
+  resource <- get_resource(resource_id)
   
   res <- ckanr::resource_create(package_id = dataset_id,
                                 name = resource$title,
