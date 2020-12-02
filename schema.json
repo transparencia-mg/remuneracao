@@ -6,7 +6,10 @@
             "type": "integer",
             "format": "default",
             "title": "MASP",
-            "description": "Número que identifica o servidor civil ou militar de Minas Gerais."
+            "description": "Número que identifica o servidor civil ou militar de Minas Gerais.",
+                  "constraints": {
+        "required": true
+      }
           },
           {
             "name": "nome",
