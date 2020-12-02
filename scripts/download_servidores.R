@@ -1,10 +1,10 @@
-library(googledrive); library(purrr); library(dplyr)
+library(googledrive); library(purrr); library(dplyr); library(stringr)
 
-source("scripts/lib/utils.R")
+purrr::walk(list.files("scripts/lib/", full.names = TRUE, pattern = ".R"), source)
 
 # obter lista dos arquivos csv na pasta Layout_Novo_Planilhas_atualizadas_20201103
 
-files <- drive_get(as_id("1Tk8jW6Ml0rZnsZ52X98iMCTD6I7WWVy2")) %>% 
+files <- drive_get(as_id("1Tk8jW6Ml0rZnsZ52X98iMCTD6I7WWVy2")) %>%
             drive_ls(type = "csv", recursive = TRUE)
 
 output <- files$name %>% 
@@ -15,5 +15,7 @@ output <- files$name %>%
 files <- files %>% mutate(output = file.path("data-raw/servidores", output))
 
 # download dos arquivos
+
+dir.create("data-raw/servidores")
 
 walk2(files$id, files$output, ~drive_download(as_id(.x), .y))

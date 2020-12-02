@@ -12,8 +12,8 @@ report$valid
 report$tables[[1]]$errors %>% map("message")
 
   
-validate_resource("servidores-2012-06") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) Licença INSS em remuner para servidor CARLOS MAGNO PEREIRA DE SOUZA masp 600064
-validate_resource("servidores-2012-07") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) digito no masp
+val_2012_06 <- validate_resource("servidores-2012-06") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) Licença INSS em remuner para servidor CARLOS MAGNO PEREIRA DE SOUZA masp 600064
+val_2012_07 <- validate_resource("servidores-2012-07") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) digito no masp
 validate_resource("servidores-2012-08") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL em carga_hora 2) cabecalho na ultima linha
 validate_resource("servidores-2012-09") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL 2) digito no masp
 validate_resource("servidores-2012-10") # 1) DEDICACAO EXCLUSIVA e TEMPO INTEGRAL 2) digito no masp 3) OK|ok na coluna teto 4) - como zero nas colunas de jetons das empresas

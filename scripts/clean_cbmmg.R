@@ -1,6 +1,6 @@
 library(tidyverse); library(readxl); library(stringi)
 
-source("scripts/lib/utils.R")
+purrr::walk(list.files("scripts/lib/", full.names = TRUE, pattern = ".R"), source)
 
 input <- list.files("data-raw/cbmmg", full.names = TRUE, recursive = TRUE, pattern = ".xlsx$")
 

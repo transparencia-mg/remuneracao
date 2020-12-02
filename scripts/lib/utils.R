@@ -4,6 +4,10 @@ MESES <- c("JAN" = "01", "FEV" = "02", "MAR" = "03", "ABR" = "04",
            "MAI" = "05", "JUN" = "06", "JUL" = "07", "AGO" = "08",
            "SET" = "09", "OUT" = "10", "NOV" = "11", "DEZ" = "12")
 
+all_duplicated <- function(x) {
+  duplicated(x, fromLast = TRUE) | duplicated(x, fromLast = FALSE)
+}
+
 read_cbmmg <- function(x) {
   result <- read_excel(x, skip = 2, col_names = FALSE)
   
@@ -104,7 +108,9 @@ rm_extra_empty_columns <- function(dt) {
   dt[, ..col_names]
 }
 
-read_remuneracao <- function(resource_id) {
+read_remuneracao <- function(path) {
+  
+  resource_id <- "servidores-2020-01"
   
   resource <- get_resource(resource_id)
   
@@ -112,11 +118,11 @@ read_remuneracao <- function(resource_id) {
   
   col_types <- get_col_types(resource_id) %>% col_types_mapping()
   
-  result <- readr::read_csv2(resource$path, col_names = col_names, skip = 1, col_types = col_types, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  result <- readr::read_csv2(path, col_names = col_names, skip = 1, col_types = col_types, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
   
   #stop_for_problems(result)
   
-  result
+  data.table::as.data.table(result)
 }
 
 col_types_mapping <- function(x) {
@@ -279,6 +285,29 @@ normalize_text_descinst <- function(dt) {
   
 }
 
+rm_header_row_from_data_content <- function(dt) {
+  nrows <- nrow(dt)
+  
+  dt <- dt[!masp %in% c("MASP", "masp")]
+  dt <- dt[!bdmg %in% c("BDMG", "masp")]
+  
+  if(nrows != nrow(dt)) {
+    warning("Foi removido um cabeçalho das linhas do arquivo.")
+  }
+  
+  dt[]
+}
+
+normalize_text_designado_ao_servico_ativo <- function(dt) {
+  
+  regex <- "DESIGNADO P/ O SERVI[CÇ?]O ATIVO"
+  
+  dt[stringr::str_detect(descsitser, regex), descsitser := "DESIGNADO AO SERVICO ATIVO"]
+  
+  dt[]
+  
+}
+
 impute_value_rem_pos_cbmmg <- function(dt) {
   
   dt[
@@ -287,4 +316,20 @@ impute_value_rem_pos_cbmmg <- function(dt) {
   ]
   
   dt[]
+}
+
+is_rem_pos_valid <- function(dt) {
+  rem_post_derived <- dt[, 
+    round(remuner - teto + ferias + decter + premio + feriasprem + jetons + eventual - ir - prev, 2)
+  ]
+  
+  # result <- waldo::compare(round(dt$rem_pos, 2), rem_post_derived)
+  
+  result <- round(dt$rem_pos, 2) == rem_post_derived
+  
+  result
+}
+
+is_rem_pos_equal <- function(dt_ref, dt) {
+  round(dt_ref$rem_pos, 2) == round(dt$rem_pos, 2)
 }
