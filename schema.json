@@ -20,7 +20,18 @@
             "type": "string",
             "format": "default",
             "title": "Descrição da situação",
-            "description": "Descrição da situação do servidor"
+            "description": "Descrição da situação do servidor",
+                  "constraints": {
+        "enum": [
+          "ATIVO",
+          "ATIVO/NAO ESTAO INFORMADOS OS VALORES EXTRA SISAP",
+          "ATIVO/NAO CONSIDERADOS RECEBIMENTOS EXTRA SISAP",
+          "ATIVO/OPTOU POR RECEBER ORGAO DE ORIGEM",
+          "DESIGNADO",
+          "DESIGNADO AO SERVICO ATIVO",
+          "INATIVO"
+        ]
+      }
           },
           {
             "name": "nmefet",
