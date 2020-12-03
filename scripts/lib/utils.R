@@ -321,6 +321,8 @@ normalize_text_designado_ao_servico_ativo <- function(dt) {
   
   dt[stringr::str_detect(descsitser, regex), descsitser := "DESIGNADO AO SERVICO ATIVO"]
   
+  data.table::set(dt, j = "descsitser", value = normalize_text_basic(dt[["descsitser"]]))
+  
   dt[]
   
 }
