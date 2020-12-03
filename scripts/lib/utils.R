@@ -217,9 +217,26 @@ coerce_verbas_remun_to_numeric <- function(dt) {
   
 }
 
+fix_jetons <- function(dt) {
+  
+  col_names <- jsonlite::read_json("schema.json")$fields %>% purrr::map_chr("name")
+  
+  if(!"funpemg" %in% names(dt)) {
+    dt[, funpemg := "0"]
+  }
+  
+  if("codemge" %in% names(dt)) {
+    data.table::setnames(dt, "codemge", "codemig")
+  }
+  
+  # emc é excluída em rm_extra_empty_columns()
+  
+  dt
+}
 
 as_numeric <- function(x) {
 
+  # se x nao for caracter readr::parse_number lanca um erro
   result <- readr::parse_number(x, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
 
   result

@@ -9,6 +9,7 @@ for (file in files) {
   remuneracao <- remuneracao_raw %>% 
     rm_header_row_from_data_content() %>% 
     rm_masp_hyphen() %>% 
+    fix_jetons() %>% 
     rm_extra_empty_columns() %>% 
     coerce_verbas_remun_to_numeric() %>% 
     normalize_text_descinst() %>% 
