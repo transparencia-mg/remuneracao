@@ -1218,7 +1218,7 @@
     "salário",
     "remuneração"
   ],
-  "name": "remuneracao",
+  "name": "remuneracao-servidores-ativos",
   "title": "Remuneração",
   "description": "Remuneração dos Servidores do Poder Executivo ",
   "private": "false",
