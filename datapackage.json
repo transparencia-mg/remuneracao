@@ -8,7 +8,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -20,7 +20,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -32,7 +32,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -44,7 +44,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -56,7 +56,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -68,7 +68,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -80,7 +80,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2012",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -92,7 +92,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -104,7 +104,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -116,7 +116,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -128,7 +128,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -140,7 +140,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -152,7 +152,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -164,7 +164,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -176,7 +176,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -188,7 +188,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -200,7 +200,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -212,7 +212,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -224,7 +224,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2013",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -236,7 +236,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -248,7 +248,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -260,7 +260,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -272,7 +272,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -284,7 +284,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -296,7 +296,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -308,7 +308,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -320,7 +320,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -332,7 +332,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -344,7 +344,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -356,7 +356,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -368,7 +368,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2014",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -380,7 +380,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -392,7 +392,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -404,7 +404,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -416,7 +416,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -428,7 +428,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -440,7 +440,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -452,7 +452,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -464,7 +464,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -476,7 +476,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -488,7 +488,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -500,7 +500,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -512,7 +512,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2015",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -524,7 +524,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -536,7 +536,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -548,7 +548,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -560,7 +560,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -572,7 +572,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -584,7 +584,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -596,7 +596,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -608,7 +608,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -620,7 +620,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -632,7 +632,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -644,7 +644,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -656,7 +656,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2016",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -668,7 +668,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -680,7 +680,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -692,7 +692,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -704,7 +704,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -716,7 +716,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -728,7 +728,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -740,7 +740,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -752,7 +752,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -764,7 +764,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -776,7 +776,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -788,7 +788,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -800,7 +800,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2017",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -812,7 +812,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -824,7 +824,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -836,7 +836,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -848,7 +848,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -860,7 +860,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -872,7 +872,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -884,7 +884,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -896,7 +896,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -908,7 +908,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -920,7 +920,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -932,7 +932,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -944,7 +944,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2018",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -956,7 +956,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -968,7 +968,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -980,7 +980,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Março de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -992,7 +992,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1004,7 +1004,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1016,7 +1016,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1028,7 +1028,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1040,7 +1040,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1052,7 +1052,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1064,7 +1064,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1076,7 +1076,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1088,7 +1088,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2019",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1100,7 +1100,7 @@
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "dialect": "dialect.json",
       "format": "csv"
@@ -1113,7 +1113,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Fevereiro de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1125,7 +1125,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Março de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1137,7 +1137,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Abril de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1149,7 +1149,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Maio de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1161,7 +1161,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Junho de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1173,7 +1173,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Julho de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1185,7 +1185,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Agosto de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1197,7 +1197,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Setembro de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     },
@@ -1209,7 +1209,7 @@
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
       "title": "Remuneração de Outubro de 2020",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
     }

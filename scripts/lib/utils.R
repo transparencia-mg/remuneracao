@@ -46,7 +46,7 @@ enrich_cbmmg <- function(x) {
 }
 
 write_remuneracao <- function(x, output) {
-  data.table::fwrite(x, file = output, sep = ";", dec = ",", bom = TRUE, na = "NA")
+  write.csv2(x, output, fileEncoding = "CP1252", row.names = FALSE)
 }
 
 clean_headers_cbmmg <- function(x) {
