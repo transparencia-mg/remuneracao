@@ -13,6 +13,8 @@ validate_resource <- function(x) {
   
   file.remove("_resource.json")
   
+  print(glue::glue("Resource {resource$name} validated"))
+  
   result
 }
 
