@@ -7,3 +7,7 @@ logs/*
 data-raw/*
 !/data-raw/.gitkeep
 data/*
+renv/library/
+renv/lock/
+renv/python/
+renv/staging/
