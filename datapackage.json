@@ -1223,7 +1223,7 @@
   "description": "Remuneração dos Servidores Ativos do Poder Executivo",
   "private": "false",
   "state": "active",
-  "version": "0.0.0.9000",
+  "version": "0.1.0",
   "sources": [
     {
       "title": "Github",
