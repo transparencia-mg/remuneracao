@@ -6,8 +6,8 @@ create_resource <- function(resource_id, dataset_id) {
                                 name = resource$title,
                                 description = resource$description,
                                 upload = resource$path,
-                                url = Sys.getenv("DADOSMG_DEV_HOST"), 
-                                key = Sys.getenv("DADOSMG_DEV"))
+                                url = Sys.getenv("DADOSMG_PROD_HOST"), 
+                                key = Sys.getenv("DADOSMG_PROD"))
   res
   
 }
@@ -27,8 +27,8 @@ create_dataset <- function() {
                                package_url = datapackage$sources[[1]]$path,
                                title = datapackage$title,
                                notes = datapackage$description,
-                               url = Sys.getenv("DADOSMG_DEV_HOST"), 
-                               key = Sys.getenv("DADOSMG_DEV"))
+                               url = Sys.getenv("DADOSMG_PROD_HOST"), 
+                               key = Sys.getenv("DADOSMG_PROD"))
   
   res
 }
