@@ -10,9 +10,7 @@ all: clean
 
 download:
 	Rscript --verbose scripts/download_servidores.R 2> logs/log.Rout
-	Rscript --verbose scripts/download_cbmmg.R 2> logs/log.Rout
 
 transform:
-	Rscript --verbose scripts/clean_cbmmg.R 2> logs/log.Rout
 	cp data-raw/servidores/* data/
 
