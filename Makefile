@@ -14,3 +14,11 @@ download:
 transform:
 	cp data-raw/servidores/* data/
 
+clean: ## Clean resource
+	Rscript --verbose scripts/clean-resource.R $(resource) 2> logs/log.Rout
+
+validate: ## Validate resource
+	Rscript --verbose scripts/validate-resource.R $(resource) 2> logs/log.Rout
+
+publish: ## Publish resource
+	Rscript --verbose scripts/publish-resource.R $(resource) 2> logs/log.Rout	
