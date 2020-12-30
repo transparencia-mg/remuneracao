@@ -1,7 +1,50 @@
 # remuneracao
 dataset que contém arquivos da consulta de remuneração mensal dos servidores
 
-## Scripts
+## Pré-requisitos
+
+### R
+
+Esse projeto utiliza o pacote [renv](https://rstudio.github.io/renv/index.html) para gerenciamento de dependências. Para instalar os pacotes necessários execute os seguintes comandos no console do R:
+
+```R
+install.packages("renv") # instalação do pacote renv
+renv::init() # instalação dos pacotes listados no arquivo renv.lock
+```
+
+
+### Variáveis de ambiente
+
+Para carga automática no CKAN é necessário a configuração de duas variáveis de ambiente:
+
+- `DADOSMG_PROD_HOST`
+- `DADOSMG_PROD`
+
+Em ambiente de produção, a variável `DADOSMG_PROD_HOST` deve estar com o valor `http://dados.mg.gov.br` e a variável `DADOSMG_PROD` com a sua [chave da API do CKAN](https://docs.ckan.org/en/ckan-2.7.3/api/#authentication-and-api-keys). Ela pode ser encontrada na sua página de usuário e parece com a string `ec5c0860-9e48-41f3-8850-4a7128b18df8`. Esse modo de autenticação foi deprecado na [versão 2.9 do CKAN](https://docs.ckan.org/en/2.9/api/index.html#authentication-and-api-tokens).
+
+Preferenciamente defina as variáveis de ambiente utilizando um arquivo `.Renviron` na sua home folder (ie. fora da pasta do projeto para evitar commit acidental). Instruções [aqui](https://support.rstudio.com/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf).
+
+### Python
+
+Para validação dos recursos é necessário a instalação do Python e da biblioteca goodtables. Para fazer essas etaptas execute os seguintes comandos no console do R:
+
+```R
+reticulate::install_miniconda() # instalacao do python via miniconda
+reticulate::conda_create("remuneracao") # criacao de ambiente conda especifico para esse projeto
+reticulate::conda_install("remuneracao", "goodtables==2.5.2") # instalacao da versao correta do goodtables
+```
+
+## Instruções - Publicação de um único mês
+
+Para executar os scripts necessários a limpeza, validação e publicação do recurso de um único mês execute na linha de comando:
+
+```sh
+make clean resource=servidores-AAAA-MM
+make validate resource=servidores-AAAA-MM > logs/validation.txt
+make publish resource=servidores-AAAA-MM
+```
+
+## Instruções - Reproduzir série histórica
 
 Na versão `datapackage$version` desse conjunto de dados foi necessário realizar um tratamento na série histórica dos arquivos para adequação ao documentado no `datapackage.json`.
 
@@ -9,8 +52,6 @@ Além disso, foi necessário:
 
 - restringir as unidades administrativas;
 - corrigir os valores da remuneração do CBMMG.
-
-### Extração
 
 Essa tratamento ocorreu uma única vez, com a seguinte sequência de scripts:
 
@@ -27,11 +68,11 @@ Essas operações podem ser executadas com
 make download
 ```
 
-### Transformação
-
 - `clean_cbmmg.R` Limpeza e padronização das planilhas `data-raw/cbmmg/` e _staging_ em `data/cbmmg/`
 
-## Consistência campo calculado - remuneração líquida
+## Regras de validação
+
+### Consistência campo calculado - remuneração líquida
 
 - Remunerações Após Deducões Obrigatórias (`rem_pos`) =
     - (+) Remuneração Básica Bruta (`remuner`)
@@ -45,13 +86,13 @@ make download
     - (-) IRPF (`ir`)
     - (-) Contribuição Previdenciária (`prev`)
 
-## Normalização de texto
+### Normalização de texto
 
 - Espaço entre palavras
     - UTRAMIG FUND EDUC PARA O TRAB (57/100 vezes)
     - UTRAMIG-FUND.EDUC.PARA O TRAB. (43/100 vezes)
 
-## Links
+# Links
 
 - [POP Planilha Remuneração](https://onedrive.live.com/?id=8686837A27156968%2148766&cid=8686837A27156968)
 - [Planilhas originais - Drive](https://drive.google.com/drive/u/0/folders/1hVdlauJdtyLs0c1X0i1mfTGHoAga1j_n)
