@@ -1,36 +1,38 @@
 library(dplyr); library(DBI); library(stringr); library(data.table)
 
+purrr::walk(list.files("scripts/lib/", full.names = TRUE, pattern = ".R"), source)
+
 con <- DBI::dbConnect(RSQLite::SQLite(), "cached/remuneracao.sqlite")
 
 remuneracao_db <- tbl(con, "remuneracao")
 
+cols_jetons <- c(
+  "bdmg",
+  "cemig",
+  "codemig",
+  "cohab",
+  "copasa",
+  "emater",
+  "epamig",
+  "funpemg",
+  "gasmig",
+  "mgi",
+  "mgs",
+  "prodemge",
+  "prominas",
+  "emip")
+
 resultset <- remuneracao_db %>% 
-  distinct(masp) %>% 
+  distinct(data, bdmg,cemig,codemig,cohab,copasa,emater,epamig,funpemg,gasmig,mgi,mgs,prodemge,prominas,emip) %>% 
   collect()
 
-resultset <- as.data.table(resultset)
+dt <- as.data.table(resultset)
 
-nchar(resultset$masp) %>% unique
+for(j in cols_jetons) {
+  set(dt, j = j, value = tidyr::replace_na(as_numeric(dt[[j]]), 0))
+}
 
+dt[, jetons_empresas := bdmg + cemig + codemig + cohab + copasa + emater + epamig + funpemg + gasmig + mgi + mgs + prodemge + prominas + emip]
 
-resultset[nchar(masp) == 1]
+melt(dt, id.vars = "data")
 
-resultset[nchar(masp) == 4]
-
-
-null_masp <- remuneracao_db %>% 
-  filter(masp == "") %>% 
-  collect()
-
-
-
-null_masp <- as.data.table(null_masp)
-
-
-null_masp[, .N, data]
-
-
-null_masp[data != "2013-12-01",]
-
-
-null_masp[data == "2013-12-01",]
