@@ -352,3 +352,22 @@ is_rem_pos_valid <- function(dt) {
 is_rem_pos_equal <- function(dt_ref, dt) {
   round(dt_ref$rem_pos, 2) == round(dt$rem_pos, 2)
 }
+
+clean_resource <- function(dt) {
+  
+  dt <- dt %>% rm_header_row_from_data_content() %>% 
+    rm_masp_hyphen() %>% 
+    fix_jetons() %>% 
+    rm_extra_empty_columns() %>% 
+    coerce_verbas_remun_to_numeric() %>% 
+    normalize_text_descinst() %>% 
+    normalize_text_descunid() %>% 
+    mask_descunid_gmg() %>% 
+    mask_descunid_sejusp() %>% 
+    mask_descunid_pcmg() %>% 
+    mask_descunid_pmmg() %>% 
+    impute_value_rem_pos_cbmmg() %>% 
+    normalize_text_designado_ao_servico_ativo()
+  
+  dt[]
+}
