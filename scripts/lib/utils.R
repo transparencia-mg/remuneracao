@@ -105,6 +105,7 @@ rm_extra_empty_columns <- function(dt) {
   
   extra_cols_to_exclude <- setdiff(names(dt), col_names)
   
+  # colunas sao retornadas na ordem em que estao listadas no schema.json
   dt[, ..col_names]
 }
 
