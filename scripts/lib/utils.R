@@ -225,11 +225,15 @@ fix_jetons <- function(dt) {
     dt[, funpemg := "0"]
   }
   
-  if("codemge" %in% names(dt)) {
-    data.table::setnames(dt, "codemge", "codemig")
+  if(!"codemig" %in% names(dt)) {
+    dt[, codemig := "0"]
   }
   
-  # emc é excluída em rm_extra_empty_columns()
+  # if("codemge" %in% names(dt)) {
+  #   data.table::setnames(dt, "codemge", "codemig")
+  # }
+  
+  # emc e codemge são excluídas em rm_extra_empty_columns()
   
   dt
 }
