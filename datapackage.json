@@ -1212,6 +1212,18 @@
       "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
+    },
+    {
+      "name": "servidores-2020-11",
+      "path": "data/servidores-2020-11.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Novembro de 2020",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv"
     }
   ],
   "keywords": [
