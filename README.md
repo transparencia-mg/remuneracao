@@ -32,6 +32,12 @@ renv::init() # instalação dos pacotes listados no arquivo renv.lock
 
 Essa instalação demora vários minutos.
 
+As mensagens acima somente serão exibidas na primeira vez que o `renv` for inicializado. Nas sessões seguintes, a mensagem indicativa de sucesso é simplesmente
+
+```r
+* Project '~/Local/dados-mg/ckan/remuneracao' loaded. [renv 0.12.3]
+```
+
 ### Variáveis de ambiente
 
 Para carga automática no CKAN é necessário a configuração de quatro variáveis de ambiente:
@@ -48,11 +54,18 @@ De maneira similar, em ambiente de homologação a variável `DADOSMG_DEV_HOST` 
 
 O código que de fato controla em qual ambiente a carga será efetuada está no script `scripts/lib/ckan.R` e deve ser alterado manualmente.
 
-Preferenciamente defina as variáveis de ambiente utilizando um arquivo `.Renviron` na sua home folder (ie. fora da pasta do projeto para evitar commit acidental). Explicações [aqui](https://support.rstudio.com/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf). Para criar pela linha de comando use
+Preferenciamente defina as variáveis de ambiente utilizando um arquivo `.Renviron` na sua home folder (ie. fora da pasta do projeto para evitar commit acidental). Explicações [aqui](https://support.rstudio.com/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf). Para determinar sua home folder execute no console do R.
+
+```r
+Sys.getenv("HOME")
+# /Users/fjunior
+```
+
+Nesse exemplo, o arquivo `.Renviron` deve ser criado na pasta `/Users/fjunior` por qualquer meio. Para criar pela linha de comando use
 
 ```sh
-touch ~/.Renviron # cria o arquivo caso não exista
-subl ~/.Renviron # edite o arquivo
+touch /Users/fjunior/.Renviron # cria o arquivo caso não exista
+subl /Users/fjunior/.Renviron # edite o arquivo
 ```
 
 ### Python
