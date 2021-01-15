@@ -309,6 +309,24 @@
       "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
       "decimalChar": ",",
       "groupChar": "."
+    },
+    {
+      "name": "codemge",
+      "type": "number",
+      "format": "default",
+      "title": "Jetons CODEMGE",
+      "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
+      "decimalChar": ",",
+      "groupChar": "."
+    },
+    {
+      "name": "emc",
+      "type": "number",
+      "format": "default",
+      "title": "Jetons EMC",
+      "description": "É a remuneração percebida por servidores públicos estaduais em razão da participação como representantes do Estado em Conselhos de Administração e Fiscal ou órgãos equivalentes de empresas controladas direta ou indiretamente pelo Estado",
+      "decimalChar": ",",
+      "groupChar": "."
     }
   ],
   "missingValues": [
