@@ -2,7 +2,7 @@
   "fields": [
     {
       "name": "masp",
-      "type": "integer",
+      "type": "number",
       "format": "default",
       "title": "Número de matrícula",
       "description": "Número de matrícula (MASP) conferido aos servidores públicos civis e militares para efeito de pagamento e registro cadastral.",
