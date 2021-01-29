@@ -4,8 +4,8 @@
       "name": "masp",
       "type": "integer",
       "format": "default",
-      "title": "MASP",
-      "description": "Número que identifica o servidor civil ou militar de Minas Gerais.",
+      "title": "Número de matrícula",
+      "description": "Número de matrícula (MASP) conferido aos servidores públicos civis e militares para efeito de pagamento e registro cadastral.",
       "constraints": {
         "required": true
       }
@@ -14,14 +14,14 @@
       "name": "nome",
       "type": "string",
       "format": "default",
-      "title": "Nome",
-      "description": "Nome do servidor civil ou militar conforme registrado nos Sistemas de Pagamento de Pessoal do Estado de Minas Gerais - SEPLAG, CBMMG e PMMG."
+      "title": "Nome do servidor",
+      "description": "Nome do servidor civil ou militar conforme registrado nos Sistemas de Pagamento de Pessoal da SEPLAG, CBMMG e PMMG."
     },
     {
       "name": "descsitser",
       "type": "string",
       "format": "default",
-      "title": "Descrição da situação",
+      "title": "Descrição da situação do servidor",
       "description": "Descrição da situação do servidor",
       "constraints": {
         "enum": [
@@ -39,7 +39,7 @@
       "name": "nmefet",
       "type": "string",
       "format": "default",
-      "title": "Nome do cargo efetivo",
+      "title": "Descrição do cargo efetivo",
       "description": "Cargo da carreira de origem do servidor"
     },
     {
@@ -99,8 +99,8 @@
       "name": "judic",
       "type": "string",
       "format": "default",
-      "title": "Acréscimo judicial",
-      "description": "Valor de acréscimo no caso de ação judicial em favor do servidor",
+      "title": "Decisão judicial",
+      "description": "Quando sinalizado com a expressão 'Sim', indica que existe decisão judicial amparando a composição da remuneração diferenciada da prevista no limite constitucional.",
       "decimalChar": ",",
       "groupChar": "."
     },
@@ -144,8 +144,8 @@
       "name": "jetons",
       "type": "number",
       "format": "default",
-      "title": "Jetons Adm Direta",
-      "description": "Valor recebido em razão da participação em conselhos da Administração Direta",
+      "title": "Jetons - Pagos SISAP",
+      "description": "Gratificação paga, em folha, referente a participação em reuniões dos órgãos de deliberação coletiva. Pode ser pago a pessoa que não tenha vínculo funcional com o Estado.",
       "decimalChar": ",",
       "groupChar": "."
     },
@@ -154,7 +154,7 @@
       "type": "number",
       "format": "default",
       "title": "Demais Eventuais",
-      "description": "VGratificações, restituições, horas-extras e outros, pagos de forma variável e/ou eventual",
+      "description": "Gratificações, restituições, horas-extras e outros, pagos de forma variável e/ou eventual",
       "decimalChar": ",",
       "groupChar": "."
     },
