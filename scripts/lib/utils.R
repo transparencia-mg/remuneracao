@@ -117,23 +117,49 @@ read_remuneracao <- function(path) {
   
   col_names <- get_col_names(resource_id)
   
-  col_types <- get_col_types(resource_id) %>% col_types_mapping()
+  file_ext <- tools::file_ext(path)
   
-  result <- readr::read_csv2(path, col_names = col_names, skip = 1, col_types = col_types, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  if(file_ext == "csv") {
+    col_types <- get_col_types(resource_id) %>% col_types_mapping(to = "readr")
+    result <- readr::read_csv2(path, col_names = col_names, skip = 1, col_types = col_types, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  } else if(file_ext == "xlsx") {
+    col_types <- get_col_types(resource_id) %>% col_types_mapping(to = "readxl")
+    infer_cols_spec <- names(readxl::read_excel(path, n_max = 1))
+    
+    stopifnot(all(infer_cols_spec == col_names))
+    
+    result <- readxl::read_xlsx(path, col_types = col_types)
+    
+  } else {
+    stop(glue::glue("Extensão do arquivo {file_ext} não reconhecida."))
+  }
+  
+  
   
   #stop_for_problems(result)
   
   data.table::as.data.table(result)
 }
 
-col_types_mapping <- function(x) {
+col_types_mapping <- function(x, to) {
   
-  mapping <- c("string" = "c", 
-               "number" = "n", 
-               "integer" = "i", 
-               "boolean" = "l", 
-               "date" = "D", 
-               "year" = "i")
+  if(to == "readr") {
+    mapping <- c("string" = "c", 
+                 "number" = "n", 
+                 "integer" = "i", 
+                 "boolean" = "l", 
+                 "date" = "D", 
+                 "year" = "i")
+  } else if (to == "readxl") {
+    mapping <- c("string" = "text", 
+                 "number" = "numeric", 
+                 "integer" = "numeric", 
+                 "boolean" = "logical", 
+                 "date" = "date", 
+                 "year" = "numeric")
+  } else {
+    stop(glue::glue("Valor {to} para argumento to desconhecido."))
+  }
   
   result <- unname(mapping[x])
   
@@ -141,7 +167,11 @@ col_types_mapping <- function(x) {
     stop("Não foi possível encontrar o tipo da variável.")
   }
   
-  paste0(result, collapse = "")
+  if(to == "readr") {
+    paste0(result, collapse = "")
+  } else {
+    result
+  }
 }
 
 mask_descunid_pcmg <- function(dt) {
