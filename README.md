@@ -83,6 +83,7 @@ reticulate::conda_install("remuneracao", "goodtables==2.5.2") # instalacao da ve
 Para executar os scripts necessários a limpeza, validação e publicação do recurso de um único mês execute na linha de comando:
 
 ```sh
+make merge resource=servidores-AAAA-MM
 make clean resource=servidores-AAAA-MM
 make validate resource=servidores-AAAA-MM > logs/validation.txt
 make publish resource=servidores-AAAA-MM

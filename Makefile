@@ -14,6 +14,9 @@ download:
 transform:
 	cp data-raw/servidores/* data/
 
+merge: ## Merge pmmg, cbmmg e civis
+	Rscript --verbose scripts/merge-remuneracao.R $(resource) 2> logs/log.Rout
+
 clean: ## Clean resource
 	Rscript --verbose scripts/clean-resource.R $(resource) 2> logs/log.Rout
 
