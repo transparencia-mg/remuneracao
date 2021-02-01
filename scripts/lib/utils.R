@@ -352,7 +352,7 @@ rm_header_row_from_data_content <- function(dt) {
 
 normalize_text_designado_ao_servico_ativo <- function(dt) {
   
-  regex <- "DESIGNADO P/ O SERVI[CÇ?]O ATIVO"
+  regex <- "DESIGNADO P/ O SER.+ ATIVO"
   
   dt[stringr::str_detect(descsitser, regex), descsitser := "DESIGNADO AO SERVICO ATIVO"]
   
