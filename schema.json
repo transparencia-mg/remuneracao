@@ -75,8 +75,12 @@
       "type": "number",
       "format": "default",
       "title": "Carga Horária",
-      "description": "Carga horária semanal do servidor"
+      "description": "Carga horária semanal do servidor",
       "decimalChar": ",",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 168
+      }
     },
     {
       "name": "remuner",
