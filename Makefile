@@ -23,5 +23,8 @@ clean: ## Clean resource
 validate: ## Validate resource
 	Rscript --verbose scripts/validate-resource.R $(resource) 2> logs/log.Rout
 
+test: ## Test resource
+	Rscript --verbose tests/testthat.R 2> logs/log.Rout
+
 publish: ## Publish resource
 	Rscript --verbose scripts/publish-resource.R $(resource) 2> logs/log.Rout	

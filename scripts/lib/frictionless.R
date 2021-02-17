@@ -22,7 +22,7 @@ get_resource <- function(x) {
   
   resource_exists(x)
   
-  datapackage <- jsonlite::read_json("datapackage.json")
+  datapackage <- jsonlite::read_json(here::here("datapackage.json"))
   
   result <- rlist::list.filter(datapackage$resources, x %in% name)
   
@@ -31,7 +31,7 @@ get_resource <- function(x) {
 
 
 resource_exists <- function(x) {
-  datapackage <- jsonlite::read_json("datapackage.json")
+  datapackage <- jsonlite::read_json(here::here("datapackage.json"))
   
   if(!x %in% purrr::map_chr(datapackage$resources, "name")) {
     stop(glue::glue("Recurso {x} não encontrado no arquivo datapackage.json"))
@@ -48,7 +48,7 @@ get_schema <- function(resource_id) {
   if(grepl(".json$", resource$schema)) {
     # dereference schema externo
     # vide https://github.com/frictionlessdata/specs/issues/365 para contexto
-    result <- jsonlite::read_json(resource$schema)
+    result <- jsonlite::read_json(here::here(resource$schema))
   } else {
     result <- resource$schema
   }
