@@ -12,7 +12,7 @@ cbmmg <- read_remuneracao(path_cbmmg)
 pmmg <- read_remuneracao(path_pmmg)
 civis <- read_remuneracao(path_civis)
   
-result <- rbind(cbmmg, pmmg, civis)
+result <- rbindlist(list(cbmmg, pmmg, civis), fill = TRUE)
   
 result <- result %>% dplyr::arrange(nome)
 

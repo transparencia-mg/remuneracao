@@ -121,7 +121,7 @@ read_remuneracao <- function(path) {
   
   if(file_ext == "csv") {
     col_types <- get_col_types(resource_id) %>% col_types_mapping(to = "readr")
-    result <- readr::read_csv2(path, col_names = col_names, skip = 1, col_types = col_types, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+    result <- readr::read_csv2(path, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
   } else if(file_ext == "xlsx") {
     col_types <- get_col_types(resource_id) %>% col_types_mapping(to = "readxl")
     infer_cols_spec <- names(readxl::read_excel(path, n_max = 1))
