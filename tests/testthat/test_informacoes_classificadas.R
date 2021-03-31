@@ -13,6 +13,6 @@ test_that("Unidades administrativas classificadas", {
   rule <- validator(if(descinst %in% instituicoes) descunid == "INF. SIGILOSA")
   report <- confront(dt, rule)
   
-  expect_lt(summary(report)$fails, expected = 1)
+  expect_equal(summary(report)[["fails"]], expected = 0)
 })
 
