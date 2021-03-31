@@ -1248,6 +1248,35 @@
       "encoding": "windows-1252",
       "dialect": "dialect.json",
       "format": "csv"
+    },
+    {
+      "name": "servidores-2021-02",
+      "path": "data/servidores-2021-02.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Fevereiro de 2021",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2021-02-pmmg",
+          "path": "https://drive.google.com/file/d/1KgS9zoPVyR9bt4QXO0IY_bC2Bo-yx00d"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2021-02-cbmmg",
+          "path": "https://drive.google.com/file/d/1vOxwYiv1Z-Nm3MIGC4RrZKsqFzIzw3WE"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2021-02-civis",
+          "path": "https://drive.google.com/file/d/1TLtrqCn16NBCNX5-oo2Fj3WuGuvlTAoV"
+        }
+      ]
     }
   ],
   "keywords": [
