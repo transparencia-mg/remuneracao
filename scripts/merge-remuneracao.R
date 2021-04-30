@@ -4,21 +4,24 @@ arg <- commandArgs(trailingOnly = TRUE)
 
 resource_exists(arg)
 
-path_cbmmg_xlsx <- file.path("data-raw", glue::glue("{arg}-cbmmg.xlsx"))
-conform_cbmmg(path_cbmmg_xlsx, arg)
+path_cbmmg_raw <- file.path("data-raw", glue::glue("{arg}-cbmmg.xlsx"))
+conform_cbmmg(path_cbmmg_raw, arg)
 
-path_pmmg_xlsx <- file.path("data-raw", glue::glue("{arg}-pmmg.xlsx"))
-conform_pmmg(path_pmmg_xlsx, resource_name = arg)
+path_pmmg_raw <- file.path("data-raw", glue::glue("{arg}-pmmg.xlsx"))
+conform_pmmg(path_pmmg_raw, resource_name = arg)
 
-path_cbmmg <- file.path("data-raw", glue::glue("{arg}-cbmmg.csv"))
-path_pmmg <- file.path("data-raw", glue::glue("{arg}-pmmg.csv"))
-path_civis <- file.path("data-raw", glue::glue("{arg}-civis.csv"))
+path_civis_raw <- file.path("data-raw", glue::glue("{arg}-civis.csv"))
+conform_civis(path_civis_raw, resource_name = arg)
+
+path_cbmmg <- file.path("data-raw", glue::glue("{arg}-cbmmg-conformed.csv"))
+path_pmmg <- file.path("data-raw", glue::glue("{arg}-pmmg-conformed.csv"))
+path_civis <- file.path("data-raw", glue::glue("{arg}-civis-conformed.csv"))
   
 cbmmg <- read_remuneracao_raw(path_cbmmg)
 pmmg <- read_remuneracao_raw(path_pmmg)
 civis <- read_remuneracao_raw(path_civis)
   
-result <- rbindlist(list(cbmmg, pmmg, civis), fill = TRUE)
+result <- rbindlist(list(cbmmg, pmmg, civis))
   
 result <- result %>% dplyr::arrange(nome)
 

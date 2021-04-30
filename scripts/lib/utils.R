@@ -442,79 +442,40 @@ conform_pmmg <- function(path, resource_name) {
   
   expected_cols <- get_col_names(resource_name)
   
-  result[, ..expected_cols]
+  result <- result[, ..expected_cols]
   
-  data.table::fwrite(result, file = gsub(".xlsx$", ".csv", path), sep = ";", dec = ",", bom = TRUE)
+  data.table::fwrite(result, file = gsub(".xlsx$", "-conformed.csv", path), sep = ";", dec = ",", bom = TRUE)
 }
 
 conform_cbmmg <- function(path, resource_name) {
   
-  expected_cols <- c("masp", "nome", "situacao_do_servidor", "cargo_efetivo", "apostila", 
-                     "cargo_em_comissao", "orgao_entidade", "unidade_administrativa", 
-                     "carga_horaria", "remuneracao_basica_bruta", "abate_teto", "dec_judicial", 
-                     "ferias", "gratificacao_natal", "premio_de_produtividade", "ferias_premio", 
-                     "jetons_pagos_seplag", "outros_eventuais", "irrf", "contribuicao_previdenciaria", 
-                     "remuneracao_apos_deducoes_obrigatorias", "bdmg", "cemig", "codemig", 
-                     "cohab", "copasa", "emater", "epamig", "funpemg", "gasmig", "mgi", 
-                     "mgs", "prodemge", "prominas")
-  
-  if(!identical(expected_cols, clean_headers_cbmmg(path))) {
-    stop("Não foi possível intepretar o cabeçalho da planilha do CBMMG.")
-  }
-  
-  schema_cols <- c("masp" = "masp",
-                   "nome" = "nome",
-                   "situacao_do_servidor" = "descsitser",
-                   "cargo_efetivo" = "nmefet",
-                   "apostila" = "tem_apost",
-                   "cargo_em_comissao" = "desccomi",
-                   "orgao_entidade" = "descinst",
-                   "unidade_administrativa" = "descunid",
-                   "carga_horaria" = "carga_hora",
-                   "remuneracao_basica_bruta" = "remuner",
-                   "abate_teto" = "teto",
-                   "dec_judicial" = "judic",
-                   "ferias" = "ferias",
-                   "gratificacao_natal" = "decter",
-                   "premio_de_produtividade" = "premio",
-                   "ferias_premio" = "feriasprem",
-                   "jetons_pagos_seplag" = "jetons",
-                   "outros_eventuais" = "eventual",
-                   "irrf" = "ir",
-                   "contribuicao_previdenciaria" = "prev",
-                   "remuneracao_apos_deducoes_obrigatorias" = "rem_pos",
-                   "bdmg" = "bdmg",
-                   "cemig" = "cemig",
-                   "codemig" = "codemig",
-                   "cohab" = "cohab",
-                   "copasa" = "copasa",
-                   "emater" = "emater",
-                   "epamig" = "epamig",
-                   "funpemg" = "funpemg",
-                   "gasmig" = "gasmig",
-                   "mgi" = "mgi",
-                   "mgs" = "mgs",
-                   "prodemge" = "prodemge",
-                   "prominas" = "prominas")
-  
-  col_names <- unname(schema_cols[expected_cols])
-  
-  if(anyNA(col_names)) {
-    stop("Não foi possível fazer o mapeamento de colunas da planilha do CBMMG.")
-  }
-  
-  result <- readxl::read_excel(path, skip = 2, col_names = FALSE)
+  result <- data.table::as.data.table(readxl::read_xlsx(path))
   
   result <- result %>% 
-    dplyr::select(1:34) %>% 
-    purrr::set_names(col_names) %>% 
-    data.table::as.data.table() %>% 
-    rm_masp_hyphen() %>% 
-    add_column("emip", 0) %>% 
-    add_column("codemge", 0) %>% 
-    add_column("emc", 0)
+    dplyr::select(1:37) %>% 
+    rm_masp_hyphen()
   
-  data.table::fwrite(result, file = gsub(".xlsx$", ".csv", path), sep = ";", dec = ",", bom = TRUE)
+  expected_cols <- get_col_names(resource_name)
+  
+  result <- result[, ..expected_cols]
+  
+  data.table::fwrite(result, file = gsub(".xlsx$", "-conformed.csv", path), sep = ";", dec = ",", bom = TRUE)
+  
+}
+
+conform_civis <- function(path, resource_name) {
+  
+  result <- read_remuneracao_raw(path)
+  
+  result <- result %>% 
+    dplyr::select(-admissao) %>% 
+    dplyr::rename(masp = `#masp`)
+  
+  expected_cols <- get_col_names(resource_name)
+  
+  result <- result[, ..expected_cols]
+  
+  data.table::fwrite(result, file = gsub(".csv$", "-conformed.csv", path), sep = ";", dec = ",", bom = TRUE)
   
 }
 
