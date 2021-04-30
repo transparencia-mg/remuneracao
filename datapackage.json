@@ -1280,6 +1280,38 @@
           "hash": "211c389d3a10aefe488c5b3a6424b499"
         }
       ]
+    },
+        {
+      "name": "servidores-2021-03",
+      "path": "data/servidores-2021-03.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Março de 2021",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2021-03-pmmg",
+          "path": "https://drive.google.com/file/d/1XPzdUNULNAZGIhBwYgQQsMZWSYNm4GS7",
+          "hash": "eb2f8a3d5d96f1d449e14b1fa0e4915c"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2021-03-cbmmg",
+          "path": "https://drive.google.com/file/d/1F2uJQzKf_YHWBFJNyNFaIaB9uKvU3y9i",
+          "hash": "985b57ad450ebd8e76b5ce7cb9e3bd7b"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2021-03-civis",
+          "path": "https://drive.google.com/file/d/1siSquFDPkboLP0QjlfpMFmeZUuBku15D",
+          "hash": "054e0f58d918f3381fbb8fc7f4b18a5a"
+        }
+      ]
     }
   ],
   "keywords": [
