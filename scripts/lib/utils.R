@@ -517,3 +517,33 @@ conform_cbmmg <- function(path, resource_name) {
   data.table::fwrite(result, file = gsub(".xlsx$", ".csv", path), sep = ";", dec = ",", bom = TRUE)
   
 }
+
+check_raw_files_checksum <- function(resource_name) {
+  resource_exists(resource_name)
+  resource <- get_resource(resource_name)
+  
+  # https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html#extract_multiple_values
+  sources <- purrr::map_df(resource$sources, extract, c("path", "name", "hash"))
+  
+  files <- googledrive::drive_get(id = sources$path)
+  
+  files <- dplyr::mutate(files, 
+                         filename = file.path("data-raw", glue::glue("{sources$name}.{purrr::map_chr(drive_resource, 'fullFileExtension')}")))
+  
+  checksum_googledrive <- data.frame(resource = sources$name, 
+                                     checksum = purrr::map_chr(files$drive_resource, "md5Checksum"))
+  
+  checksum_filesystem <- data.frame(resource = sources$name, 
+                                    checksum = purrr::map_chr(files$filename, digest::digest, algo = "md5", file = TRUE))
+  
+  checksum_datapackage <- data.frame(resource = sources$name, 
+                                     checksum = sources$hash)
+  
+  #waldo::compare(checksum_googledrive, checksum_filesystem)
+  #waldo::compare(checksum_googledrive, checksum_datapackage)
+  
+  stopifnot(identical(checksum_googledrive, checksum_filesystem))
+  stopifnot(identical(checksum_googledrive, checksum_datapackage))
+  
+  TRUE
+}
