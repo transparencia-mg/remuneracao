@@ -14,6 +14,9 @@ download:
 transform:
 	cp data-raw/servidores/* data/
 
+extract: ## Download arquivos da pmmg, cbmmg e civis do google drive
+	Rscript --verbose scripts/download-google-drive.R $(resource) 2> logs/log.Rout
+
 merge: ## Merge pmmg, cbmmg e civis
 	Rscript --verbose scripts/merge-remuneracao.R $(resource) 2> logs/log.Rout
 
