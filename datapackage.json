@@ -1264,17 +1264,20 @@
         {
           "title": "Remuneração PMMG",
           "name": "servidores-2021-02-pmmg",
-          "path": "https://drive.google.com/file/d/1KgS9zoPVyR9bt4QXO0IY_bC2Bo-yx00d"
+          "path": "https://drive.google.com/file/d/1KgS9zoPVyR9bt4QXO0IY_bC2Bo-yx00d",
+          "hash": "e20ea31a2754a4d71ee5b5cc54a9594b"
         },
         {
           "title": "Remuneração CBMMG",
           "name": "servidores-2021-02-cbmmg",
-          "path": "https://drive.google.com/file/d/1vOxwYiv1Z-Nm3MIGC4RrZKsqFzIzw3WE"
+          "path": "https://drive.google.com/file/d/1vOxwYiv1Z-Nm3MIGC4RrZKsqFzIzw3WE",
+          "hash": "4207c1f937f71e5a31e5724edd78c5dd"
         },
         {
           "title": "Remuneração Civis",
           "name": "servidores-2021-02-civis",
-          "path": "https://drive.google.com/file/d/1TLtrqCn16NBCNX5-oo2Fj3WuGuvlTAoV"
+          "path": "https://drive.google.com/file/d/1TLtrqCn16NBCNX5-oo2Fj3WuGuvlTAoV",
+          "hash": "211c389d3a10aefe488c5b3a6424b499"
         }
       ]
     }
