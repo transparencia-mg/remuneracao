@@ -5,10 +5,13 @@ Todas as alterações relevantes no conjunto de dados da remuneração serão do
 ## Mar/2021
 
 - Inclusão de novos cargos, a exemplo de Gratificados, Contratos de Agente Público Socieducativo e Agente Público Penitenciário;
-- Alteração do cálculo da coluna eventual que passará a apresentar as verbas recebidas e descontadas dentro do mesmo mês, incluindo as verbas atrasadas. 
-- Inclusão de todos os créditos e débitos na coluna Eventual referentes a vale transporte e custeio alimentação.
-- Alteração da regra referente a divulgação da carga horária semanal do servidor, que passará a divulgar a carga horária referente ao cargo de recebimento, com exceção de servidores inativos, servidores desligados mas que ainda possuem verbas atrasadas para receber, membros da Acadepol, dentre outros, que podem apresentar carga horária zerada.
-- Alteração da regra de divulgação do situação do servidor no caso de recebimento de Férias Prêmio em caso de desligamento ou aposentadoria. Quando do pagamento, o servidor beneficiário aparecerá com a situação “ATIVO” na planilha de remuneração.
+- Alteração do cálculo da coluna eventual que passará a apresentar todas as verbas eventuais recebidas e descontadas dentro do mesmo mês, incluindo as verbas atrasadas. Podendo inclusive apresentar valores negativos.
+- Inclusão de todos os créditos e débitos na coluna Eventual referentes a vale transporte e custeio alimentação. Ou seja, esses valores serão apresentados de forma líquida.
+- Inclusão dos valores recebidos a título de Férias Prêmio que atualmente são gerados em folhas extras. Quando do pagamento, o servidor beneficiário aparecerá com a situação “ATIVO” na planilha de remuneração. 
+- Apresentação de todos os valores que forem gerados em folhas extras e que corresponderem ao pagamento dentro do mês.
+- Inclusão das expressões "SIM" (quando o servidor possuir alguma decisão judicial referente ao abate teto) e "NÃO" (quando não houver nenhuma decisão) na coluna JUDIC;
+- Inclusão do número de admissão na geração dos dados;
+- Inclusão de todas a verbas na extração dos dados, independente do período de criação.
 
 ## Dez/2020
 
