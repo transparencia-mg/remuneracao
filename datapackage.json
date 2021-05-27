@@ -1225,7 +1225,7 @@
       "dialect": "dialect.json",
       "format": "csv"
     },
-        {
+    {
       "name": "servidores-2020-12",
       "path": "data/servidores-2020-12.csv",
       "profile": "tabular-data-resource",
@@ -1281,7 +1281,7 @@
         }
       ]
     },
-        {
+    {
       "name": "servidores-2021-03",
       "path": "data/servidores-2021-03.csv",
       "profile": "tabular-data-resource",
