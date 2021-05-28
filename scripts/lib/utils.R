@@ -479,7 +479,27 @@ conform_civis <- function(path, resource_name) {
   
 }
 
-check_raw_files_checksum <- function(resource_name) {
+#' Verifica linhagem dos arquivos originais
+#'
+#' @description
+#' Essa função compara a igualdade da md5 checksum armazenada no data package,
+#' no google drive e no computador local.
+#' 
+#' @details 
+#' Essa função compara as seguintes checksums
+#'
+#' - na propriedade `datapackage.resources.sources.hash` 
+#' - do arquivo correspondente armazenado no google drive indicado na propriedade `datapackage.resources.sources.path`
+#' - do arquivo armazenado localmente em data-raw/ obtido pelo target `make extract`
+#'
+#' O valor `FALSE` como resultado dessa função indica que houve modificação nos arquivos
+#' sem atualização correspondente nos metadados do data package.
+#'
+#' @param resource_name Nome (`name`) de um recurso do data package
+#' @return `TRUE` se existe igualdade entre as três checksums e `FALSE` caso contrário 
+#' @examples
+#' check_raw_files_checksum(servidores-2021-03)
+check_raw_data_source_lineage <- function(resource_name) {
   resource_exists(resource_name)
   resource <- get_resource(resource_name)
   
