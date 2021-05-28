@@ -45,9 +45,9 @@ Para carga automática no CKAN é necessário a configuração de quatro variáv
 - `DADOSMG_DEV`
 
 
-Em ambiente de produção, a variável `DADOSMG_PROD_HOST` deve estar com o valor `http://dados.mg.gov.br` e a variável `DADOSMG_PROD` com a sua [chave da API do CKAN](https://docs.ckan.org/en/ckan-2.7.3/api/#authentication-and-api-keys). Ela pode ser encontrada na sua página de usuário e parece com a string `ec5c0860-9e48-41f3-8850-4a7128b18df8`. Esse modo de autenticação foi deprecado na [versão 2.9 do CKAN](https://docs.ckan.org/en/2.9/api/index.html#authentication-and-api-tokens).
+Em ambiente de produção, a variável `DADOSMG_PROD_HOST` deve estar com o valor `https://dados.mg.gov.br` e a variável `DADOSMG_PROD` com a sua [chave da API do CKAN](https://docs.ckan.org/en/ckan-2.7.3/api/#authentication-and-api-keys). Ela pode ser encontrada na sua página de usuário e parece com a string `ec5c0860-9e48-41f3-8850-4a7128b18df8`. Esse modo de autenticação foi deprecado na [versão 2.9 do CKAN](https://docs.ckan.org/en/2.9/api/index.html#authentication-and-api-tokens).
 
-De maneira similar, em ambiente de homologação a variável `DADOSMG_DEV_HOST` deve estar com o valor `http://homologa.cge.mg.gov.br` e com a chave apropriada do seu usuário de homologação.
+De maneira similar, em ambiente de homologação a variável `DADOSMG_DEV_HOST` deve estar com o valor `https://homologa.cge.mg.gov.br` e com a chave apropriada do seu usuário de homologação.
 
 O código que de fato controla em qual ambiente a carga será efetuada está no script `scripts/lib/ckan.R` e deve ser alterado manualmente.
 
