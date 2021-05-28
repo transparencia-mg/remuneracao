@@ -93,8 +93,9 @@ O pré-processamento consiste em padronizar os cabeçalhos de todos os arquivos 
 Para executar os scripts necessários para consolidação, limpeza e validação do recurso de um único mês execute na linha de comando
 
 ```sh
+make extract resource=servidores-AAAA-MM # download dos arquivos originais do google drive
 make merge resource=servidores-AAAA-MM # gera arquivo consolidado data-raw/servidores-AAAA-MM.csv
-make clean resource=servidores-AAAA-MM # # gera arquivo data/servidores-AAAA-MM.csv
+make clean resource=servidores-AAAA-MM # gera arquivo data/servidores-AAAA-MM.csv
 make validate resource=servidores-AAAA-MM > logs/validation.txt
 ```
 
