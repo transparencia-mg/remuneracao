@@ -509,7 +509,7 @@ check_raw_data_source_lineage <- function(resource_name) {
   files <- googledrive::drive_get(id = sources$path)
   
   files <- dplyr::mutate(files, 
-                         filename = file.path("data-raw", glue::glue("{sources$name}.{purrr::map_chr(drive_resource, 'fullFileExtension')}")))
+                         filename = here::here(file.path("data-raw", glue::glue("{sources$name}.{purrr::map_chr(drive_resource, 'fullFileExtension')}"))))
   
   checksum_googledrive <- data.frame(resource = sources$name, 
                                      checksum = purrr::map_chr(files$drive_resource, "md5Checksum"))
