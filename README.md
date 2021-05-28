@@ -7,6 +7,16 @@ Instruções sobre instalação dos pré-requisitos e configuração do ambiente
 
 ## Uso
 
+Inicialmente é necessário adicionar manualmente um novo recurso para o mês corrente no arquivo `datapackage.json`. 
+
+Para além das atualizações do mês de referência, é necessário inserir as informações de localização dos arquivos primários no google drive. Essas informações podem ser colhidas de forma manual, ou por meio do script abaixo. O `id` no comando abaixo deve ser preenchido com a id da pasta relevante no google drive.
+
+```sh
+make get-info id=1dDdvkf-ku8bJTI-gEJ27JBRu7H7z1q_h
+```
+
+Ainda é necessário inserir as informações de `path` e `hash` no arquivo `datapackage.json`.
+
 Para executar os scripts necessários para download, consolidação, limpeza e validação do recurso de um único mês da remuneração execute na linha de comando
 
 ```sh

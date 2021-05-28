@@ -14,6 +14,9 @@ download:
 transform:
 	cp data-raw/servidores/* data/
 
+get-info: ## Extrai informações de uma pasta do google drive
+	Rscript --verbose scripts/get_source_metadata_info.R $(id) 2> logs/log.Rout
+
 extract: ## Download arquivos da pmmg, cbmmg e civis do google drive
 	Rscript --verbose scripts/download-google-drive.R $(resource) 2> logs/log.Rout
 
