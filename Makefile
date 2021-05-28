@@ -34,3 +34,6 @@ test: ## Test resource
 
 publish: ## Publish resource
 	Rscript --verbose scripts/publish-resource.R $(resource) 2> logs/log.Rout	
+
+save: ## Publish resource
+	Rscript --verbose scripts/save-resource.R $(resource) 2> logs/log.Rout	
