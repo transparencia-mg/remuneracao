@@ -2,14 +2,17 @@
 
 ## R
 
-Esse projeto utiliza o pacote [renv](https://rstudio.github.io/renv/index.html) para gerenciamento de dependências. Ao inicializar o projeto do Rstudio, se as seguintes mensagens forem apresentadas
+Esse projeto utiliza o [R versão 4.1.0](https://www.r-project.org/). Faça a instalação ou atualização antes de continuar.
+
+O pacote [renv](https://rstudio.github.io/renv/index.html) é utilizado para gerenciamento de dependências. 
+Ao inicializar o projeto do Rstudio, se as seguintes mensagens forem apresentadas
 
 ```r
-# Bootstrapping renv 0.12.3 --------------------------------------------------
-* Downloading renv 0.12.3 from CRAN ... OK
-* Installing renv 0.12.3 ... Done!
-* Successfully installed and loaded renv 0.12.3.
-* Project 'C:/Users/m752587/projects/remuneracao' loaded. [renv 0.12.3]
+# Bootstrapping renv 0.13.2 --------------------------------------------------
+* Downloading renv 0.13.2 from CRAN ... OK
+* Installing renv 0.13.2 ... Done!
+* Successfully installed and loaded renv 0.13.2.
+* Project 'C:/Users/m752587/projects/remuneracao' loaded. [renv 0.13.2]
 * The project library is out of sync with the lockfile.
 * Use `renv::restore()` to install packages recorded in the lockfile.
 ```
@@ -29,10 +32,11 @@ renv::init() # instalação dos pacotes listados no arquivo renv.lock
 
 Essa instalação demora vários minutos.
 
-As mensagens acima somente serão exibidas na primeira vez que o `renv` for inicializado. Nas sessões seguintes, a mensagem indicativa de sucesso é simplesmente
+As mensagens acima somente serão exibidas na primeira vez que o `renv` for inicializado. 
+Nas sessões seguintes, a mensagem indicativa de sucesso é simplesmente
 
 ```r
-* Project '~/Local/dados-mg/ckan/remuneracao' loaded. [renv 0.12.3]
+* Project '~/Local/dados-mg/ckan/remuneracao' loaded. [renv 0.13.2]
 ```
 
 ## Variáveis de ambiente
@@ -67,7 +71,8 @@ subl /Users/fjunior/.Renviron # edite o arquivo
 
 ## Python
 
-Para validação dos recursos é necessário a instalação do Python e da biblioteca goodtables. Para fazer essas etaptas execute os seguintes comandos no console do R:
+Para validação dos recursos com `make validate` é necessário a instalação do Python e do pacote `goodtables`. 
+Para fazer essas etapas pelo R execute os seguintes comandos no console do R:
 
 ```R
 reticulate::install_miniconda() # instalacao do python via miniconda
