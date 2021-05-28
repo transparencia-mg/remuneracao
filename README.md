@@ -69,8 +69,14 @@ Para publicar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/data
 make publish resource=servidores-AAAA-MM
 ```
 
-Por fim, para armazenar a `hash` do novo recurso no data package e fazer commit dessa alteração, execute
+Para armazenar a `hash` do novo recurso no data package e fazer commit dessa alteração, execute
 
 ```sh
 make save resource=servidores-AAAA-MM
+```
+
+Por fim, faça push das alterações para o Github
+
+```sh
+git push
 ```
