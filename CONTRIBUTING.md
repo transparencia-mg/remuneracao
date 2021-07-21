@@ -4,8 +4,8 @@ Saiba como contribuir com a documentação deste conjunto de dados!
 
 A documentação deste conjunto de dados está sendo feita de forma aberta e colaborativa no [Github](https://github.com/). Existem duas alternativas para enviar sua contribuição:
 
-- [Issues](https://github.com/dados-mg/diarias/issues): Para iniciar uma discussão sobre melhorias na documentação.
-- [Pull requests](https://github.com/dados-mg/diarias/pulls): Para sugerir uma alteração concreta na documentação.
+- [Issues](https://github.com/dados-mg/remuneracao/issues): Para iniciar uma discussão sobre melhorias na documentação.
+- [Pull requests](https://github.com/dados-mg/remuneracao/pulls): Para sugerir uma alteração concreta na documentação.
 
 Todas as contribuições são bem vindas. Alguns exemplos são:
 
