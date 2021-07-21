@@ -1,6 +1,6 @@
-# Instruções para instalação e configuração do ambiente
+## Instalação e configuração
 
-## R
+### R
 
 Esse projeto utiliza o [R versão 4.1.0](https://www.r-project.org/). Faça a instalação ou atualização antes de continuar.
 
@@ -39,7 +39,7 @@ Nas sessões seguintes, a mensagem indicativa de sucesso é simplesmente
 * Project '~/Local/dados-mg/ckan/remuneracao' loaded. [renv 0.13.2]
 ```
 
-## Variáveis de ambiente
+### Variáveis de ambiente
 
 Para carga automática no CKAN é necessário a configuração de quatro variáveis de ambiente:
 
@@ -69,7 +69,7 @@ touch /Users/fjunior/.Renviron # cria o arquivo caso não exista
 subl /Users/fjunior/.Renviron # edite o arquivo
 ```
 
-## Python
+### Python
 
 Para validação dos recursos com `make validate` é necessário a instalação do Python e do pacote `goodtables`. 
 Para fazer essas etapas pelo R execute os seguintes comandos no console do R:
