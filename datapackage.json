@@ -1592,6 +1592,40 @@
         }
       ],
       "id": "f0bf0707-7e22-4fcc-979c-1be729485f5e"
+    },
+    {
+      "name": "servidores-2021-06",
+      "path": "data/servidores-2021-06.csv.gz",
+      "hash": "sha256:334068e6fc6a6d87c221f4408824424e206994fffa44aadf07573a20b3d41e0a",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Junho de 2021",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2021-06-pmmg",
+          "path": "https://drive.google.com/file/d/16ZXi0tfYJxBYgSn9qUkCL2mr17zutg1S",
+          "hash": "5ae214dcc59d250291f85903649d63a4"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2021-06-cbmmg",
+          "path": "https://drive.google.com/file/d/1TrxJ7yL-of7VyNGnzGNJ8526L_1TvvXZ",
+          "hash": "b710fc888b8a33edfd1b2715cc447120"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2021-06-civis",
+          "path": "https://drive.google.com/file/d/1KuN6WTaTqblx-OSHiJgjguzgpj7Zwzdt",
+          "hash": "b9ee2da3ea0d92833d8368f72788cf07"
+        }
+      ],
+      "id": "dfc721f7-579f-47c2-8e72-97e8a0b3992d"
     }
   ],
   "keywords": [

@@ -113,7 +113,7 @@ read_remuneracao <- function(path) {
   
   file_ext <- tools::file_ext(path)
   
-  if(file_ext == "csv") {
+  if(file_ext == "gz") {
     col_types <- get_col_types(resource_id) %>% col_types_mapping(to = "readr")
     result <- readr::read_csv2(path, locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
   } else if(file_ext == "xlsx") {
