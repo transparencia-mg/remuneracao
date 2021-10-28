@@ -449,7 +449,7 @@ conform_pmmg <- function(path, resource_name) {
 
 conform_cbmmg <- function(path, resource_name) {
   
-  result <- data.table::as.data.table(readxl::read_xlsx(path))
+  result <- data.table::as.data.table(readxl::read_excel(path))
   
   result <- result %>% 
     dplyr::select(1:37) %>% 
@@ -459,7 +459,7 @@ conform_cbmmg <- function(path, resource_name) {
   
   result <- result[, ..expected_cols]
   
-  data.table::fwrite(result, file = gsub(".xlsx$", "-conformed.csv", path), sep = ";", dec = ",", bom = TRUE)
+  data.table::fwrite(result, file = gsub(".xlsx$|.xls", "-conformed.csv", path), sep = ";", dec = ",", bom = TRUE)
   
 }
 

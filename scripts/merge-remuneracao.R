@@ -1,13 +1,22 @@
+library(googledrive)
+
 purrr::walk(list.files("scripts/lib/", full.names = TRUE, pattern = ".R"), source)
 
 arg <- commandArgs(trailingOnly = TRUE)
 
 resource_exists(arg)
 
-path_cbmmg_raw <- file.path("data-raw", glue::glue("{arg}-cbmmg.xlsx"))
+resource <- get_resource(arg)
+
+cbmmg_drive <- drive_get(rlist::list.filter(resource$sources, paste0(arg, "-cbmmg") %in% name)[[1]]$path)
+cbmmg_file_ext <- cbmmg_drive$drive_resource[[1]]$fullFileExtension
+
+path_cbmmg_raw <- file.path("data-raw", glue::glue("{arg}-cbmmg.{cbmmg_file_ext}"))
 conform_cbmmg(path_cbmmg_raw, arg)
 
-path_pmmg_raw <- file.path("data-raw", glue::glue("{arg}-pmmg.xlsx"))
+pmmg_drive <- drive_get(rlist::list.filter(resource$sources, paste0(arg, "-pmmg") %in% name)[[1]]$path)
+pmmg_file_ext <- pmmg_drive$drive_resource[[1]]$fullFileExtension
+path_pmmg_raw <- file.path("data-raw", glue::glue("{arg}-pmmg.{pmmg_file_ext}"))
 conform_pmmg(path_pmmg_raw, resource_name = arg)
 
 path_civis_raw <- file.path("data-raw", glue::glue("{arg}-civis.csv"))
