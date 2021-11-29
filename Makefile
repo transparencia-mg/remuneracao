@@ -33,7 +33,7 @@ test: ## Test resource
 	Rscript --verbose tests/testthat.R 2> logs/log.Rout
 
 publish: ## Publish resource
-	Rscript --verbose scripts/publish-resource.R $(resource) 2> logs/log.Rout	
+	dpckan resource create --resource-name $(resource) 2> logs/log.Rout	
 
 save: ## Publish resource
 	Rscript --verbose scripts/save-resource.R $(resource) 2> logs/log.Rout	

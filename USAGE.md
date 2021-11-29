@@ -1,12 +1,33 @@
+## Instalação e configuração
+
+Instruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md).
+
 ## Uso
+
+Antes de iniciar, certifique-se que o ambiente virtual conda `remuneracao` está ativado:
+
+```
+conda activate remuneracao
+```
+
+Em caso de dificuldades consulte o issue [transparencia-mg/age7#108](https://github.com/transparencia-mg/age7/issues/108).
 
 ### Download arquivos primários
 
 Para publicação de um novo mês da remuneração a etapa inicial é a inserção de um novo recurso no data package. 
 A atualização do arquivo  `datapackage.json` é manual. 
+As propriedades
 
-Para além das atualizações do mês de referência que aparecem em algumas propriedades, é necessário inserir as informações de localização (`source.path`) e integridade (`source.hash`) dos arquivos primários no google drive na propriedade `source` do recurso. 
-Essas informações podem ser colhidas de forma manual, ou por meio do target `make get info`, que imprime na linha de comando os metadados relevantes extraídos do google drive. 
+- `name`
+- `path`
+- `hash` (somente disponível ao final do processo)
+- `title`
+- `id` (somente disponível ao final do processo)
+
+serão diferentes a cada mês. Também serão diferentes as propriedades `source.name`, `source.path` e `source.hash` de cada elemento da propriedade `source`.
+
+
+As informações de localização (`source.path`) e integridade (`source.hash`) dos arquivos primários no google drive podem ser colhidas de forma manual, ou por meio do target `make get info`, que imprime na linha de comando os metadados relevantes extraídos do google drive. 
 Para tanto, é necessário informar o `id` da pasta no google drive que contém os arquivos relevantes. O `id` deve extraído da URL da pasta, e o comando deve ser executado
 
 ```sh
@@ -28,6 +49,12 @@ Para execução dos scripts necessários para consolidação e limpeza dos arqui
 ```sh
 make merge resource=servidores-AAAA-MM # gera arquivo consolidado data-raw/servidores-AAAA-MM.csv
 make clean resource=servidores-AAAA-MM # gera arquivo data/servidores-AAAA-MM.csv
+```
+
+Agora você já pode obter o valor da propriedade `hash` com o comando
+
+```
+sha256sum data/servidores-AAAA-MM.csv.gz
 ```
 
 ### Validação e Testes
@@ -61,14 +88,4 @@ Para publicar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/data
 make publish resource=servidores-AAAA-MM
 ```
 
-Para armazenar a `hash` do novo recurso no data package e fazer commit dessa alteração, execute
-
-```sh
-make save resource=servidores-AAAA-MM
-```
-
-Por fim, faça push das alterações para o Github
-
-```sh
-git push
-```
+Atualiza a propriedade `id`, faça commit dos arquivos alterados e push das alterações para o GitHub.
