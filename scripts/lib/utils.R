@@ -419,6 +419,8 @@ conform_pmmg <- function(path, resource_name) {
   
   result <- data.table::as.data.table(readxl::read_xlsx(path))
   
+  names(result) <- tolower(names(result))
+  
   result <- result %>% 
     add_column("tem_apost", NA_character_) %>% 
     add_column("judic", NA_character_) %>% 
@@ -450,6 +452,8 @@ conform_pmmg <- function(path, resource_name) {
 conform_cbmmg <- function(path, resource_name) {
   
   result <- data.table::as.data.table(readxl::read_excel(path))
+  
+  names(result) <- tolower(names(result))
   
   result <- result %>% 
     dplyr::select(1:37) %>% 
