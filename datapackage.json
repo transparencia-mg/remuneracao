@@ -1829,7 +1829,41 @@
           "hash": "e05d49ce56aac0da01e222b24ac92969"
         }
       ],
-      "id": ""
+      "id": "89d95c5e-5572-47b1-ba6b-601b6aa30593"
+    },
+            {
+      "name": "servidores-2022-01",
+      "path": "data/servidores-2022-01.csv.gz",
+      "hash": "sha256:5fbbdffdc97378c80df8deb17be7d123440f882f2d8b9ba25a9db08fabb4805d",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Janeiro de 2022",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2022-01-pmmg",
+          "path": "https://drive.google.com/file/d/1asqDYUom0skml7aJofgnzFGDeK1oz7ha",
+          "hash": "eb9f748187f1d9c5fd95e7810b5ef88c"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2022-01-cbmmg",
+          "path": "https://drive.google.com/file/d/1CmdG40moKaGsI4tPNqjGbzNmoBU-Ynoc",
+          "hash": "9a17a0a8ce5047788a8a51a2bcbd7a68"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2022-01-civis",
+          "path": "https://drive.google.com/file/d/1pZG5hJJzs0_cOyWVTgZ_Q5tNi4fI1zXi",
+          "hash": "333d472bf35daf6d832436987ecc34a6"
+        }
+      ],
+      "id": "d2e68594-6de9-4614-b2bc-349ca1890538"
     }
   ],
   "keywords": [
