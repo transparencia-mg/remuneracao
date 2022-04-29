@@ -42,6 +42,12 @@ Para de fato fazer download dos arquivos do mês corrente (`AAAA-MM`) para a pas
 make extract resource=servidores-AAAA-MM # download dos arquivos originais do google drive
 ```
 
+Para validar os arquivos primários de acordo com o leiaute pré-estabelecido execute
+
+```sh
+make validate-raw resource=servidores-AAAA-MM
+```
+
 ### Consolidação e limpeza
 
 Para execução dos scripts necessários para consolidação e limpeza dos arquivos do SISAP, PMMG, e CBMMG execute na linha de comando

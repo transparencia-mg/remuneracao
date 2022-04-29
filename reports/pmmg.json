@@ -1,0 +1,264 @@
+{
+  "version": "4.16.6",
+  "time": 10.958,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "path": "data-raw/servidores-2022-03-pmmg.xlsx",
+        "schema": {
+          "fields": [
+            {
+              "name": "masp",
+              "type": "integer",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "type": "string"
+            },
+            {
+              "name": "descsitser",
+              "type": "string",
+              "constraints": {
+                "enum": [
+                  "ATIVO",
+                  "DESIGNADO AO SERVICO ATIVO"
+                ]
+              }
+            },
+            {
+              "name": "nmefet",
+              "type": "string"
+            },
+            {
+              "name": "desccomi",
+              "type": "string"
+            },
+            {
+              "name": "descinst",
+              "type": "string"
+            },
+            {
+              "name": "descunid",
+              "type": "string"
+            },
+            {
+              "name": "carga_hora",
+              "type": "number",
+              "constraints": {
+                "minimum": 0,
+                "maximum": 168
+              }
+            },
+            {
+              "name": "remuner",
+              "type": "number"
+            },
+            {
+              "name": "teto",
+              "type": "number"
+            },
+            {
+              "name": "ferias",
+              "type": "number"
+            },
+            {
+              "name": "decter",
+              "type": "number"
+            },
+            {
+              "name": "premio",
+              "type": "number"
+            },
+            {
+              "name": "feriasprem",
+              "type": "number"
+            },
+            {
+              "name": "eventual",
+              "type": "number"
+            },
+            {
+              "name": "ir",
+              "type": "number"
+            },
+            {
+              "name": "prev",
+              "type": "number"
+            },
+            {
+              "name": "rem_pos",
+              "type": "number"
+            }
+          ],
+          "missingValues": [
+            ""
+          ]
+        },
+        "name": "servidores-2022-03-pmmg",
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "format": "xlsx",
+        "hashing": "md5",
+        "encoding": "utf-8",
+        "stats": {
+          "hash": "",
+          "bytes": 0,
+          "fields": 18,
+          "rows": 40892
+        }
+      },
+      "time": 10.958,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [
+        {
+          "label": "matricula",
+          "fieldName": "masp",
+          "fieldNumber": 1,
+          "fieldPosition": 1,
+          "labels": [
+            "matricula",
+            "nome",
+            "descsitser",
+            "nmefet",
+            "desccomi",
+            "descinst",
+            "descunid",
+            "carga_hora",
+            "remuner",
+            "teto",
+            "ferias",
+            "decter",
+            "premio",
+            "feriasprem",
+            "eventual",
+            "ir",
+            "prev",
+            "rem_pos"
+          ],
+          "rowPositions": [
+            1
+          ],
+          "code": "incorrect-label",
+          "name": "Incorrect Label",
+          "tags": [
+            "#table",
+            "#header",
+            "#label"
+          ],
+          "note": "",
+          "message": "Label \"matricula\" in field masp at position \"1\" does not match the field name in the schema",
+          "description": "One of the data source header does not match the field name defined in the schema."
+        },
+        {
+          "cell": "396",
+          "fieldName": "carga_hora",
+          "fieldNumber": 8,
+          "fieldPosition": 8,
+          "cells": [
+            "1008796",
+            "BENJAMIN ALVES RABELLO FILHO",
+            "ATIVO",
+            "PROFESSOR DESIGNADO",
+            "None",
+            "POLICIA MILITAR DE MINAS GERAIS",
+            "CPP/APM",
+            "396",
+            "5726.51",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "524.33",
+            "658.54",
+            "4543.64"
+          ],
+          "rowNumber": 989,
+          "rowPosition": 990,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"maximum\" is \"168\"",
+          "message": "The cell \"396\" in row at position \"990\" and field \"carga_hora\" at position \"8\" does not conform to a constraint: constraint \"maximum\" is \"168\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "182",
+          "fieldName": "carga_hora",
+          "fieldNumber": 8,
+          "fieldPosition": 8,
+          "cells": [
+            "1020627",
+            "CESAR AUGUSTO DE CASTRO FIUZA",
+            "ATIVO",
+            "PROFESSOR DESIGNADO",
+            "None",
+            "POLICIA MILITAR DE MINAS GERAIS",
+            "CPP/APM",
+            "182",
+            "2951.21",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "53.08",
+            "339.38",
+            "2558.75"
+          ],
+          "rowNumber": 1054,
+          "rowPosition": 1055,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"maximum\" is \"168\"",
+          "message": "The cell \"182\" in row at position \"1055\" and field \"carga_hora\" at position \"8\" does not conform to a constraint: constraint \"maximum\" is \"168\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
+      "stats": {
+        "errors": 3
+      },
+      "valid": false
+    }
+  ],
+  "stats": {
+    "errors": 3,
+    "tasks": 1
+  },
+  "valid": false
+}

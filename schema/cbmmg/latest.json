@@ -1,0 +1,172 @@
+{
+  "fields": [
+    {
+      "name": "masp",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nome",
+      "type": "string"
+    },
+    {
+      "name": "descsitser",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "ATIVO",
+          "DESIGNADO AO SERVICO ATIVO"
+        ]
+      }
+    },
+    {
+      "name": "nmefet",
+      "type": "string"
+    },
+    {
+      "name": "tem_apost",
+      "type": "boolean",
+      "trueValues": ["SIM"],
+      "falseValues": ["NAO"]
+    },
+    {
+      "name": "desccomi",
+      "type": "string"
+    },
+    {
+      "name": "descinst",
+      "type": "string"
+    },
+    {
+      "name": "descunid",
+      "type": "string"
+    },
+    {
+      "name": "carga_hora",
+      "type": "number",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 168
+      }
+    },
+    {
+      "name": "remuner",
+      "type": "number"
+    },
+    {
+      "name": "teto",
+      "type": "number"
+    },
+    {
+      "name": "judic",
+      "type": "boolean",
+      "trueValues": ["SIM"],
+      "falseValues": ["NAO"]
+    },
+    {
+      "name": "ferias",
+      "type": "number"
+    },
+    {
+      "name": "decter",
+      "type": "number"
+    },
+    {
+      "name": "premio",
+      "type": "number"
+    },
+    {
+      "name": "feriasprem",
+      "type": "number"
+    },
+    {
+      "name": "jetons",
+      "type": "number"
+    },
+    {
+      "name": "eventual",
+      "type": "number"
+    },
+    {
+      "name": "ir",
+      "type": "number"
+    },
+    {
+      "name": "prev",
+      "type": "number"
+    },
+    {
+      "name": "rem_pos",
+      "type": "number"
+    },
+    {
+      "name": "bdmg",
+      "type": "number"
+    },
+    {
+      "name": "cemig",
+      "type": "number"
+    },
+    {
+      "name": "codemig",
+      "type": "number"
+    },
+    {
+      "name": "cohab",
+      "type": "number"
+    },
+    {
+      "name": "copasa",
+      "type": "number"
+    },
+    {
+      "name": "emater",
+      "type": "number"
+    },
+    {
+      "name": "epamig",
+      "type": "number"
+    },
+    {
+      "name": "funpemg",
+      "type": "number"
+    },
+    {
+      "name": "gasmig",
+      "type": "number"
+    },
+    {
+      "name": "mgi",
+      "type": "number"
+    },
+    {
+      "name": "mgs",
+      "type": "number"
+    },
+    {
+      "name": "prodemge",
+      "type": "number"
+    },
+    {
+      "name": "prominas",
+      "type": "number"
+    },
+    {
+      "name": "emip",
+      "type": "number"
+    },
+    {
+      "name": "codemge",
+      "type": "number"
+    },
+    {
+      "name": "emc",
+      "type": "number"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}

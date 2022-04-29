@@ -1,0 +1,249 @@
+{
+  "fields": [
+    {
+      "name": "#masp",
+      "type": "integer",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "admissao",
+      "type": "integer",
+      "format": "default",
+      "bareNumber": true,
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nome",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "descsitser",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "ATIVO",
+          "ATIVO/NAO ESTAO INFORMADOS OS VALORES EXTRA SISAP",
+          "ATIVO/NAO CONSIDERADOS RECEBIMENTOS EXTRA SISAP",
+          "ATIVO/OPTOU POR RECEBER ORGAO DE ORIGEM",
+          "DESIGNADO",
+          "DESIGNADO AO SERVICO ATIVO",
+          "INATIVO"
+        ]
+      }
+    },
+    {
+      "name": "nmefet",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "tem_apost",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "desccomi",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "descinst",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "descunid",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "carga_hora",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 168
+      }
+    },
+    {
+      "name": "remuner",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "teto",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "judic",
+      "type": "boolean",
+      "format": "default",
+      "trueValues": ["SIM"],
+      "falseValues": ["NAO"]
+    },
+    {
+      "name": "ferias",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "decter",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "premio",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "feriasprem",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "jetons",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "eventual",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "ir",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "prev",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "rem_pos",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "bdmg",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "cemig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "codemig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "cohab",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "copasa",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "emater",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "epamig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "funpemg",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "gasmig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "mgi",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "mgs",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "prodemge",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "prominas",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "emip",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "codemge",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "emc",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}
