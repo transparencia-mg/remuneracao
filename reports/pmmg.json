@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 10.958,
+  "time": 10.596,
   "errors": [],
   "tasks": [
     {
@@ -111,7 +111,7 @@
           "rows": 40892
         }
       },
-      "time": 10.958,
+      "time": 10.596,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -134,45 +134,6 @@
       ],
       "partial": false,
       "errors": [
-        {
-          "label": "matricula",
-          "fieldName": "masp",
-          "fieldNumber": 1,
-          "fieldPosition": 1,
-          "labels": [
-            "matricula",
-            "nome",
-            "descsitser",
-            "nmefet",
-            "desccomi",
-            "descinst",
-            "descunid",
-            "carga_hora",
-            "remuner",
-            "teto",
-            "ferias",
-            "decter",
-            "premio",
-            "feriasprem",
-            "eventual",
-            "ir",
-            "prev",
-            "rem_pos"
-          ],
-          "rowPositions": [
-            1
-          ],
-          "code": "incorrect-label",
-          "name": "Incorrect Label",
-          "tags": [
-            "#table",
-            "#header",
-            "#label"
-          ],
-          "note": "",
-          "message": "Label \"matricula\" in field masp at position \"1\" does not match the field name in the schema",
-          "description": "One of the data source header does not match the field name defined in the schema."
-        },
         {
           "cell": "396",
           "fieldName": "carga_hora",
@@ -251,13 +212,13 @@
         }
       ],
       "stats": {
-        "errors": 3
+        "errors": 2
       },
       "valid": false
     }
   ],
   "stats": {
-    "errors": 3,
+    "errors": 2,
     "tasks": 1
   },
   "valid": false
