@@ -6,7 +6,7 @@ validate_resource <- function(x) {
   
   jsonlite::write_json(descriptor, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
   
-  reticulate::use_condaenv("remuneracao", required = TRUE)
+  reticulate::use_virtualenv("./venv", required = TRUE)
   reticulate::source_python("scripts/lib/utils.py")
   
   result <- validate_resource_py("_resource.json")

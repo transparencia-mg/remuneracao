@@ -4,13 +4,12 @@ Instruções sobre instalação dos pré-requisitos e configuração do ambiente
 
 ## Uso
 
-Antes de iniciar, certifique-se que o ambiente virtual conda `remuneracao` está ativado:
+Antes de iniciar, se as dependências python estiverem instaladas em um ambiente virtual `venv`, lembre-se de ativá-lo com:
 
+```bash
+. activate venv/Scripts/activate # windows
+. activate venv/bin/activate # linux
 ```
-conda activate remuneracao
-```
-
-Em caso de dificuldades consulte o issue [transparencia-mg/age7#108](https://github.com/transparencia-mg/age7/issues/108).
 
 ### Download arquivos primários
 
@@ -71,7 +70,7 @@ Para verificação da conformidade dos dados, armazenados em `data/servidores-AA
 make validate resource=servidores-AAAA-MM
 ```
 
-A validação feita em `make validate` é para garantir a validade dos aspectos estruturais dos arquivos, utilizando-se do pacote `goodtables` do python. 
+A validação feita em `make validate` é para garantir a validade dos aspectos estruturais dos arquivos, utilizando-se do pacote `frictionless` do python. 
 
 Além disso, para garantia adicional de qualidade é necessário a verificação de regras de negócio, implementadas por meio do pacote [validate](https://cran.r-project.org/web/packages/validate/index.html) do R.
 

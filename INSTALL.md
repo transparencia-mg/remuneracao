@@ -39,43 +39,26 @@ Nas sessões seguintes, a mensagem indicativa de sucesso é simplesmente
 * Project '~/Local/dados-mg/ckan/remuneracao' loaded. [renv 0.13.2]
 ```
 
-### Variáveis de ambiente
-
-Para carga automática no CKAN é necessário a configuração de quatro variáveis de ambiente:
-
-- `DADOSMG_PROD_HOST`
-- `DADOSMG_PROD`
-- `DADOSMG_DEV_HOST`
-- `DADOSMG_DEV`
-
-
-Em ambiente de produção, a variável `DADOSMG_PROD_HOST` deve estar com o valor `https://dados.mg.gov.br` e a variável `DADOSMG_PROD` com a sua [chave da API do CKAN](https://docs.ckan.org/en/ckan-2.7.3/api/#authentication-and-api-keys). Ela pode ser encontrada na sua página de usuário e parece com a string `ec5c0860-9e48-41f3-8850-4a7128b18df8`. Esse modo de autenticação foi deprecado na [versão 2.9 do CKAN](https://docs.ckan.org/en/2.9/api/index.html#authentication-and-api-tokens).
-
-De maneira similar, em ambiente de homologação a variável `DADOSMG_DEV_HOST` deve estar com o valor `https://homologa.cge.mg.gov.br` e com a chave apropriada do seu usuário de homologação.
-
-O código que de fato controla em qual ambiente a carga será efetuada está no script `scripts/lib/ckan.R` e deve ser alterado manualmente.
-
-Preferenciamente defina as variáveis de ambiente utilizando um arquivo `.Renviron` na sua home folder (ie. fora da pasta do projeto para evitar commit acidental). Explicações [aqui](https://support.rstudio.com/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf). Para determinar sua home folder execute no console do R.
-
-```r
-Sys.getenv("HOME")
-# /Users/fjunior
-```
-
-Nesse exemplo, o arquivo `.Renviron` deve ser criado na pasta `/Users/fjunior` por qualquer meio. Para criar pela linha de comando use
-
-```sh
-touch /Users/fjunior/.Renviron # cria o arquivo caso não exista
-subl /Users/fjunior/.Renviron # edite o arquivo
-```
-
 ### Python
 
-Para validação dos recursos com `make validate` é necessário a instalação do Python e do pacote `goodtables`. 
-Para fazer essas etapas pelo R execute os seguintes comandos no console do R:
+Esse projeto utiliza o Python 3.9.7. Faça a instalação ou atualização antes de continuar.
 
-```R
-reticulate::install_miniconda() # instalacao do python via miniconda
-reticulate::conda_create("remuneracao") # criacao de ambiente conda especifico para esse projeto
-reticulate::conda_install("remuneracao", "goodtables==2.5.2") # instalacao da versao correta do goodtables
+O pacote venv é utilizado para gerenciamento de dependências. Para instalar as mesmas execute:
+
+```python
+pip install -r requirements.txt
 ```
+
+### Variáveis de ambiente
+
+Verifique se os softwares necessários estão acessíveis via linha de comando com:
+
+```bash
+Rscript --version
+dpckan --version
+```
+
+Em caso de erro faça os ajustes na variável de ambiente `PATH`.
+
+Além disso, para carga automática no CKAN esse projeto utiliza o `dpckan`, sendo necessário a configuração das variáveis de ambiente `CKAN_HOST` e `CKAN_KEY`. [Vide aqui instruções sobre como fazer isso com o arquivo `.env`](https://github.com/transparencia-mg/dpckan#configura%C3%A7%C3%A3o-de-vari%C3%A1veis-de-ambiente).
+
