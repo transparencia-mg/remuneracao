@@ -35,13 +35,15 @@ clean: ## Clean resource
 	Rscript --verbose scripts/clean-resource.R $(resource) 2> logs/log.Rout
 
 validate: ## Validate resource
-	Rscript --verbose scripts/validate-resource.R $(resource) 2> logs/log.Rout
+	frictionless describe datapackage.json --type package --yaml > datapackage.yaml
+	dtamg-py etl-make validate -r $(resource) 2> logs/log.Rout
+	rm datapackage.yaml
 
 test: ## Test resource
 	Rscript --verbose tests/testthat.R 2> logs/log.Rout
 
 publish: ## Publish resource
-	dpckan resource create --resource-name $(resource) 2> logs/log.Rout	
+	dpckan resource $(resource) create 2> logs/log.Rout	
 
 save: ## Publish resource
 	Rscript --verbose scripts/save-resource.R $(resource) 2> logs/log.Rout	

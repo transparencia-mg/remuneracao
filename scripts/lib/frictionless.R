@@ -1,23 +1,3 @@
-validate_resource <- function(x) {
-  
-  resource <- get_resource(x)
-  
-  descriptor <- list(resources = list(resource))
-  
-  jsonlite::write_json(descriptor, path = "_resource.json", auto_unbox = TRUE, pretty = TRUE)
-  
-  reticulate::use_virtualenv("./venv", required = TRUE)
-  reticulate::source_python("scripts/lib/utils.py")
-  
-  result <- validate_resource_py("_resource.json")
-  
-  file.remove("_resource.json")
-  
-  print(glue::glue("Resource {resource$name} validated"))
-  
-  result
-}
-
 get_resource <- function(x) {
   
   resource_exists(x)
