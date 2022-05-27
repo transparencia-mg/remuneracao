@@ -11,28 +11,51 @@ conda activate remuneracao
 ```
 
 Em caso de dificuldades consulte o issue [transparencia-mg/age7#108](https://github.com/transparencia-mg/age7/issues/108).
+Pode ser necessário trocar as barras na BASH cell de `\` para `/`:
+
+````
+Andre@DESKTOP-R63LP8N MINGW64 ~/Documents/teletrabalho/dados-mg/remuneracao (master)
+$ conda activate C:\Users\Andre\AppData\Local\R-MINI~1\envs\remuneracao
+Could not find conda environment: C:UsersAndreAppDataLocalR-MINI~1envsremuneracao
+You can list all discoverable environments with `conda info --envs`.
+
+(base)
+Andre@DESKTOP-R63LP8N MINGW64 ~/Documents/teletrabalho/dados-mg/remuneracao (master)
+$ conda activate C:/Users/Andre/AppData/Local/R-MINI~1/envs/remuneracao
+(remuneracao)
+Andre@DESKTOP-R63LP8N MINGW64 ~/Documents/teletrabalho/dados-mg/remuneracao (master)
+$
+````
 
 ### Download arquivos primários
 
-Para publicação de um novo mês da remuneração a etapa inicial é a inserção de um novo recurso no data package. 
+Para publicação de um novo mês da remuneração, a etapa inicial é a inserção de um novo recurso no data package. 
 A atualização do arquivo  `datapackage.json` é manual. 
 As propriedades
 
 - `name`
 - `path`
-- `hash` (somente disponível ao final do processo)
 - `title`
-- `id` (somente disponível ao final do processo)
 
-serão diferentes a cada mês. Também serão diferentes as propriedades `source.name`, `source.path` e `source.hash` de cada elemento da propriedade `source`.
+serão diferentes a cada mês, sendo necessário alterar seus valores manualmente.
 
+Já as propriedades
 
+- `id` 
+- `hash` 
+
+somente estarão disponíveis ao final do processo, portanto seus valores devem ser deletados dos metadados do novo recurso que está sendo incluído no datapackage.json. A `hash` vem ao final do processo, e a `id` vem após a publicação no CKAN e `pull` do repositório.
+
+Também serão diferentes as propriedades `source.name`, `source.path` e `source.hash` de cada elemento da propriedade `source`.
 As informações de localização (`source.path`) e integridade (`source.hash`) dos arquivos primários no google drive podem ser colhidas de forma manual, ou por meio do target `make get info`, que imprime na linha de comando os metadados relevantes extraídos do google drive. 
-Para tanto, é necessário informar o `id` da pasta no google drive que contém os arquivos relevantes. O `id` deve extraído da URL da pasta, e o comando deve ser executado
+
+Para tanto, é necessário informar o `id` da pasta no google drive que contém os arquivos relevantes. O `id` deve extraído da [URL da pasta](https://drive.google.com/drive/u/0/folders/18AdLoyizGT2_4DjBM8uyIRtidKHUOoZY), e o comando deve ser executado
 
 ```sh
 make get-info id=1dDdvkf-ku8bJTI-gEJ27JBRu7H7z1q_h
 ```
+
+OBS.: o caminho das pastas do drive onde se localizam os arquivos:  Diretoria_Transparencia_Ativa_DTA > Portal_Transparencia > Consultas > Remuneração > Produção > Planilhas_remuneracao > ANO
 
 Copie e cole as propriedades `path` e `hash` nas mesmas propriedades do novo recurso no arquivo `datapackage.json`.
 
