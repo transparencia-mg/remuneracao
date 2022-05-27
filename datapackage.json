@@ -1940,6 +1940,7 @@
     "Portal da Transparência"
   ],
   "name": "remuneracao-servidores-ativos",
+  "owner_org": "controladoria-geral-do-estado-cge",
   "title": "Remuneração dos Servidores Ativos do Poder Executivo",
   "description": "Remuneração dos Servidores Ativos do Poder Executivo",
   "private": "false",
