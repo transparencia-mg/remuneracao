@@ -1,3 +1,4 @@
 dpckan==0.1.18
 dtamg-py==0.1.4
 livemark==0.88.1
+frictionless[excel]==4.38.0
