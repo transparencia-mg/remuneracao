@@ -35,9 +35,7 @@ clean: ## Clean resource
 	Rscript --verbose scripts/clean-resource.R $(resource) 2> logs/log.Rout
 
 validate: ## Validate resource
-	frictionless describe datapackage.json --type package --yaml > datapackage.yaml
 	dtamg-py etl-make validate -r $(resource) 2> logs/log.Rout
-	rm datapackage.yaml
 
 test: ## Test resource
 	Rscript --verbose tests/testthat.R 2> logs/log.Rout
