@@ -21,7 +21,6 @@ As propriedades
 - `path`
 - `hash` (somente disponível ao final do processo)
 - `title`
-- `id` (somente disponível ao final do processo)
 
 serão diferentes a cada mês. Também serão diferentes as propriedades `source.name`, `source.path` e `source.hash` de cada elemento da propriedade `source`.
 
@@ -93,4 +92,4 @@ Para publicar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/data
 make publish resource=servidores-AAAA-MM
 ```
 
-Atualiza a propriedade `id`, faça commit dos arquivos alterados e push das alterações para o GitHub.
+Faça commit dos arquivos alterados e push das alterações para o GitHub.
