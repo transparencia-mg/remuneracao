@@ -47,7 +47,7 @@ O pacote venv é utilizado para gerenciamento de dependências. Para criar um am
 
 ```python
 python -m venv venv
-. activate venv/Scripts/activate
+. venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
