@@ -43,9 +43,11 @@ Nas sessões seguintes, a mensagem indicativa de sucesso é simplesmente
 
 Esse projeto utiliza o Python 3.9.7. Faça a instalação ou atualização antes de continuar.
 
-O pacote venv é utilizado para gerenciamento de dependências. Para instalar as mesmas execute:
+O pacote venv é utilizado para gerenciamento de dependências. Para criar um ambiente chamado `venv`, ativar o mesmo e instalar as dependências  execute:
 
 ```python
+python -m venv venv
+. activate venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
