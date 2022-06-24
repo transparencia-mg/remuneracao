@@ -7,8 +7,8 @@ Instruções sobre instalação dos pré-requisitos e configuração do ambiente
 Antes de iniciar, se as dependências python estiverem instaladas em um ambiente virtual `venv`, lembre-se de ativá-lo com:
 
 ```bash
-. activate venv/Scripts/activate # windows
-. activate venv/bin/activate # linux
+. venv/Scripts/activate # windows
+. venv/bin/activate # linux
 ```
 
 ### Download arquivos primários
