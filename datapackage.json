@@ -1965,6 +1965,39 @@
           "hash": "6a91dec2faa7288ef6d5f8543a249aab"
         }
       ]
+    },
+        {
+      "name": "servidores-2022-05",
+      "path": "data/servidores-2022-05.csv.gz",
+      "hash": "sha256:8460468a0b0b2fa0c479cb674564f36408482debe63ac8178f863e39ec3eaaa2",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Maio de 2022",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2022-05-pmmg",
+          "path": "https://drive.google.com/file/d/1n7Uq2Kh0aL2x63fx2WhmXukLkKSHe6SH",
+          "hash": "14460a5a395f23f40be03412a0252360"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2022-05-cbmmg",
+          "path": "https://drive.google.com/file/d/1V2jtAmCvHTmkgE981h8osIXadCspb5oR",
+          "hash": "86802c986ac2798b4be577797ea73b0f"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2022-05-civis",
+          "path": "https://drive.google.com/file/d/1BsgPrBFkaiy_MVCXIuJnVx1xUmKI7cdM",
+          "hash": "53843d7e808cd2fe37627ebd8af53941"
+        }
+      ]
     }
   ],
   "keywords": [
