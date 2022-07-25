@@ -422,26 +422,8 @@ conform_pmmg <- function(path, resource_name) {
   names(result) <- tolower(names(result))
   
   result <- result %>% 
-    add_column("tem_apost", NA_character_) %>% 
-    add_column("judic", NA_character_) %>% 
-    add_column("jetons", 0) %>% 
-    add_column("bdmg", 0) %>% 
-    add_column("cemig", 0) %>% 
-    add_column("codemig", 0) %>% 
-    add_column("cohab", 0) %>% 
-    add_column("copasa", 0) %>% 
-    add_column("emater", 0) %>% 
-    add_column("epamig", 0) %>% 
-    add_column("funpemg", 0) %>% 
-    add_column("gasmig", 0) %>% 
-    add_column("mgi", 0) %>% 
-    add_column("mgs", 0) %>% 
-    add_column("prodemge", 0) %>% 
-    add_column("prominas", 0) %>% 
-    add_column("emip", 0) %>% 
-    add_column("codemge", 0) %>% 
-    add_column("emc", 0)
-  
+  dplyr::select(-admissao) 
+    
   expected_cols <- get_col_names(resource_name)
   
   result <- result[, ..expected_cols]

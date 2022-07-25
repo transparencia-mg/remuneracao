@@ -8,6 +8,10 @@
       }
     },
     {
+      "name": "admissao",
+      "type": "string"
+    },
+    {
       "name": "nome",
       "type": "string"
     },
@@ -24,6 +28,11 @@
     {
       "name": "nmefet",
       "type": "string"
+    },
+    {
+      "name": "tem_apost",
+      "type": "string",
+      "format": "default"
     },
     {
       "name": "desccomi",
@@ -54,6 +63,12 @@
       "type": "number"
     },
     {
+      "name": "judic",
+      "type": "boolean",
+      "trueValues": ["SIM"],
+      "falseValues": ["NAO"]
+    },
+    {
       "name": "ferias",
       "type": "number"
     },
@@ -67,6 +82,10 @@
     },
     {
       "name": "feriasprem",
+      "type": "number"
+    },
+    {
+      "name": "jetons",
       "type": "number"
     },
     {
@@ -84,6 +103,102 @@
     {
       "name": "rem_pos",
       "type": "number"
+    },
+    {
+      "name": "bdmg",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "cemig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "codemig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "cohab",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "copasa",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "emater",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "epamig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "funpemg",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "gasmig",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "mgi",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "mgs",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "prodemge",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "prominas",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "emip",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "codemge",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
+    },
+    {
+      "name": "emc",
+      "type": "number",
+      "decimalChar": ",",
+      "format": "default"
     }
   ],
   "missingValues": [
