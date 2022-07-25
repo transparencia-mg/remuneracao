@@ -1,11 +1,11 @@
 {
-  "version": "4.16.6",
-  "time": 32.649,
+  "version": "4.40.3",
+  "time": 79.358,
   "errors": [],
   "tasks": [
     {
       "resource": {
-        "path": "data-raw/servidores-2022-03-civis.csv",
+        "path": "data-raw/servidores-2022-06-civis.csv",
         "schema": {
           "fields": [
             {
@@ -259,23 +259,23 @@
             ""
           ]
         },
-        "name": "servidores-2022-03-civis",
+        "name": "servidores-2022-06-civis",
         "profile": "tabular-data-resource",
         "scheme": "file",
         "format": "csv",
         "hashing": "md5",
+        "stats": {
+          "hash": "5cc2e379af7813775043d1ebd3b45158",
+          "bytes": 87961047,
+          "fields": 38,
+          "rows": 311505
+        },
         "encoding": "utf-8",
         "dialect": {
           "delimiter": ";"
-        },
-        "stats": {
-          "hash": "55cadccb1356110523cf6045abef3650",
-          "bytes": 84339756,
-          "fields": 38,
-          "rows": 298545
         }
       },
-      "time": 32.649,
+      "time": 79.358,
       "scope": [
         "hash-count-error",
         "byte-count-error",

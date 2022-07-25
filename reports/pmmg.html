@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="None">
-<meta name="keywords" content="validações">
+<meta name="keywords" content="validaã§ãµes">
 <link rel="icon" href="None">
-<title>Validações</title>
+<title>ValidaÃ§Ãµes</title>
 <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
 <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://unpkg.com/prismjs@1.23.0/themes/prism.css">
@@ -1627,7 +1627,7 @@ body:not(.with-readability) #livemark-right::-webkit-scrollbar {
   <ul>
     <li>
       <a class="active" href="..">
-        Validações
+        ValidaÃ§Ãµes
       </a>
     </li>
   </ul>
@@ -1641,17 +1641,17 @@ body:not(.with-readability) #livemark-right::-webkit-scrollbar {
 <div id="livemark-main">
 <div id="livemark-notes">
   Written in <a href="https://livemark.frictionlessdata.io" target="_blank"> Livemark </a><br>
-  (2022-04-29 12:33)
+  (2022-07-25 08:22)
 </div>
 
-<h1>Validações</h1>
+<h1>ValidaÃ§Ãµes</h1>
 <div class="livemark-report">
   <div id="livemark-report-1">
   </div>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
-  const report = {"errors": [], "stats": {"errors": 2, "tasks": 1}, "tasks": [{"errors": [{"cell": "396", "cells": ["1008796", "BENJAMIN ALVES RABELLO FILHO", "ATIVO", "PROFESSOR DESIGNADO", "None", "POLICIA MILITAR DE MINAS GERAIS", "CPP/APM", "396", "5726.51", "0", "0", "0", "0", "0", "0", "524.33", "658.54", "4543.64"], "code": "constraint-error", "description": "A field value does not conform to a constraint.", "fieldName": "carga_hora", "fieldNumber": 8, "fieldPosition": 8, "message": "The cell \"396\" in row at position \"990\" and field \"carga_hora\" at position \"8\" does not conform to a constraint: constraint \"maximum\" is \"168\"", "name": "Constraint Error", "note": "constraint \"maximum\" is \"168\"", "rowNumber": 989, "rowPosition": 990, "tags": ["#table", "#row", "#cell"]}, {"cell": "182", "cells": ["1020627", "CESAR AUGUSTO DE CASTRO FIUZA", "ATIVO", "PROFESSOR DESIGNADO", "None", "POLICIA MILITAR DE MINAS GERAIS", "CPP/APM", "182", "2951.21", "0", "0", "0", "0", "0", "0", "53.08", "339.38", "2558.75"], "code": "constraint-error", "description": "A field value does not conform to a constraint.", "fieldName": "carga_hora", "fieldNumber": 8, "fieldPosition": 8, "message": "The cell \"182\" in row at position \"1055\" and field \"carga_hora\" at position \"8\" does not conform to a constraint: constraint \"maximum\" is \"168\"", "name": "Constraint Error", "note": "constraint \"maximum\" is \"168\"", "rowNumber": 1054, "rowPosition": 1055, "tags": ["#table", "#row", "#cell"]}], "partial": false, "resource": {"encoding": "utf-8", "format": "xlsx", "hashing": "md5", "name": "servidores-2022-03-pmmg", "path": "data-raw/servidores-2022-03-pmmg.xlsx", "profile": "tabular-data-resource", "schema": {"fields": [{"constraints": {"required": true}, "name": "masp", "type": "integer"}, {"name": "nome", "type": "string"}, {"constraints": {"enum": ["ATIVO", "DESIGNADO AO SERVICO ATIVO"]}, "name": "descsitser", "type": "string"}, {"name": "nmefet", "type": "string"}, {"name": "desccomi", "type": "string"}, {"name": "descinst", "type": "string"}, {"name": "descunid", "type": "string"}, {"constraints": {"maximum": 168, "minimum": 0}, "name": "carga_hora", "type": "number"}, {"name": "remuner", "type": "number"}, {"name": "teto", "type": "number"}, {"name": "ferias", "type": "number"}, {"name": "decter", "type": "number"}, {"name": "premio", "type": "number"}, {"name": "feriasprem", "type": "number"}, {"name": "eventual", "type": "number"}, {"name": "ir", "type": "number"}, {"name": "prev", "type": "number"}, {"name": "rem_pos", "type": "number"}], "missingValues": [""]}, "scheme": "file", "stats": {"bytes": 0, "fields": 18, "hash": "", "rows": 40892}}, "scope": ["hash-count-error", "byte-count-error", "field-count-error", "row-count-error", "blank-header", "extra-label", "missing-label", "blank-label", "duplicate-label", "incorrect-label", "blank-row", "primary-key-error", "foreign-key-error", "extra-cell", "missing-cell", "type-error", "constraint-error", "unique-error"], "stats": {"errors": 2}, "time": 10.596, "valid": false}], "time": 10.596, "valid": false, "version": "4.16.6"}
+  const report = {"errors": [], "stats": {"errors": 0, "tasks": 1}, "tasks": [{"errors": [], "partial": false, "resource": {"encoding": "utf-8", "format": "xlsx", "hashing": "md5", "name": "servidores-2022-06-pmmg", "path": "data-raw/servidores-2022-06-pmmg.xlsx", "profile": "tabular-data-resource", "schema": {"fields": [{"constraints": {"required": true}, "name": "masp", "type": "integer"}, {"name": "admissao", "type": "string"}, {"name": "nome", "type": "string"}, {"constraints": {"enum": ["ATIVO", "DESIGNADO AO SERVICO ATIVO"]}, "name": "descsitser", "type": "string"}, {"name": "nmefet", "type": "string"}, {"format": "default", "name": "tem_apost", "type": "string"}, {"name": "desccomi", "type": "string"}, {"name": "descinst", "type": "string"}, {"name": "descunid", "type": "string"}, {"constraints": {"maximum": 168, "minimum": 0}, "name": "carga_hora", "type": "number"}, {"name": "remuner", "type": "number"}, {"name": "teto", "type": "number"}, {"falseValues": ["NAO"], "name": "judic", "trueValues": ["SIM"], "type": "boolean"}, {"name": "ferias", "type": "number"}, {"name": "decter", "type": "number"}, {"name": "premio", "type": "number"}, {"name": "feriasprem", "type": "number"}, {"name": "jetons", "type": "number"}, {"name": "eventual", "type": "number"}, {"name": "ir", "type": "number"}, {"name": "prev", "type": "number"}, {"name": "rem_pos", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "bdmg", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "cemig", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "codemig", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "cohab", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "copasa", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "emater", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "epamig", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "funpemg", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "gasmig", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "mgi", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "mgs", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "prodemge", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "prominas", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "emip", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "codemge", "type": "number"}, {"decimalChar": ",", "format": "default", "name": "emc", "type": "number"}], "missingValues": [""]}, "scheme": "file", "stats": {"bytes": 7047693, "fields": 38, "hash": "4af3c51db12ef0898d33d2b3ff77410d", "rows": 40982}}, "scope": ["hash-count-error", "byte-count-error", "field-count-error", "row-count-error", "blank-header", "extra-label", "missing-label", "blank-label", "duplicate-label", "incorrect-label", "blank-row", "primary-key-error", "foreign-key-error", "extra-cell", "missing-cell", "type-error", "constraint-error", "unique-error"], "stats": {"errors": 0}, "time": 35.736, "valid": true}], "time": 35.736, "valid": true, "version": "4.40.3"}
   const element = document.getElementById('livemark-report-1')
   frictionlessComponents.render(frictionlessComponents.Report, {report}, element)
 });

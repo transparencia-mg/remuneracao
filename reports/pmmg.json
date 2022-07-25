@@ -1,11 +1,11 @@
 {
-  "version": "4.16.6",
-  "time": 10.596,
+  "version": "4.40.3",
+  "time": 35.736,
   "errors": [],
   "tasks": [
     {
       "resource": {
-        "path": "data-raw/servidores-2022-03-pmmg.xlsx",
+        "path": "data-raw/servidores-2022-06-pmmg.xlsx",
         "schema": {
           "fields": [
             {
@@ -14,6 +14,10 @@
               "constraints": {
                 "required": true
               }
+            },
+            {
+              "name": "admissao",
+              "type": "string"
             },
             {
               "name": "nome",
@@ -32,6 +36,11 @@
             {
               "name": "nmefet",
               "type": "string"
+            },
+            {
+              "name": "tem_apost",
+              "type": "string",
+              "format": "default"
             },
             {
               "name": "desccomi",
@@ -62,6 +71,16 @@
               "type": "number"
             },
             {
+              "name": "judic",
+              "type": "boolean",
+              "trueValues": [
+                "SIM"
+              ],
+              "falseValues": [
+                "NAO"
+              ]
+            },
+            {
               "name": "ferias",
               "type": "number"
             },
@@ -75,6 +94,10 @@
             },
             {
               "name": "feriasprem",
+              "type": "number"
+            },
+            {
+              "name": "jetons",
               "type": "number"
             },
             {
@@ -92,26 +115,122 @@
             {
               "name": "rem_pos",
               "type": "number"
+            },
+            {
+              "name": "bdmg",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "cemig",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "codemig",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "cohab",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "copasa",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "emater",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "epamig",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "funpemg",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "gasmig",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "mgi",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "mgs",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "prodemge",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "prominas",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "emip",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "codemge",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
+            },
+            {
+              "name": "emc",
+              "type": "number",
+              "decimalChar": ",",
+              "format": "default"
             }
           ],
           "missingValues": [
             ""
           ]
         },
-        "name": "servidores-2022-03-pmmg",
+        "name": "servidores-2022-06-pmmg",
         "profile": "tabular-data-resource",
         "scheme": "file",
         "format": "xlsx",
         "hashing": "md5",
-        "encoding": "utf-8",
         "stats": {
-          "hash": "",
-          "bytes": 0,
-          "fields": 18,
-          "rows": 40892
-        }
+          "hash": "4af3c51db12ef0898d33d2b3ff77410d",
+          "bytes": 7047693,
+          "fields": 38,
+          "rows": 40982
+        },
+        "encoding": "utf-8"
       },
-      "time": 10.596,
+      "time": 35.736,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -133,93 +252,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cell": "396",
-          "fieldName": "carga_hora",
-          "fieldNumber": 8,
-          "fieldPosition": 8,
-          "cells": [
-            "1008796",
-            "BENJAMIN ALVES RABELLO FILHO",
-            "ATIVO",
-            "PROFESSOR DESIGNADO",
-            "None",
-            "POLICIA MILITAR DE MINAS GERAIS",
-            "CPP/APM",
-            "396",
-            "5726.51",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "524.33",
-            "658.54",
-            "4543.64"
-          ],
-          "rowNumber": 989,
-          "rowPosition": 990,
-          "code": "constraint-error",
-          "name": "Constraint Error",
-          "tags": [
-            "#table",
-            "#row",
-            "#cell"
-          ],
-          "note": "constraint \"maximum\" is \"168\"",
-          "message": "The cell \"396\" in row at position \"990\" and field \"carga_hora\" at position \"8\" does not conform to a constraint: constraint \"maximum\" is \"168\"",
-          "description": "A field value does not conform to a constraint."
-        },
-        {
-          "cell": "182",
-          "fieldName": "carga_hora",
-          "fieldNumber": 8,
-          "fieldPosition": 8,
-          "cells": [
-            "1020627",
-            "CESAR AUGUSTO DE CASTRO FIUZA",
-            "ATIVO",
-            "PROFESSOR DESIGNADO",
-            "None",
-            "POLICIA MILITAR DE MINAS GERAIS",
-            "CPP/APM",
-            "182",
-            "2951.21",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "53.08",
-            "339.38",
-            "2558.75"
-          ],
-          "rowNumber": 1054,
-          "rowPosition": 1055,
-          "code": "constraint-error",
-          "name": "Constraint Error",
-          "tags": [
-            "#table",
-            "#row",
-            "#cell"
-          ],
-          "note": "constraint \"maximum\" is \"168\"",
-          "message": "The cell \"182\" in row at position \"1055\" and field \"carga_hora\" at position \"8\" does not conform to a constraint: constraint \"maximum\" is \"168\"",
-          "description": "A field value does not conform to a constraint."
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 2
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 2,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
