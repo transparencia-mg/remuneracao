@@ -92,4 +92,15 @@ Para publicar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/data
 make publish resource=servidores-AAAA-MM
 ```
 
+### Atualização de recurso
+
+Para atualizar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/dataset/remuneracao-servidores-ativos) execute na linha de comando
+
+O ID do recurso pode ser obtido ao clicar dentro do recurso no Portal de Dados Abertos.
+
+```sh
+dpckan resource servidores-AAAA-MM update resorce_ID
+```
+
 Faça commit dos arquivos alterados e push das alterações para o GitHub.
+
