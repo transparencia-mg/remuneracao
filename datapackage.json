@@ -1936,7 +1936,7 @@
         {
       "name": "servidores-2022-04",
       "path": "data/servidores-2022-04.csv.gz",
-      "hash": "sha256:1a9d3d891a25cce4eaf632f528b94402e6946f813b372810a9a2d263ed8069a1",
+      "hash": "sha256:2a45b8e05625e4e03153a4e309d327943b62fd8fc26e2f79b7343884f73e8f7d",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -1969,7 +1969,7 @@
         {
       "name": "servidores-2022-05",
       "path": "data/servidores-2022-05.csv.gz",
-      "hash": "sha256:8460468a0b0b2fa0c479cb674564f36408482debe63ac8178f863e39ec3eaaa2",
+      "hash": "sha256:627bda736c3d43189e8cf26aea1788507d4551d922ae2ae7c01001c5084c3e07",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
