@@ -1,6 +1,6 @@
 {
   "version": "4.40.3",
-  "time": 35.736,
+  "time": 36.532,
   "errors": [],
   "tasks": [
     {
@@ -223,14 +223,14 @@
         "format": "xlsx",
         "hashing": "md5",
         "stats": {
-          "hash": "4af3c51db12ef0898d33d2b3ff77410d",
-          "bytes": 7047693,
+          "hash": "c342f97e8c696c0e8c0c222f596261ba",
+          "bytes": 7047533,
           "fields": 38,
           "rows": 40982
         },
         "encoding": "utf-8"
       },
-      "time": 35.736,
+      "time": 36.532,
       "scope": [
         "hash-count-error",
         "byte-count-error",

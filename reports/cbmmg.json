@@ -1,6 +1,6 @@
 {
   "version": "4.40.3",
-  "time": 1.587,
+  "time": 1.661,
   "errors": [],
   "tasks": [
     {
@@ -199,7 +199,7 @@
         },
         "encoding": "utf-8"
       },
-      "time": 1.587,
+      "time": 1.661,
       "scope": [
         "hash-count-error",
         "byte-count-error",

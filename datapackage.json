@@ -2002,7 +2002,7 @@
         {
       "name": "servidores-2022-06",
       "path": "data/servidores-2022-06.csv.gz",
-      "hash": "sha256:3f6561886ef75e870740b72272f565a1f8da7bb1a2ffd87e816c996f2ef28b54",
+      "hash": "sha256:8de02ee8ffc12f86a64f8ff12dcd0e7d3e5baa931f302a08f6972b4b087a9789",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -2027,8 +2027,8 @@
         {
           "title": "Remuneração Civis",
           "name": "servidores-2022-06-civis",
-          "path": "https://drive.google.com/file/d/1oT-iey_WCyhZDCschu5Q0dMfIGIfQgDJ",
-          "hash": "5cc2e379af7813775043d1ebd3b45158"
+          "path": "https://drive.google.com/file/d/1alPJqz6iqg9EdkZqOsFbLmlNVG7QrGTf",
+          "hash": "0400223ab8ac672aa76985f49cd5f0e8"
         }
       ]
     }
