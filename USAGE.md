@@ -84,7 +84,7 @@ make test
 Se houver erros é necessário executar os testes de forma interativa no console do R. 
 Primeiro execute o script `tests/testthat/setup.R` e depois os scripts `tests/testthat/test_*` relevantes (ie. que tiveram mensagem de erro).
 
-### Publicação
+### Publicação (não utilizar o comando make publish quando for atualizar o arquivo)
 
 Para publicar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/dataset/remuneracao-servidores-ativos) execute na linha de comando
 
