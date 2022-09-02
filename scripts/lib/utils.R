@@ -438,8 +438,8 @@ conform_cbmmg <- function(path, resource_name) {
   names(result) <- tolower(names(result))
   
   result <- result %>% 
-    dplyr::select(1:37) %>% 
-    rm_masp_hyphen()
+    dplyr::select(-admissao)
+   
   
   expected_cols <- get_col_names(resource_name)
   
