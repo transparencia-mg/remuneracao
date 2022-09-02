@@ -1630,7 +1630,7 @@
         {
       "name": "servidores-2021-07",
       "path": "data/servidores-2021-07.csv.gz",
-      "hash": "sha256:d1ac3ffad63bfb640eff38be51121036cb736cc62c878d4a5260bfa118d9898d",
+      "hash": "sha256:972a81e1b1fcb1d839cb2dc071de33736d859e712e0bd934ff8c2f138c1908e1",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -1643,19 +1643,19 @@
         {
           "title": "Remuneração PMMG",
           "name": "servidores-2021-07-pmmg",
-          "path": "https://drive.google.com/file/d/1PlnO8X4WWMi-9xG8q1qdmIDcVcLZoiQH",
-          "hash": "585d1b9d080f0a195a3618ba402cc925"
+          "path": "https://drive.google.com/file/d/1gsWGuez4bwDQ-GdiqARmuE7PE1jZE6ow",
+          "hash": "040a3e5de85ed1334f6b501420c9f336"
         },
         {
           "title": "Remuneração CBMMG",
           "name": "servidores-2021-07-cbmmg",
-          "path": "https://drive.google.com/file/d/1mz6zgB_v_pIvkzvsl05WKpX-Qa2xCFFZ",
-          "hash": "614fe4e92651ccf9b834677d77e9d000"
+          "path": "https://drive.google.com/file/d/1mUHjq1L-bx6nX7U-ccbHufFVYb4bpuV1",
+          "hash": "522d3ce1c0d2d49d4d2818b9cdd673b6"
         },
         {
           "title": "Remuneração Civis",
           "name": "servidores-2021-07-civis",
-          "path": "https://drive.google.com/file/d/13NwWsK3wNBw3I2PCNDtSD5_zSj0QvPqj",
+          "path": "https://drive.google.com/file/d/1GZVv8RIdKEHxyiXUD8b4DFazsrpv_NWV",
           "hash": "8c91fe91a2c98224cac23cc93387d2df"
         }
       ],

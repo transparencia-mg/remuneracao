@@ -8,6 +8,15 @@
       }
     },
     {
+      "name": "admissao",
+      "type": "integer",
+      "format": "default",
+      "bareNumber": true,
+      "constraints": {
+        "required": true
+      }
+    },
+    {
       "name": "nome",
       "type": "string"
     },
