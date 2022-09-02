@@ -99,7 +99,7 @@ Para atualizar o arquivo no [Portal de Dados Abertos](http://dados.mg.gov.br/dat
 O ID do recurso pode ser obtido ao clicar dentro do recurso no Portal de Dados Abertos.
 
 ```sh
-dpckan resource servidores-AAAA-MM update resorce_ID
+dpckan resource servidores-AAAA-MM update resource_ID
 ```
 
 Faça commit dos arquivos alterados e push das alterações para o GitHub.
