@@ -1,11 +1,11 @@
 {
   "version": "4.40.3",
-  "time": 36.532,
+  "time": 23.202,
   "errors": [],
   "tasks": [
     {
       "resource": {
-        "path": "data-raw/servidores-2022-06-pmmg.xlsx",
+        "path": "data-raw/servidores-2021-01-pmmg.xlsx",
         "schema": {
           "fields": [
             {
@@ -217,20 +217,20 @@
             ""
           ]
         },
-        "name": "servidores-2022-06-pmmg",
+        "name": "servidores-2021-01-pmmg",
         "profile": "tabular-data-resource",
         "scheme": "file",
         "format": "xlsx",
         "hashing": "md5",
         "stats": {
-          "hash": "c342f97e8c696c0e8c0c222f596261ba",
-          "bytes": 7047533,
+          "hash": "40e74d5c241d2d60c0db7037b9140d02",
+          "bytes": 4726283,
           "fields": 38,
-          "rows": 40982
+          "rows": 41095
         },
         "encoding": "utf-8"
       },
-      "time": 36.532,
+      "time": 23.202,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -252,16 +252,133 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "396",
+          "fieldName": "carga_hora",
+          "fieldNumber": 10,
+          "fieldPosition": 10,
+          "cells": [
+            "1008796",
+            "",
+            "BENJAMIN ALVES RABELLO FILHO",
+            "ATIVO",
+            "PROFESSOR DESIGNADO",
+            "",
+            "",
+            "POLICIA MILITAR DE MINAS GERAIS",
+            "CPP/APM",
+            "396",
+            "5726.51",
+            "0",
+            "",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "0",
+            "524.33",
+            "658.54",
+            "4543.64",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 1115,
+          "rowPosition": 1116,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"maximum\" is \"168\"",
+          "message": "The cell \"396\" in row at position \"1116\" and field \"carga_hora\" at position \"10\" does not conform to a constraint: constraint \"maximum\" is \"168\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "182",
+          "fieldName": "carga_hora",
+          "fieldNumber": 10,
+          "fieldPosition": 10,
+          "cells": [
+            "1020627",
+            "",
+            "CESAR AUGUSTO DE CASTRO FIUZA",
+            "ATIVO",
+            "PROFESSOR DESIGNADO",
+            "",
+            "",
+            "POLICIA MILITAR DE MINAS GERAIS",
+            "CPP/APM",
+            "182",
+            "2951.21",
+            "0",
+            "",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "0",
+            "53.08",
+            "339.38",
+            "2558.75",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 1183,
+          "rowPosition": 1184,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"maximum\" is \"168\"",
+          "message": "The cell \"182\" in row at position \"1184\" and field \"carga_hora\" at position \"10\" does not conform to a constraint: constraint \"maximum\" is \"168\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 2
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 2,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
