@@ -2,7 +2,7 @@
 
 ### R
 
-Esse projeto utiliza o [R versão 4.1.0](https://www.r-project.org/). Faça a instalação ou atualização antes de continuar.
+Esse projeto utiliza o [R versão 4.1.0](https://www.r-project.org/). Faça a instalação ou atualização antes de continuar. Ao instalar o R é necessário colocar as informações da pasta 'bin' na váriavel de ambiente 'path'.
 
 O pacote [renv](https://rstudio.github.io/renv/index.html) é utilizado para gerenciamento de dependências. 
 Ao inicializar o projeto do Rstudio, se as seguintes mensagens forem apresentadas
@@ -64,3 +64,48 @@ Em caso de erro faça os ajustes na variável de ambiente `PATH`.
 
 Além disso, para carga automática no CKAN esse projeto utiliza o `dpckan`, sendo necessário a configuração das variáveis de ambiente `CKAN_HOST` e `CKAN_KEY`. [Vide aqui instruções sobre como fazer isso com o arquivo `.env`](https://github.com/transparencia-mg/dpckan#configura%C3%A7%C3%A3o-de-vari%C3%A1veis-de-ambiente).
 
+### Credenciais Google Drive
+
+Se ao chamar o comando 'make get-info id=" aparecer o erro abaixo, siga as intruções:
+
+```
+Error in `drive_auth()`:
+! Can't get Google credentials
+i Are you running googledrive in a non-interactive session? Consider:
+* `drive_deauth()` to prevent the attempt to get credentials
+* Call `drive_auth()` directly with all necessary specifics
+i See gargle's "Non-interactive auth" vignette for more details:
+i <https://gargle.r-lib.org/articles/non-interactive-auth.html>
+
+```
+
+Instruções:
+
+No console do R digite:
+
+```sh
+library("googledrive")
+drive_auth()
+```
+
+```
+# Para a mensagem: "Is it OK to cache OAuth access credentials in the folder 
+                    C:/Users/M13368~1/AppData/Local/gargle/gargle/Cache between R sessions?" 
+                    Selecione a opção 1: Yes
+
+# Para a mensagem:  The httpuv package enables a nicer Google auth experience, in many cases. 
+                    It doesn't seem to be installed. Would you like to install it now?
+                    Selecione a opção 1: Yes
+```
+
+Após esses passos será aberto automaticamente uma aba para selecionar o e-mail correspondente:
+
+1- selecione o email;
+
+2- marque a opção "Ver, editar, criar e excluir todos os seus arquivos do Google Drive.";
+
+3- Mensagem de atualizado com sucesso:
+
+```
+Authentication complete. Please close this page and return to R.
+```
