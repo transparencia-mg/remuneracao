@@ -34,7 +34,7 @@ make get-info id=1dDdvkf-ku8bJTI-gEJ27JBRu7H7z1q_h
 
 Copie e cole as propriedades `path` e `hash` nas mesmas propriedades do novo recurso no arquivo `datapackage.json`.
 
-Nota 1: caso as credenciais da pasta google drive seja solicitata seguir os passos: [Credenciais Google Drive]([https://github.com/dados-mg/remuneracao/edit/master/INSTALL.md](https://github.com/dados-mg/remuneracao/edit/master/INSTALL.md#credenciais-google-drive))
+**Nota 1: caso as credenciais da pasta google drive seja solicitata seguir os passos: [Credenciais Google Drive]([https://github.com/dados-mg/remuneracao/edit/master/INSTALL.md](https://github.com/dados-mg/remuneracao/edit/master/INSTALL.md#credenciais-google-drive)**
 
 
 Para de fato fazer download dos arquivos do mês corrente (`AAAA-MM`) para a pasta `data-raw/` com os nomes corretos, execute
