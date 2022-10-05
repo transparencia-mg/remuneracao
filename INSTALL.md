@@ -109,3 +109,19 @@ Após esses passos será aberto automaticamente uma aba para selecionar o e-mail
 ```
 Authentication complete. Please close this page and return to R.
 ```
+
+Para alterar o email de autentificação:
+
+- Digite no R os comandos:
+
+```sh
+library("googledrive")
+drive_auth()
+```
+- Será exibido a mensagem:
+```
+The googledrive package is requesting access to your Google account.
+Select a pre-authorised account or enter '0' to obtain a new token.
+Press Esc/Ctrl + C to cancel.
+```
+- Digite a opção "0""
