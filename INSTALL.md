@@ -66,6 +66,27 @@ Além disso, para carga automática no CKAN esse projeto utiliza o `dpckan`, sen
 
 ### Credenciais Google Drive
 
+1- Instalaçao do pacote 'googledrive'
+
+Se ao chamar o comando 'make get-info id=" aparecer o erro abaixo, siga as intruções:
+```
+Rscript --verbose scripts/get_source_metadata_info.R 1iR92JiUDcMi4ElF7gsnEmrLS1MNvFtRv 2> logs/log.Rout
+Durante a inicializaþÒo - Warning message:
+Setting LC_CTYPE=pt_BR.UTF-8 failed
+Error in library(googledrive) : there is no package called 'googledrive'
+ExecuþÒo interrompida
+```
+
+Instruções:
+
+No console do R digite:
+
+```sh
+install.packages("googledrive")
+```
+
+2- Configurar credenciais
+
 Se ao chamar o comando 'make get-info id=" aparecer o erro abaixo, siga as intruções:
 
 ```
