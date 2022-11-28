@@ -2,7 +2,7 @@
 
 ### R
 
-Esse projeto utiliza o [R versão 4.1.0](https://www.r-project.org/). Faça a instalação ou atualização antes de continuar. Ao instalar o R é necessário colocar as informações da pasta 'bin' na váriavel de ambiente 'path'.
+Esse projeto utiliza o [R versão 4.1.0](https://cran.r-project.org/bin/windows/base/old/4.1.0/). Faça a instalação ou atualização antes de continuar. Ao instalar o R é necessário colocar as informações da pasta 'bin' na váriavel de ambiente 'path'.
 
 O pacote [renv](https://rstudio.github.io/renv/index.html) é utilizado para gerenciamento de dependências. 
 Ao inicializar o projeto do Rstudio, se as seguintes mensagens forem apresentadas
