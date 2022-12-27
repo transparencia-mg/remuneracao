@@ -2183,6 +2183,39 @@
           "hash": "a0864a042db5223a95bf59e95898fcdd"
         }
       ]
+    },
+        {
+      "name": "servidores-2022-11",
+      "path": "data/servidores-2022-11.csv.gz",
+      "hash": "sha256:85544a4101247938caae2fbab1e870f3b4170139f452511bfada2ddafc4013f3",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Novembro de 2022",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2022-11-pmmg",
+          "path": "https://drive.google.com/file/d/1bb1t79C7tqpVa7lJQj1pklu6R0MeAnbZ",
+          "hash": "f05b0f4e57391164512c5ba41f2e180e"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2022-11-cbmmg",
+          "path": "https://drive.google.com/file/d/1ESDPM57z0JZaOpHwFwyewzNu52TIz0lo",
+          "hash": "0f6d082da815f4cecc7151354904cf63"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2022-11-civis",
+          "path": "https://drive.google.com/file/d/1kFmnIjODytDXuLJhnaIoC6OuSQhisF7M",
+          "hash": "6e5916d22f41f4fd9c26f0a3c6cc0e62"
+        }
+      ]
     }
   ],
   "keywords": [
