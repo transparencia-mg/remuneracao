@@ -2381,6 +2381,39 @@
           "hash": "24d9eea82db2562c96cb5143d6bafd8f"
         }
       ]
+    },
+        {
+      "name": "servidores-2023-05",
+      "path": "data/servidores-2023-05.csv.gz",
+      "hash": "sha256:57c0df16aad3381f605836aa4d31d1e3d6a72d65601b06e0e60fe66d679ff30b",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Maio de 2023",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2023-05-pmmg",
+          "path": "https://drive.google.com/file/d/17BiHfGU0Z0wYF0wgY1X28k9QhBpvqlal",
+          "hash": "df95dc8cb4c163dc68cef545e5fdd380"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2023-05-cbmmg",
+          "path": "https://drive.google.com/file/d/1FE4_5LEjmcqaNYIDJpP95ZzJocYWUMSq",
+          "hash": "33d082ee5c820afd90993f8406a194ef"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2023-05-civis",
+          "path": "https://drive.google.com/file/d/1iBrKibVl2U6pRmWe9zbP6BRuyQD4e-A5",
+          "hash": "0ddbd1178ece26d8c7f0969c6f0733c8"
+        }
+      ]
     }
   ],
   "keywords": [
