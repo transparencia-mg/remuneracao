@@ -2550,11 +2550,11 @@
         {
       "name": "servidores-2023-10",
       "path": "data/servidores-2023-10.csv.gz",
-      "hash": "sha256:",
+      "hash": "sha256:3c760d0646c4e76b2ef70c5958a4de116e94e00cc1c8f2f6e7fa3f553330e015",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
-      "title": "Remuneração de Outumbro de 2023",
+      "title": "Remuneração de Outubro de 2023",
       "mediatype": "text/csv",
       "encoding": "windows-1252",
       "dialect": "dialect.json",
@@ -2563,8 +2563,8 @@
         {
           "title": "Remuneração PMMG",
           "name": "servidores-2023-10-pmmg",
-          "path": "https://drive.google.com/file/d/15QO4OOSEXdpfmtuo8kXIkDR_qFg81TIU",
-          "hash": "d451a99d005df75d2721b0acfec4d4d7"
+          "path": "https://drive.google.com/file/d/15unzt1njHn9uQQrZWiWeGMLkt16rSsCA",
+          "hash": "e395cadb87e61030cf8ba51630ceaf48"
         },
         {
           "title": "Remuneração CBMMG",

@@ -24,9 +24,6 @@ validate-raw: ## Validar arquivos primários da pmmg, cbmmg e civis
 	frictionless validate data-raw/$(resource)-cbmmg.xlsx --json --schema schema/cbmmg/latest.json > reports/cbmmg.json
 	frictionless validate data-raw/$(resource)-pmmg.xlsx --json --schema schema/pmmg/latest.json > reports/pmmg.json
 	frictionless validate data-raw/$(resource)-civis.csv --json --schema schema/civis/latest.json > reports/civis.json
-	livemark build reports/cbmmg.md
-	livemark build reports/pmmg.md
-	livemark build reports/civis.md
 
 merge: ## Merge pmmg, cbmmg e civis
 	Rscript --verbose scripts/merge-remuneracao.R $(resource) 2> logs/log.Rout
