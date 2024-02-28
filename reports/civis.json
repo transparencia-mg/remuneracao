@@ -1,11 +1,11 @@
 {
   "version": "4.40.3",
-  "time": 58.382,
+  "time": 22.958,
   "errors": [],
   "tasks": [
     {
       "resource": {
-        "path": "data-raw/servidores-2023-10-civis.csv",
+        "path": "data-raw/servidores-2024-01-civis.csv",
         "schema": {
           "fields": [
             {
@@ -259,23 +259,23 @@
             ""
           ]
         },
-        "name": "servidores-2023-10-civis",
+        "name": "servidores-2024-01-civis",
         "profile": "tabular-data-resource",
         "scheme": "file",
         "format": "csv",
         "hashing": "md5",
         "stats": {
-          "hash": "2b5ec0ca04fa4b10ec4afa13b2ff270b",
-          "bytes": 90787901,
+          "hash": "858ec80a271b3ef35f7db68c5c7d9072",
+          "bytes": 97001548,
           "fields": 38,
-          "rows": 319444
+          "rows": 342573
         },
         "encoding": "utf-8",
         "dialect": {
           "delimiter": ";"
         }
       },
-      "time": 58.382,
+      "time": 22.958,
       "scope": [
         "hash-count-error",
         "byte-count-error",
