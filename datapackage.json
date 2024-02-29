@@ -2616,7 +2616,7 @@
         {
       "name": "servidores-2023-12",
       "path": "data/servidores-2023-12.csv.gz",
-      "hash": "sha256:",
+      "hash": "sha256:04f19772357ce8d9111997928db58ba24bddfcf73589634c14f22f57e615dd74",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -2642,7 +2642,40 @@
           "title": "Remuneração Civis",
           "name": "servidores-2023-12-civis",
           "path": "https://drive.google.com/file/d/1eoyZWc4YPXVRPrkZDlH4O3ZPm-gkbjcR",
-          "hash": "5bf26bba74943810f9c0c7a8fc082c14"
+          "hash": "ea8ca55009b7175566277f0ba0bb8e6b"
+        }
+      ]
+    },
+        {
+      "name": "servidores-2024-01",
+      "path": "data/servidores-2024-01.csv.gz",
+      "hash": "sha256:1e0a337116eb61af37434e39142adce1e4b30b7602bcfcad462fd2bf4aa82ed7",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Janeiro de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-01-pmmg",
+          "path": "https://drive.google.com/file/d/1hSuj7rtKH1vL-i3gQ6cgbyZsSXtwvtLB",
+          "hash": "94e660d0ee6ad1ba9658da191e20222e"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-01-cbmmg",
+          "path": "https://drive.google.com/file/d/1j1kDd1LI5PQlT0gTLRx1xh12eMHzKul5",
+          "hash": "02661fb285289fdf6caf2eb245ed967c"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-01-civis",
+          "path": "https://drive.google.com/file/d/1JKcIwu-IwGhlnXs9U2Qun_HqNo8ixPfX",
+          "hash": "858ec80a271b3ef35f7db68c5c7d9072"
         }
       ]
     }
