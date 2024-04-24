@@ -2678,6 +2678,72 @@
           "hash": "858ec80a271b3ef35f7db68c5c7d9072"
         }
       ]
+    },
+        {
+      "name": "servidores-2024-02",
+      "path": "data/servidores-2024-02.csv.gz",
+      "hash": "sha256:0b8b5012d94a87a23262b964e61ab302c687d72c45864cac848eb6bef0855f17",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Fevereiro de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-02-pmmg",
+          "path": "https://drive.google.com/file/d/1Tgzy6-q5inev5xhAa1b6JBKKmNjtUtPh",
+          "hash": "1dae600d9f73029537f5a3c004be6ebb"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-02-cbmmg",
+          "path": "https://drive.google.com/file/d/1Kh_AH5JKsgVenm-X2a6ZlLEjIiQsCaCd",
+          "hash": "d3513f466e407c38144f1886e924b418"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-02-civis",
+          "path": "https://drive.google.com/file/d/14PA8rnA5Bh0LwVW9yVFV4A57R06uVBkz",
+          "hash": "d3af06e12050463bbf93cbd8eab3beae"
+        }
+      ]
+    },
+        {
+      "name": "servidores-2024-03",
+      "path": "data/servidores-2024-03.csv.gz",
+      "hash": "sha256:c7df58ebd61d7a41cdd9e2954429ed77c3c45fc90a863e84a1717f6a30baa616",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Março de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-03-pmmg",
+          "path": "https://drive.google.com/file/d/1VYoq6Iclek1SsJk4-0INw9_squ-szBjw",
+          "hash": "c349183fb907fa37e6b7b15bce8237b5"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-03-cbmmg",
+          "path": "https://drive.google.com/file/d/10rzBYpNBm1O8jluvqPrOvXBJwoCOU_6T",
+          "hash": "496db738e51d43b18bb56a4e244e480f"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-03-civis",
+          "path": "https://drive.google.com/file/d/1gAgB1yKgGGLFyUcEvj_DyiTm7FZ3aSnw",
+          "hash": "f680306d96653c49108f6c2c2a9b998d"
+        }
+      ]
     }
   ],
   "keywords": [
