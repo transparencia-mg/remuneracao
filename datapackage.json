@@ -2744,6 +2744,39 @@
           "hash": "f680306d96653c49108f6c2c2a9b998d"
         }
       ]
+    },
+        {
+      "name": "servidores-2024-04",
+      "path": "data/servidores-2024-04.csv.gz",
+      "hash": "sha256:80cb69e539606ad1adcd42fd6e295c2053a3f24b47d2067f0b80919e0449c205",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Abril de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-04-pmmg",
+          "path": "https://drive.google.com/file/d/1kYYkOsFxa6GqA20vi0E5eoOiZAgSkYvc",
+          "hash": "f4b580a3f649a30b429130829ca0ef6a"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-04-cbmmg",
+          "path": "https://drive.google.com/file/d/1z7D_6Yg4_cPmim-Fs8ZkP1jpsnlQwGCm",
+          "hash": "16d20f3f09221830f3ba4423ce08f5d1"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-04-civis",
+          "path": "https://drive.google.com/file/d/1m4STDffwZ8FPVTR-GPKB-I24-bBzv5Rn",
+          "hash": "91dfa2ba4d8d776033d9478cdb93fe7a"
+        }
+      ]
     }
   ],
   "keywords": [
