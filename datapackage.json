@@ -2874,6 +2874,39 @@
           "name": "servidores-2024-07-civis",
           "path": "https://drive.google.com/file/d/1ghdNHx3HW45tftbWaIm9ocn7v_PELbBI",
           "hash": "8aa50bd367b2a46621d4505e07b8f5da"
+          }
+    ]
+    },
+        {
+      "name": "servidores-2024-08",
+      "path": "data/servidores-2024-08.csv.gz",
+      "hash": "sha256:811a17ab0546af99cf025fc117ea53c69b88a8c4f3a18dca4a4c23a67c278424",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Agosto de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-08-pmmg",
+          "path": "https://drive.google.com/file/d/1V5PkGKVdQ2Lvqdf3fRqv4Hncmu8kqrzD",
+          "hash": "2610423889f0d71f371d5141c451d8c2"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-08-cbmmg",
+          "path": "https://drive.google.com/file/d/1eSj33X3PxV87fbdeePEnczVltBu0co9p",
+          "hash": "9b0ec2c019b99a1e785ce313f3386e0a"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-08-civis",
+          "path": "https://drive.google.com/file/d/1v-1Y-fCFhbwcPzpBIfaWULXjRXWe5ETY",
+          "hash": "020a280575d16f1c293c46597bcbbe23"
       }
     ]
     }
