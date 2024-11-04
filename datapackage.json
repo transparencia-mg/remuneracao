@@ -101,7 +101,7 @@
     },
     {
       "name": "servidores-2013-01",
-      "path": "data/servidores-2013-01.csv.gz",
+      "path": "data/servidores-2013-01.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2013",
@@ -115,7 +115,7 @@
     },
     {
       "name": "servidores-2013-02",
-      "path": "data/servidores-2013-02.csv.gz",
+      "path": "data/servidores-2013-02.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2013",
@@ -129,7 +129,7 @@
     },
     {
       "name": "servidores-2013-03",
-      "path": "data/servidores-2013-03.csv.gz",
+      "path": "data/servidores-2013-03.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Março de 2013",
@@ -143,7 +143,7 @@
     },
     {
       "name": "servidores-2013-04",
-      "path": "data/servidores-2013-04.csv.gz",
+      "path": "data/servidores-2013-04.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2013",
@@ -157,7 +157,7 @@
     },
     {
       "name": "servidores-2013-05",
-      "path": "data/servidores-2013-05.csv.gz",
+      "path": "data/servidores-2013-05.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2013",
@@ -171,7 +171,7 @@
     },
     {
       "name": "servidores-2013-06",
-      "path": "data/servidores-2013-06.csv.gz",
+      "path": "data/servidores-2013-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2013",
@@ -185,7 +185,7 @@
     },
     {
       "name": "servidores-2013-07",
-      "path": "data/servidores-2013-07.csv.gz",
+      "path": "data/servidores-2013-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2013",
@@ -199,7 +199,7 @@
     },
     {
       "name": "servidores-2013-08",
-      "path": "data/servidores-2013-08.csv.gz",
+      "path": "data/servidores-2013-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2013",
@@ -213,7 +213,7 @@
     },
     {
       "name": "servidores-2013-09",
-      "path": "data/servidores-2013-09.csv.gz",
+      "path": "data/servidores-2013-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2013",
@@ -227,7 +227,7 @@
     },
     {
       "name": "servidores-2013-10",
-      "path": "data/servidores-2013-10.csv.gz",
+      "path": "data/servidores-2013-10.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2013",
@@ -255,7 +255,7 @@
     },
     {
       "name": "servidores-2013-12",
-      "path": "data/servidores-2013-12.csv.gz",
+      "path": "data/servidores-2013-12.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2013",
