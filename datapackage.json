@@ -241,7 +241,7 @@
     },
     {
       "name": "servidores-2013-11",
-      "path": "data/servidores-2013-11.csv.gz",
+      "path": "data/servidores-2013-11.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2013",
