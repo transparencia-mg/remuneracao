@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "servidores-2012-06",
-      "path": "data/servidores-2012-06.csv.gz",
+      "path": "data/servidores-2012-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2012",
@@ -17,7 +17,7 @@
     },
     {
       "name": "servidores-2012-07",
-      "path": "data/servidores-2012-07.csv.gz",
+      "path": "data/servidores-2012-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2012",
@@ -31,7 +31,7 @@
     },
     {
       "name": "servidores-2012-08",
-      "path": "data/servidores-2012-08.csv.gz",
+      "path": "data/servidores-2012-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2012",
@@ -45,7 +45,7 @@
     },
     {
       "name": "servidores-2012-09",
-      "path": "data/servidores-2012-09.csv.gz",
+      "path": "data/servidores-2012-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2012",
@@ -59,7 +59,7 @@
     },
     {
       "name": "servidores-2012-10",
-      "path": "data/servidores-2012-10.csv.gz",
+      "path": "data/servidores-2012-10.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2012",
@@ -73,7 +73,7 @@
     },
     {
       "name": "servidores-2012-11",
-      "path": "data/servidores-2012-11.csv.gz",
+      "path": "data/servidores-2012-11.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2012",
@@ -87,7 +87,7 @@
     },
     {
       "name": "servidores-2012-12",
-      "path": "data/servidores-2012-12.csv.gz",
+      "path": "data/servidores-2012-12.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2012",
@@ -101,7 +101,7 @@
     },
     {
       "name": "servidores-2013-01",
-      "path": "data/servidores-2013-01.csv.gz",
+      "path": "data/servidores-2013-01.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2013",
@@ -115,7 +115,7 @@
     },
     {
       "name": "servidores-2013-02",
-      "path": "data/servidores-2013-02.csv.gz",
+      "path": "data/servidores-2013-02.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2013",
@@ -129,7 +129,7 @@
     },
     {
       "name": "servidores-2013-03",
-      "path": "data/servidores-2013-03.csv.gz",
+      "path": "data/servidores-2013-03.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Março de 2013",
@@ -143,7 +143,7 @@
     },
     {
       "name": "servidores-2013-04",
-      "path": "data/servidores-2013-04.csv.gz",
+      "path": "data/servidores-2013-04.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2013",
@@ -157,7 +157,7 @@
     },
     {
       "name": "servidores-2013-05",
-      "path": "data/servidores-2013-05.csv.gz",
+      "path": "data/servidores-2013-05.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2013",
@@ -171,7 +171,7 @@
     },
     {
       "name": "servidores-2013-06",
-      "path": "data/servidores-2013-06.csv.gz",
+      "path": "data/servidores-2013-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2013",
@@ -185,7 +185,7 @@
     },
     {
       "name": "servidores-2013-07",
-      "path": "data/servidores-2013-07.csv.gz",
+      "path": "data/servidores-2013-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2013",
@@ -199,7 +199,7 @@
     },
     {
       "name": "servidores-2013-08",
-      "path": "data/servidores-2013-08.csv.gz",
+      "path": "data/servidores-2013-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2013",
@@ -213,7 +213,7 @@
     },
     {
       "name": "servidores-2013-09",
-      "path": "data/servidores-2013-09.csv.gz",
+      "path": "data/servidores-2013-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2013",
@@ -227,7 +227,7 @@
     },
     {
       "name": "servidores-2013-10",
-      "path": "data/servidores-2013-10.csv.gz",
+      "path": "data/servidores-2013-10.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2013",
@@ -241,7 +241,7 @@
     },
     {
       "name": "servidores-2013-11",
-      "path": "data/servidores-2013-11.csv.gz",
+      "path": "data/servidores-2013-11.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2013",
@@ -255,7 +255,7 @@
     },
     {
       "name": "servidores-2013-12",
-      "path": "data/servidores-2013-12.csv.gz",
+      "path": "data/servidores-2013-12.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2013",
@@ -269,7 +269,7 @@
     },
     {
       "name": "servidores-2014-01",
-      "path": "data/servidores-2014-01.csv.gz",
+      "path": "data/servidores-2014-01.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2014",
@@ -283,7 +283,7 @@
     },
     {
       "name": "servidores-2014-02",
-      "path": "data/servidores-2014-02.csv.gz",
+      "path": "data/servidores-2014-02.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2014",
@@ -297,7 +297,7 @@
     },
     {
       "name": "servidores-2014-03",
-      "path": "data/servidores-2014-03.csv.gz",
+      "path": "data/servidores-2014-03.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Março de 2014",
@@ -311,7 +311,7 @@
     },
     {
       "name": "servidores-2014-04",
-      "path": "data/servidores-2014-04.csv.gz",
+      "path": "data/servidores-2014-04.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2014",
@@ -325,7 +325,7 @@
     },
     {
       "name": "servidores-2014-05",
-      "path": "data/servidores-2014-05.csv.gz",
+      "path": "data/servidores-2014-05.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2014",
@@ -339,7 +339,7 @@
     },
     {
       "name": "servidores-2014-06",
-      "path": "data/servidores-2014-06.csv.gz",
+      "path": "data/servidores-2014-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2014",
@@ -353,7 +353,7 @@
     },
     {
       "name": "servidores-2014-07",
-      "path": "data/servidores-2014-07.csv.gz",
+      "path": "data/servidores-2014-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2014",
@@ -367,7 +367,7 @@
     },
     {
       "name": "servidores-2014-08",
-      "path": "data/servidores-2014-08.csv.gz",
+      "path": "data/servidores-2014-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2014",
@@ -381,7 +381,7 @@
     },
     {
       "name": "servidores-2014-09",
-      "path": "data/servidores-2014-09.csv.gz",
+      "path": "data/servidores-2014-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2014",
@@ -395,7 +395,7 @@
     },
     {
       "name": "servidores-2014-10",
-      "path": "data/servidores-2014-10.csv.gz",
+      "path": "data/servidores-2014-10.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2014",
@@ -409,7 +409,7 @@
     },
     {
       "name": "servidores-2014-11",
-      "path": "data/servidores-2014-11.csv.gz",
+      "path": "data/servidores-2014-11.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2014",
@@ -423,7 +423,7 @@
     },
     {
       "name": "servidores-2014-12",
-      "path": "data/servidores-2014-12.csv.gz",
+      "path": "data/servidores-2014-12.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2014",
@@ -437,7 +437,7 @@
     },
     {
       "name": "servidores-2015-01",
-      "path": "data/servidores-2015-01.csv.gz",
+      "path": "data/servidores-2015-01.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2015",
@@ -451,7 +451,7 @@
     },
     {
       "name": "servidores-2015-02",
-      "path": "data/servidores-2015-02.csv.gz",
+      "path": "data/servidores-2015-02.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2015",
@@ -465,7 +465,7 @@
     },
     {
       "name": "servidores-2015-03",
-      "path": "data/servidores-2015-03.csv.gz",
+      "path": "data/servidores-2015-03.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Março de 2015",
@@ -479,7 +479,7 @@
     },
     {
       "name": "servidores-2015-04",
-      "path": "data/servidores-2015-04.csv.gz",
+      "path": "data/servidores-2015-04.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2015",
@@ -493,7 +493,7 @@
     },
     {
       "name": "servidores-2015-05",
-      "path": "data/servidores-2015-05.csv.gz",
+      "path": "data/servidores-2015-05.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2015",
@@ -507,7 +507,7 @@
     },
     {
       "name": "servidores-2015-06",
-      "path": "data/servidores-2015-06.csv.gz",
+      "path": "data/servidores-2015-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2015",
@@ -521,7 +521,7 @@
     },
     {
       "name": "servidores-2015-07",
-      "path": "data/servidores-2015-07.csv.gz",
+      "path": "data/servidores-2015-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2015",
@@ -535,7 +535,7 @@
     },
     {
       "name": "servidores-2015-08",
-      "path": "data/servidores-2015-08.csv.gz",
+      "path": "data/servidores-2015-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2015",
@@ -549,7 +549,7 @@
     },
     {
       "name": "servidores-2015-09",
-      "path": "data/servidores-2015-09.csv.gz",
+      "path": "data/servidores-2015-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2015",
@@ -563,7 +563,7 @@
     },
     {
       "name": "servidores-2015-10",
-      "path": "data/servidores-2015-10.csv.gz",
+      "path": "data/servidores-2015-10.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2015",
@@ -577,7 +577,7 @@
     },
     {
       "name": "servidores-2015-11",
-      "path": "data/servidores-2015-11.csv.gz",
+      "path": "data/servidores-2015-11.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2015",
@@ -591,7 +591,7 @@
     },
     {
       "name": "servidores-2015-12",
-      "path": "data/servidores-2015-12.csv.gz",
+      "path": "data/servidores-2015-12.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2015",
@@ -605,7 +605,7 @@
     },
     {
       "name": "servidores-2016-01",
-      "path": "data/servidores-2016-01.csv.gz",
+      "path": "data/servidores-2016-01.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Janeiro de 2016",
@@ -619,7 +619,7 @@
     },
     {
       "name": "servidores-2016-02",
-      "path": "data/servidores-2016-02.csv.gz",
+      "path": "data/servidores-2016-02.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Fevereiro de 2016",
@@ -633,7 +633,7 @@
     },
     {
       "name": "servidores-2016-03",
-      "path": "data/servidores-2016-03.csv.gz",
+      "path": "data/servidores-2016-03.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Março de 2016",
@@ -647,7 +647,7 @@
     },
     {
       "name": "servidores-2016-04",
-      "path": "data/servidores-2016-04.csv.gz",
+      "path": "data/servidores-2016-04.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Abril de 2016",
@@ -661,7 +661,7 @@
     },
     {
       "name": "servidores-2016-05",
-      "path": "data/servidores-2016-05.csv.gz",
+      "path": "data/servidores-2016-05.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Maio de 2016",
@@ -675,7 +675,7 @@
     },
     {
       "name": "servidores-2016-06",
-      "path": "data/servidores-2016-06.csv.gz",
+      "path": "data/servidores-2016-06.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Junho de 2016",
@@ -689,7 +689,7 @@
     },
     {
       "name": "servidores-2016-07",
-      "path": "data/servidores-2016-07.csv.gz",
+      "path": "data/servidores-2016-07.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Julho de 2016",
@@ -703,7 +703,7 @@
     },
     {
       "name": "servidores-2016-08",
-      "path": "data/servidores-2016-08.csv.gz",
+      "path": "data/servidores-2016-08.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Agosto de 2016",
@@ -717,7 +717,7 @@
     },
     {
       "name": "servidores-2016-09",
-      "path": "data/servidores-2016-09.csv.gz",
+      "path": "data/servidores-2016-09.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Setembro de 2016",
@@ -731,7 +731,7 @@
     },
     {
       "name": "servidores-2016-10",
-      "path": "data/servidores-2016-10.csv.gz",
+      "path": "data/servidores-2016-10.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Outubro de 2016",
@@ -745,7 +745,7 @@
     },
     {
       "name": "servidores-2016-11",
-      "path": "data/servidores-2016-11.csv.gz",
+      "path": "data/servidores-2016-11.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Novembro de 2016",
@@ -759,7 +759,7 @@
     },
     {
       "name": "servidores-2016-12",
-      "path": "data/servidores-2016-12.csv.gz",
+      "path": "data/servidores-2016-12.csv",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "title": "Remuneração de Dezembro de 2016",
@@ -2874,6 +2874,105 @@
           "name": "servidores-2024-07-civis",
           "path": "https://drive.google.com/file/d/1ghdNHx3HW45tftbWaIm9ocn7v_PELbBI",
           "hash": "8aa50bd367b2a46621d4505e07b8f5da"
+          }
+    ]
+    },
+        {
+      "name": "servidores-2024-08",
+      "path": "data/servidores-2024-08.csv.gz",
+      "hash": "sha256:811a17ab0546af99cf025fc117ea53c69b88a8c4f3a18dca4a4c23a67c278424",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Agosto de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-08-pmmg",
+          "path": "https://drive.google.com/file/d/1V5PkGKVdQ2Lvqdf3fRqv4Hncmu8kqrzD",
+          "hash": "2610423889f0d71f371d5141c451d8c2"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-08-cbmmg",
+          "path": "https://drive.google.com/file/d/1eSj33X3PxV87fbdeePEnczVltBu0co9p",
+          "hash": "9b0ec2c019b99a1e785ce313f3386e0a"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-08-civis",
+          "path": "https://drive.google.com/file/d/1v-1Y-fCFhbwcPzpBIfaWULXjRXWe5ETY",
+          "hash": "020a280575d16f1c293c46597bcbbe23"
+      }
+    ]
+    },
+        {
+      "name": "servidores-2024-09",
+      "path": "data/servidores-2024-09.csv",
+      "hash": "sha256:70130fbad6d6571b86234f1336f7783ec5b70c2baed45da2d5a42c92fd9ff669",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Setembro de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-09-pmmg",
+          "path": "https://drive.google.com/file/d/1iG8BH5JiaezRaV6foAtk0r7mz4f26yKb",
+          "hash": "16f547c0f0b7bf43996fad6d7b8b4a28"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-09-cbmmg",
+          "path": "https://drive.google.com/file/d/1H1QHck41soXvxQ8Rtynqa4IeWbXJyCWV",
+          "hash": "cca280a4450b46ab0b535e7aec5dd8d1"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-09-civis",
+          "path": "https://drive.google.com/file/d/1sV6JsG19kTm5f9wfu3_Jhq_Iyo9um8we",
+          "hash": "e8fa5a131bfac7b2a0745b89529184ec"
+      }
+    ]
+    },
+        {
+      "name": "servidores-2024-10",
+      "path": "data/servidores-2024-10.csv",
+      "hash": "sha256:620f5d3eb91e6041ce5a7d927ff4efa56f4b8361cfaf637d155e2ee383f7fce3",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Outubro de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-10-pmmg",
+          "path": "https://drive.google.com/file/d/1Hv9cGTsLtNO_RwPQVDVsJzsmZ0o9E_7-",
+          "hash":  "e3698a7dea36afc1d2eb6db78b273b91"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-10-cbmmg",
+          "path": "https://drive.google.com/file/d/1JGqajFlYgQ6qBf13mdgEB5K2_4R826WU",
+          "hash": "c7151dbdaa6794fae9bfb54167b51b4e"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-10-civis",
+          "path": "https://drive.google.com/file/d/15PVVkZ-pxfBMmOMNDAoYQMWzBUzsD_dJ",
+          "hash": "00c5067a802ec02b04fd9c30b982248d"
       }
     ]
     }
