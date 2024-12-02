@@ -6,7 +6,7 @@ Documentação das principais alterações sofridas por este conjunto de dados.
 
 - Alteração do cálculo da coluna eventual que passará a apresentar todas as verbas eventuais recebidas e descontadas dentro do mesmo mês, incluindo as verbas atrasadas. Podendo inclusive apresentar valores negativos.
 
-- Inclusão do número de admissão na geração dos dados.
+- Inclusão do número de admissão na geração dos dados..
 
 ### Mar/2021
 
