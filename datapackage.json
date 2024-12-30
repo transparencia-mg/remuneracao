@@ -2979,7 +2979,7 @@
         {
       "name": "servidores-2024-11",
       "path": "data/servidores-2024-11.csv",
-      "hash": "sha256:",
+      "hash": "sha256:9ba944375c5a4b4d8d644cbbc094b75fcde223365578d5cc2e1f96d1d91dbacf",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
