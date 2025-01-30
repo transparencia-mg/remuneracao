@@ -3008,6 +3008,39 @@
           "hash": "4165a4b214b5c326240dee02161bb558"
       }
     ]
+    },
+        {
+      "name": "servidores-2024-12",
+      "path": "data/servidores-2024-12.csv",
+      "hash": "sha256:",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Dezembro de 2024",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json1",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2024-12-pmmg",
+          "path": "https://drive.google.com/file/d/1mYZHK8AsDdi1S5pD6j4Ij0GpDJmXWFdL",
+          "hash":  "bab848b37c8a48b67a97b22c38a4fc06"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2024-12-cbmmg",
+          "path": "https://drive.google.com/file/d/1dtZIzL9RuRf4UQNIRYd3-j1GeTQWnY2-",
+          "hash": "49e9f644776bde94b4fd3090c47f46cc"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2024-12-civis",
+          "path": "https://drive.google.com/file/d/1wrktID1XuJZdwRaj0B8VzVcwQJc9_fdK",
+          "hash": "a2648e7d681df97b6fdf714520e6615d"
+      }
+    ]
     }
   ],
   "keywords": [
