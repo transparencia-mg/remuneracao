@@ -3118,6 +3118,8 @@
   "owner_org": "controladoria-geral-do-estado-cge",
   "title": "Remuneração dos Servidores Ativos do Poder Executivo",
   "description": "Remuneração dos Servidores Ativos do Poder Executivo",
+  "homepage":"https://www.transparencia.mg.gov.br/estado-pessoal/remuneracao-dos-servidores",
+  "Frequência de atualização":"mensal",
   "private": "false",
   "state": "active",
   "version": "0.1.0",
