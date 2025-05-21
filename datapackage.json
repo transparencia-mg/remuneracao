@@ -3077,8 +3077,8 @@
     },
         {
       "name": "servidores-2025-02",
-      "path": "data/servidores-2025-02.csv",
-      "hash": "sha256:9f2c0b2e1b10be556571bc3795274d10e5f08792acd37389e9ee5abb91aaf5e0",
+      "path": "data/servidores-2025-01.csv",
+      "hash": "sha256:",
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -3091,20 +3091,53 @@
         {
           "title": "Remuneração PMMG",
           "name": "servidores-2025-02-pmmg",
-          "path": "https://drive.google.com/file/d/1taL--fwLE5ammvrud0JGFuOPrSg1DtVD",
-          "hash":  "0ce846c60ad2a26ada7ee1339c3b4f00"
+          "path": "ftp://200.198.49.164/Fevereiro_2025/servidores-pmmg-2025-02.xlsx",
+          "hash":  "e1982c1688b50a92afad1f56dfb214f5c142ead358479482c285e0984f626770"
         },
         {
           "title": "Remuneração CBMMG",
           "name": "servidores-2025-02-cbmmg",
-          "path": "https://drive.google.com/file/d/1bvIeV3a0__SAB0Quqri3NYuLW9Bfg973",
-          "hash": "64c18b996425cd21e5e10bdda867df4e"
+          "path": "ftp://200.198.49.164/Fevereiro_2025/TRANSPAR├èNCIA CBMMG-2025-02.xlsx",
+          "hash": "b7c5b4ab112403909905f679c7ad83ccebff3a306947b2d83569ec2925463ecc"
         },
         {
           "title": "Remuneração Civis",
           "name": "servidores-2025-02-civis",
-          "path": "https://drive.google.com/file/d/1kNu-8ci40Cak1yTSF79QNht16H6uglw2",
-          "hash": "02b70fde585ede2ac00f3fbfec5baeeb"
+          "path": "ftp://200.198.49.164/Fevereiro_2025/Portal.da.Transparencia.2025.02",
+          "hash": "52995b2f34e2735774bb343f0f0e7ab06905cfe77804afca60327c38335e043a"
+      }
+    ]
+    },
+        {
+      "name": "servidores-2025-03",
+      "path": "data/servidores-2025-03.csv",
+      "hash": "sha256:4a55d83230a2616ed428bcf97200b135024ced413b5f2e90eeee16b819c400bc",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
+      "title": "Remuneração de Março de 2025",
+      "mediatype": "text/csv",
+      "encoding": "windows-1252",
+      "dialect": "dialect.json",
+      "format": "csv",
+      "sources": [
+        {
+          "title": "Remuneração PMMG",
+          "name": "servidores-2025-03-pmmg",
+          "path": "ftp://200.198.49.164/Marco_2025/servidores-pmmg-2025-03.xlsx",
+          "hash":  "2e20c345553d2f1a057a625ea333ea8feb6f1709359d3a35ed59ea707f6e6876"
+        },
+        {
+          "title": "Remuneração CBMMG",
+          "name": "servidores-2025-03-cbmmg",
+          "path": "ftp://200.198.49.164/Marco_2025/TRANSPARENCIA CBMMG-2025-03.xlsx",
+          "hash": "10d48579c5fb3083244b879e1630b6b035478157ef8463897a754300735cc0d4"
+        },
+        {
+          "title": "Remuneração Civis",
+          "name": "servidores-2025-03-civis",
+          "path": "ftp://200.198.49.164/Marco_2025/Portal.da.Transparencia.2025.03.csv",
+          "hash": "d42a4f16a8c7710b5972640345329930df9914ce46c4bf8f7cccbcbe97d45435"
       }
     ]
     }
