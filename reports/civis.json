@@ -1,11 +1,19 @@
 {
   "version": "4.40.3",
+<<<<<<< HEAD
   "time": 18.875,
+=======
+  "time": 20.319,
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
   "errors": [],
   "tasks": [
     {
       "resource": {
+<<<<<<< HEAD
         "path": "data-raw/servidores-2024-11-civis.csv",
+=======
+        "path": "data-raw/servidores-2025-02-civis.csv",
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
         "schema": {
           "fields": [
             {
@@ -259,23 +267,38 @@
             ""
           ]
         },
+<<<<<<< HEAD
         "name": "servidores-2024-11-civis",
+=======
+        "name": "servidores-2025-02-civis",
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
         "profile": "tabular-data-resource",
         "scheme": "file",
         "format": "csv",
         "hashing": "md5",
         "stats": {
+<<<<<<< HEAD
           "hash": "4165a4b214b5c326240dee02161bb558",
           "bytes": 96293389,
           "fields": 38,
           "rows": 340825
+=======
+          "hash": "02b70fde585ede2ac00f3fbfec5baeeb",
+          "bytes": 85762923,
+          "fields": 38,
+          "rows": 304159
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
         },
         "encoding": "utf-8",
         "dialect": {
           "delimiter": ";"
         }
       },
+<<<<<<< HEAD
       "time": 18.875,
+=======
+      "time": 20.319,
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
       "scope": [
         "hash-count-error",
         "byte-count-error",

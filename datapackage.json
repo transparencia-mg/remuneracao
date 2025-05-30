@@ -3077,8 +3077,13 @@
     },
         {
       "name": "servidores-2025-02",
+<<<<<<< HEAD
       "path": "data/servidores-2025-02.csv",
       "hash": "sha256:6bcba78f492ee65b001a5d528c478d9e2b27f70acfd1cb38b48284656e0cf09f",
+=======
+      "path": "data/servidores-2025-01.csv",
+      "hash": "sha256:",
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -3097,13 +3102,21 @@
         {
           "title": "Remuneração CBMMG",
           "name": "servidores-2025-02-cbmmg",
+<<<<<<< HEAD
           "path": "ftp://200.198.49.164/Fevereiro_2025/servidores-cbmmg-2025-02.xlsx",
+=======
+          "path": "ftp://200.198.49.164/Fevereiro_2025/TRANSPAR├èNCIA CBMMG-2025-02.xlsx",
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
           "hash": "b7c5b4ab112403909905f679c7ad83ccebff3a306947b2d83569ec2925463ecc"
         },
         {
           "title": "Remuneração Civis",
           "name": "servidores-2025-02-civis",
+<<<<<<< HEAD
           "path": "ftp://200.198.49.164/Fevereiro_2025/Portal.da.Transparencia.2025.02.csv",
+=======
+          "path": "ftp://200.198.49.164/Fevereiro_2025/Portal.da.Transparencia.2025.02",
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
           "hash": "52995b2f34e2735774bb343f0f0e7ab06905cfe77804afca60327c38335e043a"
       }
     ]
@@ -3111,7 +3124,11 @@
         {
       "name": "servidores-2025-03",
       "path": "data/servidores-2025-03.csv",
+<<<<<<< HEAD
       "hash": "sha256:463605d26628b9c93deb0cb12bf0f82d169b0608b5842f168bf0eaa60922be83",
+=======
+      "hash": "sha256:4a55d83230a2616ed428bcf97200b135024ced413b5f2e90eeee16b819c400bc",
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
       "profile": "tabular-data-resource",
       "schema": "schema.json",
       "description": "Contém dados dos componentes da remuneração mensal dos servidores do poder Executivo do Estado de Minas Gerais",
@@ -3140,6 +3157,7 @@
           "hash": "d42a4f16a8c7710b5972640345329930df9914ce46c4bf8f7cccbcbe97d45435"
       }
     ]
+<<<<<<< HEAD
     },
         {
       "name": "servidores-2025-04",
@@ -3173,6 +3191,8 @@
           "hash": "cb81dfcb3f02b767724124a217e6b712bcbd4b226d3d7131bf2c0dd3d942a213"
       }
     ]
+=======
+>>>>>>> 617fa131073861f26cee3dc0d0676175c06533c5
     }
   ],
   "keywords": [
